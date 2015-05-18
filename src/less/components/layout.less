@@ -20,7 +20,7 @@
 
 .row
 {  
-  margin:0 @container-margin*-1;
+  margin:0 -(@container-margin/2);
   font-size: 0;  
 
   & [class^=col-]
@@ -39,5 +39,15 @@
   & [class^=col-]:last-child
   {
     padding-right:0;
+  }
+}
+
+.clearfix 
+{
+  &:after, &:before 
+  {
+    content: "";
+    display: table;
+    clear: both;
   }
 }

@@ -12,7 +12,7 @@
 	<!-- endbuild -->
 
 	<!-- build:css css/style.css -->
-	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
 	<!-- endbuild -->
 
 </head>
@@ -20,29 +20,36 @@
 
 	<header class="header">
 		<div class="wrapper">
-			<a href="#" class="logo">
-				
-			</a>
-			<div class="contacts">
-				<div class="contacts__link--msg">
-					Написать нам
+			<div class="header__top clearfix">
+				<div class="logo">
+					<a class="logo__img" href="#" >
+						<img src="img/header/logo.png" alt="logo">
+					</a>				
+					<h1 class="logo__title">
+						Зимняя Психологическая Школа молодых ученых СПбГУ
+					</h1>
+				</div>				
+				<div class="contacts">
+					<div class="contacts__link contacts__link--msg">
+						Написать нам
+					</div>
+					<div class="contacts__link">
+						Контакты с ЗПШ
+					</div>
 				</div>
-				<div class="contacts__link">
-					Контакты с ЗПШ
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li>о нас</li>
-					<li>преподаватели</li>
-					<li>материалы</li>
-					<li>галерея</li>
-					<li>оставить заявку</li>
-					<li>вопросы-ответы</li>
-					<li>документы</li>
-					<li>контакты</li>
+			</div>			
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-item"><a href="#">о нас</a></li>
+					<li class="header__nav-item"><a href="#">преподаватели</a></li>
+					<li class="header__nav-item"><a href="#">материалы</a></li>
+					<li class="header__nav-item"><a href="#">галерея</a></li>
+					<li class="header__nav-item"><a href="#">оставить заявку</a></li>
+					<li class="header__nav-item"class=""><a href="#">вопросы-ответы</a></li>
+					<li class="header__nav-item"><a href="#">документы</a></li>
+					<li class="header__nav-item"><a href="#">контакты</a></li>
 				</ul>
-			</nav>
+			</nav>				
 		</div>
 	</header>
 
@@ -77,7 +84,7 @@
 		</div>
 	</div>
 
-	<div class="applications">
+	<div class="applications wrapper">
 		<row>
 			<section class="participant">
 				<div class="col-6">
