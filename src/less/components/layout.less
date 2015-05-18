@@ -1,0 +1,43 @@
+/* ////////////////////// */
+/*        LAYOUT          */
+/* ////////////////////// */
+.generate-columns(@n,@i:1) when (@i=<@n)
+{  
+  .col-@{i}
+  {
+    width:(@i*100%/@n);       
+  }
+  .generate-columns(@n, (@i+1));
+}
+
+.generate-columns(12);
+
+.wrapper
+{
+  margin: 0 auto;
+  width: @container-width;
+}
+
+.row
+{  
+  margin:0 @container-margin*-1;
+  font-size: 0;  
+
+  & [class^=col-]
+  {
+    display: inline-block;
+    vertical-align: top;  
+    padding: 0 @container-margin;
+    font-size: @font-size-base;
+  }
+
+  & [class^=col-]:first-child
+  {
+    padding-left:0;
+  }
+
+  & [class^=col-]:last-child
+  {
+    padding-right:0;
+  }
+}
