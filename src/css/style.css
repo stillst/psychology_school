@@ -106,7 +106,7 @@ p {
   text-decoration: underline;
   display: inline-block;
   vertical-align: middle;
-  float: left;
+  margin-bottom: 15px;
 }
 .recomendation:hover {
   text-decoration: none;
@@ -265,6 +265,7 @@ p {
   padding: 25px 20px;
   border: 2px solid #fc5b5b;
   margin-bottom: 10px;
+  color: #fc5b5b;
 }
 .programm {
   text-align: center;
