@@ -1,11 +1,12 @@
 .header
 {	
-	padding-top:20px; 
+	padding:20px 0; 
 
 	&__top
 	{
 		margin-bottom: 20px;
 	}
+
 	.logo
 	{
 		float: left;
@@ -13,13 +14,15 @@
 		&__img
 		{
 			margin-right: 25px;
-		}		
+		}	
+
 		&__title
 		{
 			display: inline-block;
 			vertical-align: top;
-  			font-size: 16px;
-  			line-height: 18px;
+  			font-size: 14px;
+  			line-height: 20px;
+  			color: @grey-basic;
   			font-weight: normal;
   			width: 30%;
 		}        
@@ -32,27 +35,42 @@
 
 		&__link
 		{
-			padding-top:40px; 
-			width: 30%;
-  			display: inline-block;
+			display: inline-block;
+  			vertical-align: top;
+			padding-top:45px; 
+			font-size: 10px;
+			width: 25%;  			
   			text-align: center;
   			position: relative;
   			
   			&:after
   			{
-				background: url(../img/header/msg.png) 0% 0px no-repeat;
+				background: url(../img/header/contacts_book.png) 0 0 no-repeat;
 				content: "";
 		        width: 40px;
 		        height: 40px;
 		        display: block;
 		        position: absolute;		        
 		        top: 0;
-		        left: 25%;		        
+		        left: 0;		        
   			}
 
   			&--msg
   			{
 				margin-right: 10px;
+				&:after
+  				{
+  					background: url(../img/header/email_us.png) 0 0 no-repeat;	
+  				}
+  			}
+
+  			&--search
+  			{
+  				margin-right: 10px;
+  				&:after
+  				{
+					background: url(../img/header/search.png) 0 0 no-repeat;
+				}
   			}
 		}
 	}
@@ -63,13 +81,19 @@
         &-item
         {               	
             display: inline-block;     
-            vertical-align: middle;
-            text-transform: uppercase;   
-                                 
+            vertical-align: middle;                                             
             a
             {
-				padding: 5px 13px;  	
-				font-size: 18px;  				               
+            	text-transform: uppercase;  
+				padding: 0 28px;  	
+				font-size: 18px; 
+				font-weight: bold;
+				color: @blue-basic;
+				//font-family: "BaronNeueBold"; 	
+				&:hover
+				{
+					color: @red-basic;
+				}			               
             }    
 
             &:first-child a

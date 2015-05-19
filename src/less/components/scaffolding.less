@@ -19,3 +19,42 @@ li
 {
 	list-style-type:none;
 }
+
+h1 
+{  
+  margin: 0;
+}
+
+p
+{
+	color:@grey-basic;
+}
+
+.section-title
+{
+	color: @blue-basic;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.recomendation
+{
+	color:@red-basic;
+	font-size: 14px;
+	text-decoration: underline;
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	&:hover
+	{
+		text-decoration: none;
+	}
+}
+
+.map
+{
+	width: 100%;
+	height: @height-map;
+	overflow: hidden;
+}
