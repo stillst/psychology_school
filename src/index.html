@@ -5,6 +5,8 @@
 	<title>Зимняя психологическая школа | Сайт ЗПШ СПБГУ</title>	
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!-- build:css css/vendor.css -->
 	<!-- bower:css -->		     
 		<link href="bower/normalize.css/normalize.css" rel="stylesheet" />   
@@ -30,6 +32,10 @@
 					</h1>
 				</div>				
 				<div class="contacts">
+					<!--
+						<form action="/search" id="main_search_form" method="GET" style="visibility: visible; width: 710px;"><input name="where" type="hidden" value="products"><input class="input" name="query" type="text" value="" style="width: 659px; padding-left: 25px;"><input class="submit" name="" type="submit" value="" style="right: 51px;"><a class="close" href="#"></a></form>
+					-->
+
 					<div class="contacts__link contacts__link--search">
 						
 					</div>
@@ -45,16 +51,23 @@
 				<ul class="header__nav-list">
 					<li class="header__nav-item"><a href="#">о нас</a></li>
 					<li class="header__nav-item"><a href="#">преподаватели</a></li>
-					<li class="header__nav-item"><a href="#">материалы</a></li>
+					<li class="header__nav-item"><a href="#">материалы</a>
+						<ul class="header__sub-menu">
+				            <li class="header__sub-menu-item"><a href="#">lorem</a></li>
+				            <li class="header__sub-menu-item"><a href="#">ipsum</a></li>
+				            <li class="header__sub-menu-item"><a href="#">Lorem ipsum dolor</a></li>
+				        </ul>
+					</li>
 					<li class="header__nav-item"><a href="#">галерея</a></li>
-					<li class="header__nav-item"><a href="#">участникам</a></li>					
+					<li class="header__nav-item">
+						<a href="#">участникам</a>
+						<ul class="header__sub-menu">
+				            <li class="header__sub-menu-item"><a href="#">информация</a></li>
+				            <li class="header__sub-menu-item"><a href="#">оставить заявку</a></li>
+				            <li class="header__sub-menu-item"><a href="#">вопросы и ответы</a></li>
+				        </ul>
+					</li>					
 					<li class="header__nav-item"><a href="#">контакты</a></li>
-					<!--
-
-						<li class="header__nav-item"><a href="#">оставить заявку</a></li>
-					<li class="header__nav-item"><a href="#">вопросы-ответы</a></li>
-					<li class="header__nav-item"><a href="#">документы</a></li>
-					-->
 				</ul>
 			</nav>				
 		</div>
@@ -101,44 +114,44 @@
 		</div>
 	</section>
 
-	<section class="programm">
-		<h1 class="section-title">
-			Что входит в программу?
-		</h1>	
-		<div class="programm__banner">
-			<div class="wrapper">
-				<div class="row">
-					<div class="col-4">
-						<img class="programm__img" src="img/programm/presentation.png" alt="Презентация">		
-						<div class="programm__txt">
-							Презентации проектов,
-							мастерклассы и тренинги
-							по тематическим зонам
-						</div>
+	<section class="programm">		
+		
+		<div class="wrapper">
+			<h1 class="section-title section-title--white">
+				Что входит в программу?
+			</h1>	
+			<div class="row programm__include">
+				<div class="col-4">
+					<img class="programm__img" src="img/programm/presentation.png" alt="Презентация">		
+					<div class="programm__txt">
+						Презентации проектов,
+						мастерклассы и тренинги
+						по тематическим зонам
 					</div>
-					<div class="col-4">
-						<img class="programm__img" src="img/programm/question.png" alt="Вопрос"> 
-						<div class="programm__txt">
-							Возможность найти
-							единомышленников и задать вопрос
-							любому преподавателю напрямую
-						</div>
+				</div>
+				<div class="col-4">
+					<img class="programm__img" src="img/programm/question.png" alt="Вопрос"> 
+					<div class="programm__txt">
+						Возможность найти
+						единомышленников и задать вопрос
+						любому преподавателю напрямую
 					</div>
-					<div class="col-4">
-						<img class="programm__img" src="img/programm/dj.png" alt="DJ"> 
-						<div class="programm__txt">
-							Спортивные, культурные и другие
-							различные мероприятия для тех,
-							кто готов зажигать всю ночь
-						</div>
+				</div>
+				<div class="col-4">
+					<img class="programm__img" src="img/programm/dj.png" alt="DJ"> 
+					<div class="programm__txt">
+						Спортивные, культурные и другие
+						различные мероприятия для тех,
+						кто готов зажигать всю ночь
 					</div>
 				</div>
 			</div>
-		</div>	
-		<a class="btn-order">Подробнее о программе</a>
-		<p class="programm__tizer">
-			В данный момент выложена прошлогодняя програма, в скором времени появится программа на 2016 года
-		</p>
+			<a class="btn-more-info">Подробнее о программе</a>
+			<p class="programm__tizer">
+				В данный момент выложена прошлогодняя програма, в скором времени появится программа на 2016 год
+			</p>
+		</div>
+			
 	</section>
 
 	<div class="applications wrapper">
@@ -149,8 +162,7 @@
 				</div>
 				<div class="col-6">
 					<h1 class="applications__title">Хочу стать докладчиком!</h1>
-					<p class="applications__txt">Супер! Мы тоже этого хотим :-)</p>
-					<p class="applications__txt">А почему? Да потому что в этом куча плюсов!</p>
+					<p class="applications__txt">Супер! Мы тоже этого хотим :-) В этом куча плюсов!</p>					
 					<ul class="applications__bonus-list">
 						<li class="applications__bonus-item applications__bonus-item--diplom">
 							получение диплома о проведении проекта
@@ -168,7 +180,7 @@
 							ваше имя в официальной программе зпш
 						</li>
 					</ul>
-					<p class="clearfix">
+					<p class="recomendation-wrap clearfix">
 						<a href="#" class="recomendation">Рекомендации по проектам </a>	
 					</p>					
 					<a href="#" class="btn-respond">подать заявку</a>																			
@@ -186,14 +198,18 @@
 							расширение кругозора
 						</li>
 						<li class="applications__bonus-item applications__bonus-item--workshop">
-							участие в мастер-классах
+							свободное посещение лекций и мастер-классов
 						</li>
-						<li class="applications__bonus-item applications__bonus-item--fresh-air">
-							свежий воздух
+						<li class="applications__bonus-item applications__bonus-item--certificate">
+							возможность посетить трёхдневный сквозной проект и получить диплом
 						</li>
 						<li class="applications__bonus-item applications__bonus-item--winter">
 							санки и зима
-						</li>						
+						</li>
+						<li class="applications__bonus-item applications__bonus-item--tradition">
+							традиции - глинтвейн, тепло компании
+						</li>
+												
 					</ul>
 					<a href="#" class="btn-respond">подать заявку</a>
 				</div>
@@ -238,13 +254,13 @@
 	</footer>
 	<!-- build:js js/vendor.js -->
 		<!-- bower:js -->
-
+			<script src="bower/jquery/dist/jquery.min.js"></script>  
 		<!-- endbower -->
 	<!-- endbuild -->
 	
 
 	<!-- build:js js/script.js -->
-
+		 <script src="js/script.js"></script>
 	<!-- endbuild -->
 
 </body>

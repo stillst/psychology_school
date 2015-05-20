@@ -1,9 +1,8 @@
 .applications
 {
-	margin-bottom: 65px;
 	section
 	{
-		margin-bottom: 60px;
+		margin: 60px 0;
 	}
 	&__img
 	{
@@ -12,10 +11,11 @@
 
 	&__title
 	{
+		font-family: "Appetite"; 
 		color: @blue-basic;
-		font-size: 20px;
+		font-size: 24px;
 		text-transform: uppercase;
-		margin-bottom: 15px;
+		margin-bottom: 15px;		
 	}
 
 	&__txt
@@ -27,10 +27,8 @@
 
 	&__bonus-list
 	{
-		margin-top: 20px;
-		margin-bottom: 25px;
-		text-transform: uppercase;
-		font-size: 14px;
+		margin: 20px 0 20px 0;		
+		text-transform: uppercase;		
 		color:@grey-basic;
 	}
 
@@ -38,6 +36,10 @@
 	{		
 		padding: 10px 0 10px 55px;
 		background-size: 30px 30px;
+		font-family: @open-sans;
+		font-weight: bold;
+		font-size: 14px;
+
 		background: url(../img/aplications/diplom.png) 0 50% no-repeat;	
 
 		&--feedback
@@ -62,31 +64,32 @@
 
 		&--horizon
 		{
-			background: url(../img/aplications/horizon.png) 100% 50% no-repeat;
-			padding: 10px 55px 10px 0px;
+			background: url(../img/aplications/horizon.png) 0 50% no-repeat;
 		}
 
 		&--workshop
 		{
-			background: url(../img/aplications/workshop.png) 100% 50% no-repeat;
-			padding: 10px 55px 10px 0px;
+			background: url(../img/aplications/workshop.png) 0 50% no-repeat;
 		}
 
-		&--fresh-air
+		&--tradition
 		{
-			background: url(../img/aplications/fresh-air.png) 100% 50% no-repeat;
-			padding: 10px 55px 10px 0px;
+			background: url(../img/aplications/tradition.png) 0 50% no-repeat;
 		}
 
 		&--winter
 		{
-			background: url(../img/aplications/winter.png) 100% 50% no-repeat;
-			padding: 10px 55px 10px 0px;
+			background: url(../img/aplications/winter.png) 0 50% no-repeat;
+		}
+
+		&--certificate
+		{
+			background: url(../img/aplications/certificate.png) 0 50% no-repeat;
 		}
 	}
 
-	.student
+	.recomendation-wrap
 	{
-		text-align: right;					
+		margin-bottom: 25px;
 	}
 }

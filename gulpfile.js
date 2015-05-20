@@ -23,12 +23,12 @@ gulp.task('copy_img', function () {
      .pipe(gulp.dest('dist/img/'));   
 });
 
-/*
+
 gulp.task('copy_fonts', function () {
-    return gulp.src('src/bower/components-font-awesome/fonts/*')
+    return gulp.src('src/fonts/*')
      .pipe(gulp.dest('dist/fonts/'));   
 });
-*/
+
 
 // Склейка, минификация для js и css. А также изменение путей до css* и js* и копирирование их в dist 
 gulp.task('dist', function () {
@@ -105,7 +105,4 @@ gulp.task('watch', function () {
 gulp.task('default', ['connect', 'watch']);
 
 // Сборка проекта
-gulp.task('compile', ['dist', 'copy_img'
-	//, 'copy_fonts'
-	]
-	);
+gulp.task('compile', ['dist', 'copy_img', 'copy_fonts']);

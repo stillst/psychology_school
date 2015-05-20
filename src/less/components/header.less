@@ -19,9 +19,10 @@
 		&__title
 		{
 			display: inline-block;
-			vertical-align: top;
+			font-family: @open-sans;
+			vertical-align: bottom;
   			font-size: 14px;
-  			line-height: 20px;
+  			line-height: 24px;
   			color: @grey-basic;
   			font-weight: normal;
   			width: 30%;
@@ -35,8 +36,10 @@
 
 		&__link
 		{
+			cursor: pointer;
 			display: inline-block;
   			vertical-align: top;
+  			font-family: @open-sans;
 			padding-top:45px; 
 			font-size: 10px;
 			width: 25%;  			
@@ -78,6 +81,7 @@
 
 	&__nav
     {      
+    	position: relative;
         &-item
         {               	
             display: inline-block;     
@@ -85,14 +89,14 @@
             a
             {
             	text-transform: uppercase;  
-				padding: 0 28px;  	
+				padding: 5px 31px; 	
 				font-size: 18px; 
 				font-weight: bold;
 				color: @blue-basic;
-				//font-family: "BaronNeueBold"; 	
+				font-family: "Appetite"; 	
 				&:hover
 				{
-					color: @red-basic;
+					color: @red-basic;					
 				}			               
             }    
 
@@ -104,8 +108,24 @@
             &:last-child a
             {
                 padding-right:0;
-            }   
-
-        }
+            }   		
+        }        
     }
+
+    &__sub-menu
+    {
+    	display: none;
+		position: absolute;			
+		padding: 15px 0;
+		top: 45px;
+		background: #fff;
+		&-item
+		{
+			a
+			{
+				display: inline-block;
+				font-size: 14px;
+			}			
+		}
+    }        
 }
