@@ -13,4 +13,16 @@ $(document).ready(function()
 	    	$(this).slideToggle("slow");                                                                           
 	    });
 	});
+
+
+	//search
+	$(function()
+	{
+	    $(document).on('click', '.contacts__link--search', function()
+	    { 
+	    	var toggleWidth = $(".search-form").width() == 310 ? "40px" : "310px";
+        	$('.search-form').animate({ width: toggleWidth });                                                                    
+	    });	
+	});
+
 }); 

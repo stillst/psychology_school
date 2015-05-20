@@ -1,0 +1,95 @@
+.search-form-w
+{
+	position: relative;	
+}
+
+.search-form
+{
+	position: relative;
+	left: 45px;
+	display: inline-block;			
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50px;
+	background-color: @red-basic;
+
+
+	&__input
+	{				
+		color: #fff;
+		background-color: @red-basic;
+		height: 50px;
+		border: 0px solid #d6d6d6;
+		//background-color: transparent;
+		background-repeat: no-repeat;	
+		font-size: 23px;	
+	}
+
+	&__submit
+	{		
+		position: absolute;
+		color: #fff;		
+		height: 40px;
+		width: 40px;
+		border: 0px solid #d6d6d6;
+		background-color: transparent;
+		background: url(../img/header/search_icon.png) 0 50% no-repeat;
+		font-size: 23px;
+		right: 50px;
+		border-right: 1px solid #fff;
+	}
+}
+
+
+.contacts
+{
+	float: right;
+	text-align: right;
+
+	&__link
+	{
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: top;
+		font-family: @open-sans;
+		padding-top:45px; 
+		font-size: 10px;		  		
+		text-align: center;
+		position: relative;
+		
+		&:after
+		{
+			background: url(../img/header/contacts_book.png) 0 0 no-repeat;
+			content: "";
+	        width: 40px;
+	        height: 40px;
+	        display: block;
+	        position: absolute;		        
+	        top: 0;
+	        left: 0;		        
+		}
+
+		&--msg
+		{
+			margin-right: 10px;
+			&:after
+			{
+				background: url(../img/header/email_us.png) 0 0 no-repeat;	
+			}
+		}
+
+		&--search
+		{
+			position: absolute;			
+			width: 40px;
+			padding-top: 40px;
+			right: 0;
+
+			&:after
+			{
+				background: url(../img/header/search.png) 0 0 no-repeat;
+			}
+		}
+	}
+}
