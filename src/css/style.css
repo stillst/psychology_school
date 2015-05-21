@@ -434,6 +434,37 @@ p {
 .applications .recomendation-wrap {
   margin-bottom: 25px;
 }
+.flip-container {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flip-container:hover {
+  transform: rotateY(180deg);
+}
+.flip-container__front,
+.flip-container__back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flip-container__front {
+  z-index: 2;
+}
+.flip-container__back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+  border: 5px solid #04a4e7;
+  padding: 170px 0;
+}
+.flip-container__back p {
+  text-align: center;
+  font-family: "Appetite";
+  color: #04a4e7;
+  font-size: 24px;
+  text-transform: uppercase;
+}
 .footer .copy {
   font-size: 14px;
   line-height: 90px;

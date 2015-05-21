@@ -93,3 +93,45 @@
 		margin-bottom: 25px;
 	}
 }
+
+.flip-container
+{
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+  
+  &:hover 
+  {
+    transform: rotateY(180deg);
+  }
+   
+  &__front, &__back
+  {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  &__front
+  {
+    z-index: 2;
+  }
+  
+  &__back
+  {
+    background-color: #fff;           
+    transform: rotateY(180deg);
+    border: 5px solid @blue-basic;
+    padding: 170px 0;
+    
+    & p
+    {      
+      text-align: center;
+      font-family: "Appetite"; 
+      color: @blue-basic;
+      font-size: 24px;
+      text-transform: uppercase;     
+    }
+  }
+}
