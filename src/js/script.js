@@ -20,7 +20,7 @@ $(document).ready(function()
 	{
 	    $(document).on('click', '.contacts__link--search', function()
 	    { 
-	    	var toggleWidth = $(".search-form").width() == 310 ? "40px" : "310px";
+	    	var toggleWidth = $(".search-form").width() == 500 ? "40px" : "500px";
         	$('.search-form').animate({ width: toggleWidth });                                                                    
 	    });	
 	});

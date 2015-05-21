@@ -10,17 +10,65 @@
 	.social-icons
 	{
 		float: right;
-		padding: 23px 0;
+		padding: 23px 0;		
 	}
 
 	.social-icon
 	{
-		font-size: 0;
-		margin-left: 7px;
-		img
+		display: inline-block;
+		position: relative;
+		position: relative;
+		height: 40px;
+		width: 40px;
+		border-radius: 20px;
+		background-color: @red-basic;
+
+		&:hover
 		{
-			max-height: 40px;
-			max-width: 40px;			
+			background-color: @blue-basic;
 		}
+		  		
+		&:after
+		{
+			content: "";		
+	        width: 40px;
+	        height: 40px;
+	        display: block;
+	        position: absolute;		        
+	        top: 0;
+	        left: 0;		        
+		}
+
+		&--vk
+		{
+			&:after
+			{
+				background: url(../img/footer/icon_vk.png) 50% 50% no-repeat;			
+			}		
+		}
+
+		&--facebook
+		{
+			&:after
+			{
+				background: url(../img/footer/icon_facebook.png) 50% 50% no-repeat;			
+			}		
+		}
+
+		&--twitter
+		{
+			&:after
+			{
+				background: url(../img/footer/icon_twitter.png) 50% 50% no-repeat;			
+			}		
+		}
+
+		&--instagram
+		{
+			&:after
+			{
+				background: url(../img/footer/icon_instagram.png) 50% 50% no-repeat;			
+			}		
+		}				
 	}
 }

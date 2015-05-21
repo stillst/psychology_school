@@ -184,7 +184,10 @@ p {
   height: 50px;
   border: 0px solid #d6d6d6;
   background-repeat: no-repeat;
-  font-size: 23px;
+  font-size: 20px;
+  position: absolute;
+  right: 100px;
+  outline: none;
 }
 .search-form__submit {
   position: absolute;
@@ -197,45 +200,7 @@ p {
   font-size: 23px;
   right: 50px;
   border-right: 1px solid #fff;
-}
-.contacts {
-  float: right;
-  text-align: right;
-}
-.contacts__link {
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: top;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 45px;
-  font-size: 10px;
-  text-align: center;
-  position: relative;
-}
-.contacts__link:after {
-  background: url(../img/header/contacts_book.png) 0 0 no-repeat;
-  content: "";
-  width: 40px;
-  height: 40px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.contacts__link--msg {
-  margin-right: 10px;
-}
-.contacts__link--msg:after {
-  background: url(../img/header/email_us.png) 0 0 no-repeat;
-}
-.contacts__link--search {
-  position: absolute;
-  width: 40px;
-  padding-top: 40px;
-  right: 0;
-}
-.contacts__link--search:after {
-  background: url(../img/header/search.png) 0 0 no-repeat;
+  outline: none;
 }
 .header {
   padding: 20px 0;
@@ -270,15 +235,20 @@ p {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
-  max-height: 40px;
+  height: 40px;
   font-size: 10px;
   padding-top: 40px;
   width: 40px;
   text-align: center;
   position: relative;
+  background-color: #04a4e7;
+  border-radius: 20px;
+}
+.header .contacts__link:hover {
+  background-color: #fc5b5b;
 }
 .header .contacts__link:after {
-  background: url(../img/header/contacts_book.png) 0 0 no-repeat;
+  background: url(../img/header/contacts_book.png) 50% 50% no-repeat;
   content: "";
   width: 40px;
   height: 40px;
@@ -291,13 +261,14 @@ p {
   margin-right: 10px;
 }
 .header .contacts__link--msg:after {
-  background: url(../img/header/email_us.png) 0 0 no-repeat;
+  background: url(../img/header/email_us.png) 50% 50% no-repeat;
 }
 .header .contacts__link--search {
   margin-right: 10px;
+  background-color: #fc5b5b;
 }
 .header .contacts__link--search:after {
-  background: url(../img/header/search.png) 0 0 no-repeat;
+  background: url(../img/header/search_icon.png) 50% 50% no-repeat;
 }
 .header__nav {
   position: relative;
@@ -473,10 +444,34 @@ p {
   padding: 23px 0;
 }
 .footer .social-icon {
-  font-size: 0;
-  margin-left: 7px;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #fc5b5b;
 }
-.footer .social-icon img {
-  max-height: 40px;
-  max-width: 40px;
+.footer .social-icon:hover {
+  background-color: #04a4e7;
+}
+.footer .social-icon:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer .social-icon--vk:after {
+  background: url(../img/footer/icon_vk.png) 50% 50% no-repeat;
+}
+.footer .social-icon--facebook:after {
+  background: url(../img/footer/icon_facebook.png) 50% 50% no-repeat;
+}
+.footer .social-icon--twitter:after {
+  background: url(../img/footer/icon_twitter.png) 50% 50% no-repeat;
+}
+.footer .social-icon--instagram:after {
+  background: url(../img/footer/icon_instagram.png) 50% 50% no-repeat;
 }
