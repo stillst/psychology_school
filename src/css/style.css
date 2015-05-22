@@ -669,3 +669,175 @@ This must be run when you have at least 2 sprites.
   display: inline-block;
   vertical-align: middle;
 }
+@media (max-width: 360px) {
+  /* ////////////////////*/
+  /*     Layout-small    */
+  /* ////////////////////*/
+  .wrapper {
+    width: 310px;
+  }
+  .col-xs-0 {
+    display: none!important;
+  }
+  .col-xs-1 {
+    width: 8.33333333%;
+  }
+  .col-xs-2 {
+    width: 16.66666667%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  .col-xs-5 {
+    width: 41.66666667%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
+  .col-xs-8 {
+    width: 66.66666667%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  .col-xs-11 {
+    width: 91.66666667%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+  /* ////////////////////*/
+  /*   Typography-small  */
+  /* ////////////////////*/
+  .section-title {
+    font-size: 20px;
+  }
+  /* ////////////////////*/
+  /*   Programm-small    */
+  /* ////////////////////*/
+  .programm .row [class^=col-] {
+    padding: 0;
+  }
+  .programm__img {
+    margin-top: 25px;
+  }
+  /* ////////////////////*/
+  /*        Timer-small  */
+  /* ////////////////////*/
+  .timer {
+    padding: 30px;
+  }
+  .timer__txt {
+    font-size: 20px;
+  }
+  .timer .timer__block {
+    margin-bottom: 10px;
+  }
+  /* ////////////////////*/
+  /*       do-small      */
+  /* ////////////////////*/
+  .do .speaker-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .do .student-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .do__img {
+    max-height: 200px;
+    border-radius: 50%;
+  }
+  .do__bonuses {
+    text-align: left;
+  }
+  .do .flip-container {
+    min-height: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+  }
+  .do .flip-container__back {
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 200px;
+    left: 20%;
+  }
+  .do .flip-container__back p {
+    padding: 40px 0;
+    font-size: 20px;
+  }
+  .do .flip-container__front {
+    left: 20%;
+  }
+  /* ////////////////////*/
+  /*    footer-small     */
+  /* ////////////////////*/
+  .footer {
+    text-align: center;
+  }
+  .footer .row [class^=col-] {
+    padding: 0;
+  }
+  .footer .copy {
+    padding-top: 10px;
+    line-height: 20px;
+  }
+  .footer .social-icons {
+    float: none;
+    padding: 10px 0;
+  }
+  /* ////////////////////*/
+  /*    header-small     */
+  /* ////////////////////*/
+  .header__nav-item {
+    display: block;
+  }
+  .header__nav-item:first-child a {
+    padding-left: 31px;
+  }
+  .header__nav-item:last-child a {
+    padding-right: 31px;
+  }
+  .header .logo {
+    width: 100%;
+  }
+  .header .logo__title {
+    width: 65%;
+  }
+  .header .contacts {
+    width: 100%;
+  }
+  /* ////////////////////*/
+  /*    banner-small     */
+  /* ////////////////////*/
+  .banner {
+    background-position: 850px 0px;
+  }
+  .banner__title {
+    font-size: 25px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .banner__info {
+    font-size: 15px;
+  }
+  .banner .btn-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .banner__dates {
+    padding: 0 20px;
+  }
+}
