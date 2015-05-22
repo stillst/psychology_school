@@ -1,12 +1,32 @@
-.applications
+.do
 {
-	section
+	padding: 60px 0;
+	
+	.speaker-col
 	{
-		margin: 60px 0;
+		display: inline-block;
+  		vertical-align: top;
+  		padding: 0 80px 0 0;
+		width: 50%;
 	}
+
+	.student-col
+	{
+		display: inline-block;
+  		vertical-align: top;
+  		padding: 0 0 0 80px;
+		width: 50%;
+	}
+
+	li
+	{
+		padding: 5px 0;
+	}
+		
 	&__img
 	{
 		max-height: 400px;
+		border-radius: 50%;
 	}
 
 	&__title
@@ -25,113 +45,97 @@
 		margin-bottom: 10px;
 	}
 
-	&__bonus-list
+	&__bonuses
 	{
-		margin: 20px 0 20px 0;		
-		text-transform: uppercase;		
-		color:@grey-basic;
-	}
-
-	&__bonus-item
-	{		
-		padding: 10px 0 10px 55px;
-		background-size: 30px 30px;
+		margin: 20px 0 20px 0;	
+		color:@blue-basic;	
 		font-family: @open-sans;
-		font-weight: bold;
-		font-size: 14px;
-
-		background: url(../img/aplications/diplom.png) 0 50% no-repeat;	
-
-		&--feedback
-		{
-			background: url(../img/aplications/feedback.png) 0 50% no-repeat;	
-		}
-
-		&--speach
-		{
-			background: url(../img/aplications/speach.png) 0 50% no-repeat;	
-		}
-
-		&--discount
-		{
-			background: url(../img/aplications/discount.png) 0 50% no-repeat;
-		}
-
-		&--glory
-		{
-			background: url(../img/aplications/glory.png) 0 50% no-repeat;
-		}
-
-		&--horizon
-		{
-			background: url(../img/aplications/horizon.png) 0 50% no-repeat;
-		}
-
-		&--workshop
-		{
-			background: url(../img/aplications/workshop.png) 0 50% no-repeat;
-		}
-
-		&--tradition
-		{
-			background: url(../img/aplications/tradition.png) 0 50% no-repeat;
-		}
-
-		&--winter
-		{
-			background: url(../img/aplications/winter.png) 0 50% no-repeat;
-		}
-
-		&--certificate
-		{
-			background: url(../img/aplications/certificate.png) 0 50% no-repeat;
-		}
 	}
 
-	.recomendation-wrap
-	{
-		margin-bottom: 25px;
-	}
-}
 
-.flip-container
-{
-  transition: 0.5s;
-  transform-style: preserve-3d;
-  position: relative;
-  
-  &:hover 
-  {
-    transform: rotateY(180deg);
-  }
-   
-  &__front, &__back
-  {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  &__front
-  {
-    z-index: 2;
-  }
-  
-  &__back
-  {
-    background-color: #fff;           
-    transform: rotateY(180deg);
-    border: 5px solid @blue-basic;
-    padding: 170px 0;
-    
-    & p
-    {      
-      text-align: center;
-      font-family: "Appetite"; 
-      color: @blue-basic;
-      font-size: 24px;
-      text-transform: uppercase;     
-    }
-  }
+	&__bonus
+	{		
+		&-diplom
+		{
+			&:before
+			{
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+			   .sprite(@diplom);
+			}		
+		}	
+
+		&-feedback
+		{
+			&:before
+			{				
+			   .sprite(@feedback);
+			}				
+		}
+
+		&-speach
+		{						
+			&:before
+			{
+			   .sprite(@speach);
+			}				
+		}
+
+		&-discount
+		{
+			&:before
+			{
+			   .sprite(@discount) ;
+			}
+		}
+
+		&-glory
+		{
+			&:before
+			{
+			   .sprite(@glory) ;
+			}
+		}
+
+		&-horizon
+		{
+			&:before
+			{
+			   .sprite(@horizon) ;
+			}
+		}
+
+		&-workshop
+		{
+			&:before
+			{
+			   .sprite(@workshop) ;
+			}
+		}
+
+		&-tradition
+		{			
+			&:before
+			{
+			   .sprite(@tradition) ;
+			}
+		}
+
+		&-winter
+		{	
+			&:before
+			{
+			   .sprite(@winter) ;
+			}
+		}
+
+		&-certificate
+		{			
+			&:before
+			{
+			   .sprite(@certificate) ;
+			}
+		}			
+	}
 }

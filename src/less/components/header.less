@@ -44,7 +44,7 @@
 			vertical-align: top;
 			height: 40px;
 			font-size: 10px;
-			padding-top: 40px;
+			padding-top: 10px;
 			width: 40px;
 			text-align: center;
 			position: relative;
@@ -56,24 +56,21 @@
 				background-color: @red-basic;
 			}
   			
-  			&:after
-  			{
-				background: url(../img/header/contacts_book.png) 50% 50% no-repeat;
-				content: "";
-		        width: 40px;
-		        height: 40px;
-		        display: block;
-		        position: absolute;		        
-		        top: 0;
-		        left: 0;		        
+  			&:before
+  			{				
+  				margin-bottom: 10px;
+				.sprite(@contacts-book);	        
   			}
 
   			&--msg
   			{
-				margin-right: 10px;				
-				&:after
+				margin-right: 10px;	
+
+				padding-top: 13px;			
+				&:before
   				{
-  					background: url(../img/header/email_us.png) 50% 50% no-repeat;	
+  					margin-bottom: 13px;
+  					.sprite(@email-us);	    
   				}
   			}
 
@@ -81,9 +78,9 @@
   			{
   				margin-right: 10px;
   				background-color: @red-basic;
-  				&:after
+  				&:before
   				{
-					background: url(../img/header/search_icon.png) 50% 50% no-repeat;
+  					.sprite(@search-icon);
 				}
   			}
 		}

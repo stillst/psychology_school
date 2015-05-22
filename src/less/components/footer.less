@@ -16,42 +16,37 @@
 	.social-icon
 	{
 		display: inline-block;
-		position: relative;
-		position: relative;
+		vertical-align: middle;
+		text-align: center;
 		height: 40px;
 		width: 40px;
 		border-radius: 20px;
 		background-color: @red-basic;
+
+		&:after
+		{
+			position: relative;
+			top: 12px;	
+		}
 
 		&:hover
 		{
 			background-color: @blue-basic;
 		}
 		  		
-		&:after
-		{
-			content: "";		
-	        width: 40px;
-	        height: 40px;
-	        display: block;
-	        position: absolute;		        
-	        top: 0;
-	        left: 0;		        
-		}
-
 		&--vk
 		{
 			&:after
-			{
-				background: url(../img/footer/icon_vk.png) 50% 50% no-repeat;			
+			{				
+				.sprite(@icon-vk);	
 			}		
 		}
 
 		&--facebook
 		{
 			&:after
-			{
-				background: url(../img/footer/icon_facebook.png) 50% 50% no-repeat;			
+			{				
+				.sprite(@icon-facebook);			
 			}		
 		}
 
@@ -59,7 +54,7 @@
 		{
 			&:after
 			{
-				background: url(../img/footer/icon_twitter.png) 50% 50% no-repeat;			
+				.sprite(@icon-twitter);						
 			}		
 		}
 
@@ -67,7 +62,7 @@
 		{
 			&:after
 			{
-				background: url(../img/footer/icon_instagram.png) 50% 50% no-repeat;			
+				.sprite(@icon-instagram);					
 			}		
 		}				
 	}

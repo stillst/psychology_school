@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	less = require('gulp-less'),
 	notify = require('gulp-notify'),
-	minifyCss = require('gulp-minify-css');
+	minifyCss = require('gulp-minify-css'),
+	spritesmith = require('gulp.spritesmith');
 
 // Очистка папки DIST
 gulp.task('clean', function () {
@@ -100,6 +101,22 @@ gulp.task('watch', function () {
 	gulp.watch(['./src/js/*.js'], ['js']);
 	gulp.watch(['./src/less/**/*.less'], ['less']);
 });
+
+// Спрайты
+gulp.task('sprite', function() {
+    var spriteData = 
+        gulp.src('./src/img/_for_sprite/*.*') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.less',
+                cssFormat :'less',
+                padding: 5,
+            }));
+    //../img/sprite/sprite.png
+    spriteData.img.pipe(gulp.dest('./src/img/sprite/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('./src/less/components/')); // путь, куда сохраняем стили
+});
+
 
 // Задача по-умолчанию 
 gulp.task('default', ['connect', 'watch']);

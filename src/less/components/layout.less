@@ -18,11 +18,10 @@
   width: @container-width;
 }
 
-.row
+.line
 {  
   margin:0 -(@container-margin);
   font-size: 0;  
-
   & [class^=col-]
   {
     display: inline-block;
@@ -30,7 +29,19 @@
     padding: 0 @container-margin;
     font-size: @font-size-base;
   }
-  /*
+}
+
+.row
+{  
+  font-size: 0;  
+  & [class^=col-]
+  {
+    display: inline-block;
+    vertical-align: top;  
+    padding: 0 @container-margin;
+    font-size: @font-size-base;
+  }
+
   & [class^=col-]:first-child
   {
     padding-left:0;
@@ -40,7 +51,35 @@
   {
     padding-right:0;
   }
-  */
+
+  & [class^=collist-]
+  {
+    display: inline-block;
+    vertical-align: middle;  
+    padding: 0 @container-margin-list;
+    font-size: @font-size-base;
+  }
+
+  .collist-marker
+  {
+    width: 15%;
+  }
+
+  .collist-txt
+  {
+    width: 85%;
+  }
+
+  & [class^=collist-]:first-child
+  {
+    padding-left:0;
+  }
+
+  & [class^=collist-]:last-child
+  {
+    padding-right:0;
+  }
+ 
 }
 
 .clearfix 

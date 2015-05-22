@@ -51,6 +51,7 @@ p
 	text-decoration: underline;
 	display: inline-block;
 	vertical-align: middle;
+	margin-bottom: 30px;
 	
 	&:hover
 	{
@@ -63,4 +64,51 @@ p
 	width: 100%;
 	height: @height-map;
 	overflow: hidden;
+}
+
+
+.flip-container
+{
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+  min-height: 400px;
+  margin-bottom: 50px;
+  
+  &:hover 
+  {
+    transform: rotateY(180deg);
+  }
+   
+  &__front, &__back
+  {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+  
+  &__front
+  {
+    z-index: 2;
+  }
+  
+  &__back
+  {
+    background-color: #fff;           
+    transform: rotateY(180deg);
+    border: 5px solid @blue-basic;
+    min-height: 400px;
+    
+    & p
+    {      
+      text-align: center;
+      font-family: "Appetite"; 
+      color: @blue-basic;
+      font-size: 24px;
+      text-transform: uppercase;   
+      padding: 100px 60px;  
+    }
+  }
 }

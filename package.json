@@ -2,7 +2,7 @@
   "name": "psychology_school",
   "version": "0.0.1",
   "description": "Html template for winter psychological school St. Petersburg State University",
-  "main": "gulpfile.js",  
+  "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-clean": "^0.3.1",
@@ -16,7 +16,6 @@
     "wiredep": "^2.2.2",
     "opn": "^1.0.2"
   },
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/stillst/psychology_school.git"
@@ -26,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/stillst/psychology_school/issues"
   },
-  "homepage": "https://github.com/stillst/psychology_school"
+  "homepage": "https://github.com/stillst/psychology_school",
+  "dependencies": {
+    "gulp.spritesmith": "^3.6.1"
+  }
 }
