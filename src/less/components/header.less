@@ -31,15 +31,12 @@
 
 	.contacts
 	{
-		float: right;
 		text-align: right;
-		width: 70%;
 
 		&__link
 		{
 			
   			font-family: @open-sans;
-			cursor: pointer;
 			display: inline-block;
 			vertical-align: top;
 			height: 40px;
@@ -47,9 +44,9 @@
 			padding-top: 10px;
 			width: 40px;
 			text-align: center;
-			position: relative;
 			background-color: @blue-basic;
 			border-radius: 20px;
+			margin-right: 10px;
 
 			&:hover
 			{
@@ -64,24 +61,12 @@
 
   			&--msg
   			{
-				margin-right: 10px;	
-
 				padding-top: 13px;			
 				&:before
   				{
   					margin-bottom: 13px;
   					.sprite(@email-us);	    
   				}
-  			}
-
-  			&--search
-  			{
-  				margin-right: 10px;
-  				background-color: @red-basic;
-  				&:before
-  				{
-  					.sprite(@search-icon);
-				}
   			}
 		}
 	}

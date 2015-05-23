@@ -8,11 +8,6 @@
         width: @container-width-xs;
     }   
 
-    .col-xs-0
-    {
-        display: none!important;
-    }
-
    .generate-columns(@n,@i:1) when (@i=<@n)
     {  
         .col-xs-@{i}
@@ -32,7 +27,6 @@
 	{
 		font-size: 20px;		
 	}
-
 
 	/* ////////////////////*/
     /*   Programm-small    */
@@ -58,7 +52,7 @@
     /* ////////////////////*/
 	.timer
 	{
-		padding: 30px;	
+		padding: 30px;
 		&__txt
 		{
 			font-size: 20px;		
@@ -74,9 +68,7 @@
     /*       do-small      */
     /* ////////////////////*/
 	.do
-	{
-
-		
+	{		
 		.speaker-col
 		{
 			width: 100%;
@@ -152,12 +144,36 @@
 		}
 	}
 
-
-		/* ////////////////////*/
-	    /*    header-small     */
-	    /* ////////////////////*/
+	/* //////////////////*/
+    /*    header-small   */
+    /* //////////////////*/
 	.header
 	{
+		.row 
+		{
+			& [class^=col-]
+			{			    			    
+			    padding: 0;			    
+			}
+		}
+	
+		.js-search-form
+		{
+			display: block;
+			margin: 10px ;
+
+			&__input
+			{	
+				width: 250px;
+			}
+		}
+
+		.contacts__link--msg
+		{
+			float: left;
+			margin: 0 0 10px 10px;	
+		}
+		
 		&__nav
 	    {      		    	
 	        &-item
@@ -166,35 +182,40 @@
 	             
 	            &:first-child a
 	            {
-	            	padding-left:31px;
+	            	padding-left:10px;
 	            }    
 
-	            &:last-child a
+	            a
 	            {
-	                padding-right:31px;
+	            	padding-left:10px;
 	            }   		
 	        }        
 	    }
 
-    	.logo
-    	{
-    		
-    		width: 100%;
-    		&__img
-    		{
-    		
-    		}	
+		&__sub-menu
+	    {	    	
+			padding: 15px 0;
+			top: auto;
+			left: 15px;
+			border: 2px solid #000;
+ 			background: #fff;
+			&-item
+			{
+				a
+				{
+					display: inline-block;
+					font-size: 14px;
+				}			
+			}
+	    }       
 
+    	.logo
+    	{    		
     		&__title
     		{
     			width: 65%;
     		}        
-    	}
-
-    	.contacts
-    	{
-			width: 100%;
-    	}
+    	}    
 	}
 
 	/* ////////////////////*/

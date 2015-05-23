@@ -257,41 +257,64 @@ This must be run when you have at least 2 sprites.
 .btn-respond:hover {
   background-color: #fc5b5b;
 }
-.search-form-w {
-  position: relative;
-}
-.search-form {
-  position: relative;
-  left: 45px;
+.js-search-form {
   display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.js-search-form form {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   width: 40px;
   height: 40px;
   overflow: hidden;
   border-radius: 50px;
   background-color: #fc5b5b;
 }
-.search-form__input {
+.js-search-form__toogle {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+.js-search-form__toogle:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -123px -23px;
+  width: 21px;
+  height: 21px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 10px;
+}
+.js-search-form__input {
+  position: absolute;
   color: #fff;
   background-color: #fc5b5b;
-  height: 50px;
-  border: 0px solid #d6d6d6;
-  background-repeat: no-repeat;
+  height: 40px;
+  border: none;
   font-size: 20px;
-  position: absolute;
+  width: 350px;
   right: 100px;
   outline: none;
 }
-.search-form__submit {
+.js-search-form__submit {
   position: absolute;
+  right: 50px;
   color: #fff;
   height: 40px;
   width: 40px;
-  border: 0px solid #d6d6d6;
+  border: none;
   background-color: transparent;
   background: url(../img/header/search_icon.png) 0 50% no-repeat;
   font-size: 23px;
-  right: 50px;
-  border-right: 1px solid #fff;
+  border-right: 2px solid #fff;
   outline: none;
 }
 .header {
@@ -318,13 +341,10 @@ This must be run when you have at least 2 sprites.
   width: 40%;
 }
 .header .contacts {
-  float: right;
   text-align: right;
-  width: 70%;
 }
 .header .contacts__link {
   font-family: 'Open Sans', sans-serif;
-  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   height: 40px;
@@ -332,9 +352,9 @@ This must be run when you have at least 2 sprites.
   padding-top: 10px;
   width: 40px;
   text-align: center;
-  position: relative;
   background-color: #04a4e7;
   border-radius: 20px;
+  margin-right: 10px;
 }
 .header .contacts__link:hover {
   background-color: #fc5b5b;
@@ -350,7 +370,6 @@ This must be run when you have at least 2 sprites.
   vertical-align: middle;
 }
 .header .contacts__link--msg {
-  margin-right: 10px;
   padding-top: 13px;
 }
 .header .contacts__link--msg:before {
@@ -359,19 +378,6 @@ This must be run when you have at least 2 sprites.
   background-position: -123px -97px;
   width: 21px;
   height: 15px;
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-}
-.header .contacts__link--search {
-  margin-right: 10px;
-  background-color: #fc5b5b;
-}
-.header .contacts__link--search:before {
-  background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -23px;
-  width: 21px;
-  height: 21px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -669,15 +675,165 @@ This must be run when you have at least 2 sprites.
   display: inline-block;
   vertical-align: middle;
 }
+@media (max-width: 640px) and (min-width: 360px) {
+  .wrapper {
+    width: 580px;
+  }
+  .col-tablet-1 {
+    width: 8.33333333%;
+  }
+  .col-tablet-2 {
+    width: 16.66666667%;
+  }
+  .col-tablet-3 {
+    width: 25%;
+  }
+  .col-tablet-4 {
+    width: 33.33333333%;
+  }
+  .col-tablet-5 {
+    width: 41.66666667%;
+  }
+  .col-tablet-6 {
+    width: 50%;
+  }
+  .col-tablet-7 {
+    width: 58.33333333%;
+  }
+  .col-tablet-8 {
+    width: 66.66666667%;
+  }
+  .col-tablet-9 {
+    width: 75%;
+  }
+  .col-tablet-10 {
+    width: 83.33333333%;
+  }
+  .col-tablet-11 {
+    width: 91.66666667%;
+  }
+  .col-tablet-12 {
+    width: 100%;
+  }
+  /* ////////////////////*/
+  /*    banner-small     */
+  /* ////////////////////*/
+  .banner {
+    background-position: 850px 0px;
+    min-height: 300px;
+    text-align: center;
+  }
+  .banner__title {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .banner__info {
+    font-size: 15px;
+  }
+  .banner .btn-info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .banner__dates {
+    padding: 0 20px;
+  }
+  .timer {
+    padding: 20px 100px;
+  }
+  .timer .timer__block {
+    margin-bottom: 20px;
+  }
+  .do .speaker-col {
+    padding: 10px;
+    text-align: center;
+  }
+  .do .student-col {
+    padding: 10px;
+    text-align: center;
+  }
+  .do__img {
+    max-height: 200px;
+    border-radius: 50%;
+  }
+  .do__bonuses {
+    text-align: left;
+  }
+  .do .flip-container {
+    min-height: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+  }
+  .do .flip-container__back {
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 200px;
+    left: 20%;
+  }
+  .do .flip-container__back p {
+    padding: 40px 0;
+    font-size: 20px;
+  }
+  .do .flip-container__front {
+    left: 20%;
+  }
+  .footer .copy {
+    line-height: 45px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .footer .row [class^=col-] {
+    padding: 0;
+  }
+  .header .row [class^=col-] {
+    padding: 0;
+  }
+  .header .js-search-form {
+    display: block;
+    margin: 10px ;
+  }
+  .header .js-search-form__input {
+    width: 250px;
+  }
+  .header .contacts__link--msg {
+    float: left;
+    margin: 0 0 10px 10px;
+  }
+  .header__nav-item {
+    padding: 20px 30px;
+  }
+  .header__nav-item:first-child a {
+    padding: 10px;
+  }
+  .header__nav-item:last-child a {
+    padding: 10px;
+  }
+  .header__nav-item a {
+    padding: 10px;
+  }
+  .header__sub-menu {
+    padding: 15px 0;
+    top: auto;
+    border: 2px solid #000;
+    background: #fff;
+  }
+  .header__sub-menu-item a {
+    display: inline-block;
+    font-size: 14px;
+  }
+  .header .logo__title {
+    vertical-align: top;
+    font-weight: bold;
+    width: 75%;
+    font-size: 20px;
+    font-family: "Appetite";
+  }
+}
 @media (max-width: 360px) {
   /* ////////////////////*/
   /*     Layout-small    */
   /* ////////////////////*/
   .wrapper {
     width: 310px;
-  }
-  .col-xs-0 {
-    display: none!important;
   }
   .col-xs-1 {
     width: 8.33333333%;
@@ -800,23 +956,42 @@ This must be run when you have at least 2 sprites.
   /* ////////////////////*/
   /*    header-small     */
   /* ////////////////////*/
+  .header .row [class^=col-] {
+    padding: 0;
+  }
+  .header .js-search-form {
+    display: block;
+    margin: 10px ;
+  }
+  .header .js-search-form__input {
+    width: 250px;
+  }
+  .header .contacts__link--msg {
+    float: left;
+    margin: 0 0 10px 10px;
+  }
   .header__nav-item {
     display: block;
   }
   .header__nav-item:first-child a {
-    padding-left: 31px;
+    padding-left: 10px;
   }
-  .header__nav-item:last-child a {
-    padding-right: 31px;
+  .header__nav-item a {
+    padding-left: 10px;
   }
-  .header .logo {
-    width: 100%;
+  .header__sub-menu {
+    padding: 15px 0;
+    top: auto;
+    left: 15px;
+    border: 2px solid #000;
+    background: #fff;
+  }
+  .header__sub-menu-item a {
+    display: inline-block;
+    font-size: 14px;
   }
   .header .logo__title {
     width: 65%;
-  }
-  .header .contacts {
-    width: 100%;
   }
   /* ////////////////////*/
   /*    banner-small     */

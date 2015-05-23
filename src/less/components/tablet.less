@@ -1,0 +1,207 @@
+
+@media (max-width: @resolution-tablet) and (min-width: @resolution-small) 
+{
+	.wrapper
+    {  
+        width: @wrapper-width-tablet;
+    }   
+
+   .generate-columns(@n,@i:1) when (@i=<@n)
+    {  
+        .col-tablet-@{i}
+        {
+            width:(@i*100%/@n);       
+        }
+        .generate-columns(@n, (@i+1));
+    }
+
+    .generate-columns(12);
+
+	
+	/* ////////////////////*/
+    /*    banner-small     */
+    /* ////////////////////*/
+    .banner
+    {
+    	background-position: 850px 0px;      	
+    	min-height: 300px;
+    	text-align: center;  
+		&__title
+		{
+			font-size: 25px;			
+			padding: 0 20px;
+		}
+		
+		&__info
+		{
+			font-size: 15px;	
+		}
+
+		.btn-info
+		{			
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		&__dates
+		{
+			padding: 0 20px;
+		}
+    }
+
+    .timer
+    {
+    	 padding: 20px 100px;
+    	.timer__block
+    	{
+    		margin-bottom: 20px;
+    	}
+    }
+
+	.do
+	{		
+		.speaker-col
+		{    			
+			padding: 10px;
+			text-align: center;
+		}
+
+		.student-col
+		{		
+			padding: 10px;
+			text-align: center;
+		}
+
+		&__img
+		{
+			max-height: 200px;
+			border-radius: 50%;
+		}
+
+		&__bonuses
+		{
+			text-align: left;
+		}
+
+		.flip-container
+		{		  
+			min-height: 200px;
+			max-height: 200px;
+			margin-bottom: 20px;
+		 	&__back
+		  	{
+			    min-height: 200px;
+			    max-height: 200px;
+			    max-width: 200px;
+			    left: 20%;
+			    & p
+    			{  
+    				padding: 40px 0;
+    				font-size: 20px;
+    			}
+			}
+			&__front
+		  	{
+				left: 20%;
+		  	}
+		}		
+	}
+
+	.footer
+	{		
+		.copy
+		{
+			line-height: 45px;
+			font-weight: bold;	
+			text-align: center;		
+		}	
+		.row 
+		{
+			& [class^=col-]
+			{			    			    
+			    padding: 0;			    
+			}
+		}	
+	}
+
+	.header
+	{
+		.row 
+		{
+			& [class^=col-]
+			{			    			    
+			    padding: 0;			    
+			}
+		}
+	
+		.js-search-form
+		{
+			display: block;
+			margin: 10px ;
+
+			&__input
+			{	
+				width: 250px;
+			}
+		}
+
+		.contacts__link--msg
+		{
+			float: left;
+			margin: 0 0 10px 10px;	
+		}
+		
+		
+		&__nav
+	    {      		    	
+	        &-item
+	        {               	
+	               
+	            padding: 20px 30px;                                            	             
+	            &:first-child a
+	            {
+	            	padding:10px;
+	            }    
+
+	            &:last-child a
+	            {
+	            	padding:10px;
+	            }
+
+	            a
+	            {
+	            	padding:10px;
+	            }   		
+	        }        
+	    }
+
+		&__sub-menu
+	    {	    	
+			padding: 15px 0;
+			top: auto;		
+			border: 2px solid #000;
+ 			background: #fff;
+			&-item
+			{
+				a
+				{
+					display: inline-block;
+					font-size: 14px;
+				}			
+			}
+	    }       
+
+    	.logo
+    	{    		
+    		&__title
+    		{
+    			vertical-align: top;    			
+    			font-weight: bold;
+    			width: 75%;
+    			font-size: 20px;
+    			font-family: "Appetite";
+
+    		}        
+    	}    
+	}
+}

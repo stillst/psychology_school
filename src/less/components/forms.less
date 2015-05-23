@@ -1,29 +1,48 @@
-.search-form-w
+.js-search-form
 {
-	position: relative;	
-}
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	
+	form
+	{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;			
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		border-radius: 50px;
+		background-color: @red-basic;
+	}
 
-.search-form
-{
-	position: relative;
-	left: 45px;
-	display: inline-block;			
-	width: 40px;
-	height: 40px;
-	overflow: hidden;
-	border-radius: 50px;
-	background-color: @red-basic;
-
+	&__toogle
+	{
+  		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		height: 40px;
+		width: 40px;
+		border-radius: 20px;
+  		&:before
+  		{
+  			.sprite(@search-icon);
+  			position: relative;
+  			top: 10px;
+		}
+	}
 
 	&__input
 	{				
-		color: #fff;
-		background-color: #fc5b5b;
-		height: 50px;
-		border: 0px solid #d6d6d6;
-		background-repeat: no-repeat;
-		font-size: 20px;
 		position: absolute;
+		color: #fff;
+		background-color: @red-basic;
+		height: 40px;
+		border: none;
+		font-size: 20px;
+		width: 350px;		
 		right: 100px;	
 		outline: none;
 	}
@@ -31,15 +50,16 @@
 	&__submit
 	{		
 		position: absolute;
+		right: 50px;
 		color: #fff;		
 		height: 40px;
 		width: 40px;
-		border: 0px solid #d6d6d6;
+		border: none;
 		background-color: transparent;
 		background: url(../img/header/search_icon.png) 0 50% no-repeat;
-		font-size: 23px;
-		right: 50px;
-		border-right: 1px solid #fff;
+		font-size: 23px;		
+		border-right: 2px solid #fff;
 		outline: none;
 	}
+
 }
