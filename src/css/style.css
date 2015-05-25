@@ -282,17 +282,15 @@ This must be run when you have at least 2 sprites.
   height: 40px;
   width: 40px;
   border-radius: 20px;
-}
-.js-search-form__toogle:before {
-  background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -23px;
-  width: 21px;
-  height: 21px;
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  top: 10px;
+  background: url('../img/header/search_icon.png') no-repeat 50% 50%;
+  /*
+	  		&:before
+	  		{
+	  			.sprite(@search-icon);
+	  			position: relative;
+	  			top: 10px;
+			}
+		*/
 }
 .js-search-form__input {
   position: absolute;
@@ -307,7 +305,7 @@ This must be run when you have at least 2 sprites.
 }
 .js-search-form__submit {
   position: absolute;
-  right: 50px;
+  right: 40px;
   color: #fff;
   height: 40px;
   width: 40px;
@@ -363,9 +361,9 @@ This must be run when you have at least 2 sprites.
 .header .contacts__link:before {
   margin-bottom: 10px;
   background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -72px;
-  width: 15px;
-  height: 21px;
+  background-position: -94px -74px;
+  width: 14px;
+  height: 20px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -376,9 +374,9 @@ This must be run when you have at least 2 sprites.
 .header .contacts__link--msg:before {
   margin-bottom: 13px;
   background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -97px;
-  width: 21px;
-  height: 15px;
+  background-position: -123px -96px;
+  width: 20px;
+  height: 14px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -530,8 +528,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-diplom:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: -40px -38px;
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -539,8 +537,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-feedback:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: -86px -37px;
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -548,8 +546,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-speach:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: 0px -38px;
-  width: 36px;
-  height: 34px;
+  width: 35px;
+  height: 31px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -557,8 +555,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-discount:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: 0px 0px;
-  width: 42px;
-  height: 36px;
+  width: 41px;
+  height: 33px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -566,8 +564,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-glory:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: -46px 0px;
-  width: 36px;
-  height: 34px;
+  width: 35px;
+  height: 33px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -575,8 +573,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-horizon:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: -123px 0px;
-  width: 31px;
-  height: 19px;
+  width: 30px;
+  height: 18px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -584,8 +582,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-workshop:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: -86px 0px;
-  width: 34px;
-  height: 33px;
+  width: 32px;
+  height: 32px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -593,8 +591,8 @@ This must be run when you have at least 2 sprites.
 .do__bonus-tradition:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: -63px -74px;
-  width: 27px;
-  height: 31px;
+  width: 26px;
+  height: 30px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -602,17 +600,17 @@ This must be run when you have at least 2 sprites.
 .do__bonus-winter:before {
   background-image: url(../img/sprite/sprite.png);
   background-position: -29px -74px;
-  width: 30px;
-  height: 34px;
+  width: 29px;
+  height: 33px;
   content: "";
   display: inline-block;
   vertical-align: middle;
 }
 .do__bonus-certificate:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: 0px -72px;
-  width: 25px;
-  height: 38px;
+  background-position: 0px -74px;
+  width: 24px;
+  height: 40px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -644,36 +642,36 @@ This must be run when you have at least 2 sprites.
 }
 .footer .social-icon--vk:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -94px -74px;
-  width: 22px;
-  height: 13px;
+  background-position: 0px -119px;
+  width: 21px;
+  height: 12px;
   content: "";
   display: inline-block;
   vertical-align: middle;
 }
 .footer .social-icon--facebook:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -142px -72px;
-  width: 11px;
-  height: 20px;
+  background-position: -158px 0px;
+  width: 10px;
+  height: 19px;
   content: "";
   display: inline-block;
   vertical-align: middle;
 }
 .footer .social-icon--twitter:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -94px -91px;
-  width: 18px;
-  height: 14px;
+  background-position: 0px -136px;
+  width: 17px;
+  height: 13px;
   content: "";
   display: inline-block;
   vertical-align: middle;
 }
 .footer .social-icon--instagram:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -48px;
-  width: 20px;
-  height: 20px;
+  background-position: -123px -72px;
+  width: 19px;
+  height: 19px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -706,10 +704,23 @@ This must be run when you have at least 2 sprites.
 }
 .popup__header .popup__close {
   float: right;
+  height: 20px;
+  width: 20px;
+  text-align: right;
+  position: relative;
   cursor: pointer;
-  background: url("../img/_for_sprite/close.png") no-repeat;
-  width: 30px;
-  height: 30px;
+}
+.popup__header .popup__close:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -123px -48px;
+  width: 19px;
+  height: 19px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 30%;
+  right: 0;
 }
 .popup input[type=text] {
   margin-bottom: 25px;

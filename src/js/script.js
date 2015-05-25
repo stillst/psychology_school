@@ -27,13 +27,34 @@ $(document).ready(function()
 	    	var toggleWidth = 40;
 	    	if ($(window).width() <= '360')
 	    	{
-	    		toggleWidth = $(".js-search-form form").width() == 290 ? "40px" : "290px";
+	    		if ($(".js-search-form form").width() == 290)
+	    		{
+	    			toggleWidth = "40px"
+	    			$(".js-search-form__toogle").css('background-image', "url(../img/header/search_icon.png)");  
+	    		}
+
+	    		else
+	    		{
+					toggleWidth = "290px"
+					$(".js-search-form__toogle").css('background-image', "url(../img/header/close.png)");  
+	    		}
 	    	}
 	    	else
 	    	{
-	    		toggleWidth = $(".js-search-form form").width() == 450 ? "40px" : "450px";
+	    		if ($(".js-search-form form").width() == 450)
+	    		{
+	    			toggleWidth = "40px"
+	    			$(".js-search-form__toogle").css('background-image', "url(../img/header/search_icon.png)");  
+	    		}
+	    		else
+	    		{
+					toggleWidth = "450px"
+					$(".js-search-form__toogle").css('background-image', "url(../img/header/close.png)");  
+	    		}
+	    		
 	    	}	    	
-        	$('.js-search-form form').animate({ width: toggleWidth });                                                                    
+        	$('.js-search-form form').animate({ width: toggleWidth }); 
+			
 	    });	
 	});	
 

@@ -31,11 +31,20 @@
 
         .popup__close
         {
+
             float: right;
+            height: 20px;
+            width: 20px;
+            text-align: right;
+            position: relative;
             cursor: pointer;
-            background: url("../img/_for_sprite/close.png") no-repeat;
-            width: 30px;
-            height: 30px;
+            &:before
+            {
+                .sprite(@close);     
+                position: absolute;
+                top:30%;
+                right: 0;
+            }
         }
     }
     

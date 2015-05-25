@@ -26,12 +26,16 @@
 		height: 40px;
 		width: 40px;
 		border-radius: 20px;
-  		&:before
-  		{
-  			.sprite(@search-icon);
-  			position: relative;
-  			top: 10px;
-		}
+  		background: url('../img/header/search_icon.png') no-repeat 50% 50%;
+
+  		/*
+	  		&:before
+	  		{
+	  			.sprite(@search-icon);
+	  			position: relative;
+	  			top: 10px;
+			}
+		*/
 	}
 
 	&__input
@@ -50,7 +54,7 @@
 	&__submit
 	{		
 		position: absolute;
-		right: 50px;
+		right: 40px;
 		color: #fff;		
 		height: 40px;
 		width: 40px;
