@@ -1,11 +1,8 @@
-@media (max-width: @resolution-small) 
+@media (max-width: @resolution-mobile) 
 { 
-	/* ////////////////////*/
-    /*     Layout-small    */
-    /* ////////////////////*/
     .wrapper
     {  
-        width: @container-width-xs;
+        width: @wrapper-width-mobile;
     }   
 
    .generate-columns(@n,@i:1) when (@i=<@n)
@@ -19,20 +16,14 @@
 
     .generate-columns(12);
 
-
-	/* ////////////////////*/
-    /*   Typography-small  */
-    /* ////////////////////*/
 	.section-title
 	{
 		font-size: 20px;		
 	}
 
-	/* ////////////////////*/
-    /*   Programm-small    */
-    /* ////////////////////*/
     .programm
 	{	
+		min-width: @wrapper-width-mobile;
 		.row 
 		{
 			& [class^=col-]
@@ -47,12 +38,9 @@
 		}
 	}
 
-	/* ////////////////////*/
-    /*        Timer-small  */
-    /* ////////////////////*/
 	.timer
 	{
-		padding: 30px;
+		padding: @wrapper-margin;
 		&__txt
 		{
 			font-size: 20px;		
@@ -64,9 +52,6 @@
 		}
 	}
 
-	/* ////////////////////*/
-    /*       do-small      */
-    /* ////////////////////*/
 	.do
 	{		
 		.speaker-col
@@ -118,9 +103,6 @@
 		}		
 	}
 
-	/* ////////////////////*/
-    /*    footer-small     */
-    /* ////////////////////*/
 	.footer
 	{
 		text-align: center;
@@ -144,9 +126,6 @@
 		}
 	}
 
-	/* //////////////////*/
-    /*    header-small   */
-    /* //////////////////*/
 	.header
 	{
 		.row 
@@ -218,14 +197,15 @@
     	}    
 	}
 
-	/* ////////////////////*/
-    /*    banner-small     */
-    /* ////////////////////*/
+	.map
+	{
+		min-width: @wrapper-width-mobile;
+	}
 
     .banner
     {
     	background-position: 850px 0px;    
-
+		min-width:  @wrapper-width-mobile;
 		&__title
 		{
 			font-size: 25px;

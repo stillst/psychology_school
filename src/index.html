@@ -99,37 +99,41 @@
 		</div>
 	</section>
 
-	<section class="timer wrapper">
-		<h1 class="section-title">
-			До зимней школы осталось
-		</h1>	
-		<div class="line timer__countdown">
-			<div class="col-3 col-tablet-6 col-xs-12 timer__block">
-				<p class="timer__tab" id="dday"></p>
-				<p class="timer__txt">дней</p>
-			</div>
-			<div class="col-3 col-tablet-6 col-xs-12 timer__block">
-				<p class="timer__tab" id="dhour"></p>
-				<p class="timer__txt">часов</p>
-			</div>
-			<div class="col-3 col-tablet-6 col-xs-12 timer__block">
-				<p class="timer__tab" id="dmin"></p>
-				<p class="timer__txt">минут</p>
-			</div>
-			<div class="col-3 col-tablet-6 col-xs-12 timer__block">
-				<p class="timer__tab" id="dsec"></p>
-				<p class="timer__txt">секунд</p>
-			</div>
-		</div>
+	<section class="">
+		<div class="wrapper">
+			<div class="timer">
+				<h1 class="section-title">
+					До зимней школы осталось
+				</h1>	
+				<div class="line timer__countdown">
+					<div class="col-3 col-tablet-6 col-xs-12 timer__block">
+						<p class="timer__tab" id="dday"></p>
+						<p class="timer__txt">дней</p>
+					</div>
+					<div class="col-3 col-tablet-6 col-xs-12 timer__block">
+						<p class="timer__tab" id="dhour"></p>
+						<p class="timer__txt">часов</p>
+					</div>
+					<div class="col-3 col-tablet-6 col-xs-12 timer__block">
+						<p class="timer__tab" id="dmin"></p>
+						<p class="timer__txt">минут</p>
+					</div>
+					<div class="col-3 col-tablet-6 col-xs-12 timer__block">
+						<p class="timer__tab" id="dsec"></p>
+						<p class="timer__txt">секунд</p>
+					</div>
+				</div>
+			</div>			
+		</div>		
 	</section>
 
-	<section class="programm" data-parallax='{"z" : 100, "from-scroll": 810, "distance": 10, "smoothness": 10 }'>
+	<section class="programm" data-parallax='{"z" : 80, "from-scroll": 650, "distance": 10, "smoothness": 10 }'>
 		<div class="wrapper">
 			<h1 class="section-title section-title--white">
 				Что входит в программу?
 			</h1>	
 			<div class="row programm__include">
-				<div class="col-4 col-xs-12" data-parallax='{"y" : -60, "from-scroll": 810, "distance": 60 }'>
+				<div class="col-4 col-xs-12" data-parallax='{"y" : -60, "from-scroll": 700, "distance": 60 }'>
 					<img  class="programm__img" src="img/programm/presentation.png" alt="Презентация">		
 					<div class="programm__txt">
 						Презентации проектов,
@@ -137,7 +141,7 @@
 						по тематическим зонам
 					</div>
 				</div>
-				<div class="col-4 col-xs-12" data-parallax='{"y" : 30, "from-scroll": 810, "distance": 10 }'>
+				<div class="col-4 col-xs-12" data-parallax='{"y" : 30, "from-scroll": 700, "distance": 10 }'>
 					<img  class="programm__img" src="img/programm/question.png" alt="Вопрос"> 
 					<div class="programm__txt">
 						Возможность найти
@@ -145,7 +149,7 @@
 						любому преподавателю напрямую
 					</div>
 				</div>
-				<div class="col-4 col-xs-12" data-parallax='{"y" : -60, "from-scroll": 810, "distance": 60 }'>
+				<div class="col-4 col-xs-12" data-parallax='{"y" : -60, "from-scroll": 700, "distance": 60 }'>
 					<img  class="programm__img" src="img/programm/dj.png" alt="DJ"> 
 					<div class="programm__txt">
 						Спортивные, культурные и другие
@@ -331,6 +335,20 @@
 			</div>							
 		</div>		
 	</footer>	
+
+	<div class="popup">
+	    <form class="popup__content">
+	    	<div class="popup__header clearfix">
+	    		<span class="popup__title">написать нам</span>
+	    		<div class="popup__close"></div>	    		
+	    	</div>		        	        
+	        <input type="text" placeholder="Имя">
+	        <input type="text" placeholder="Телефон">
+	        <textarea rows="10" placeholder="Вопрос"></textarea>
+	        <input type="submit">
+	    </form>
+	</div>
+
 	<!-- build:js js/vendor.js -->
 		<!-- bower:js -->
 			<script src="bower/jquery/dist/jquery.min.js"></script>  

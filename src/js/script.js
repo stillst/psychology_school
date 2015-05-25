@@ -35,15 +35,15 @@ $(document).ready(function()
 	    	}	    	
         	$('.js-search-form form').animate({ width: toggleWidth });                                                                    
 	    });	
-	});
+	});	
 
-	 function change_options_after_resize()
+	//popup
+	$(function()
 	{
-		if($('body').width()<360)
-		{
-			$('.programm').attr('data-parallax', "0");
-		}
-	}
+	    $(document).on('click', '.contacts__link--msg, .popup__close', function()
+	    { 	    	
+	    	$(".popup").slideToggle("fast");                                                                    
+	    });	
+	});	
 
-	$(window).resize(change_options_after_resize);
 }); 

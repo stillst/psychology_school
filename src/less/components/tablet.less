@@ -1,5 +1,5 @@
 
-@media (max-width: @resolution-tablet) and (min-width: @resolution-small) 
+@media (max-width: @resolution-tablet) and (min-width: @resolution-mobile) 
 {
 	.wrapper
     {  
@@ -25,6 +25,7 @@
     {
     	background-position: 850px 0px;      	
     	min-height: 300px;
+    	min-width: @wrapper-width-tablet;
     	text-align: center;  
 		&__title
 		{
@@ -47,6 +48,7 @@
 		{
 			padding: 0 20px;
 		}
+
     }
 
     .timer
@@ -60,6 +62,7 @@
 
 	.do
 	{		
+
 		.speaker-col
 		{    			
 			padding: 10px;
@@ -106,6 +109,16 @@
 		  	}
 		}		
 	}
+
+	.programm
+	{
+		min-width: @wrapper-width-tablet;
+	}
+
+	.map
+	{
+		min-width: @wrapper-width-tablet;
+	}	
 
 	.footer
 	{		

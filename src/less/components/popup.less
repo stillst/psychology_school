@@ -1,0 +1,77 @@
+.popup
+{
+    display: none;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(255,255,255,0.7);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+
+    &__content
+    {
+        margin:370px auto 0px auto;
+        width:@wrapper-popup;
+        padding:20px;
+        background-color: #fff;      
+        border: 2px solid @grey-ligth;      
+    }
+
+    &__header
+    {
+        margin-bottom: 20px;
+        .popup__title
+        {
+            float: left;
+            color: @blue-basic;
+            font-size: 24px;
+            font-family: "Appetite"; 
+            text-transform: uppercase;
+        }
+
+        .popup__close
+        {
+            float: right;
+            cursor: pointer;
+            background: url("../img/_for_sprite/close.png") no-repeat;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+    input[type=text]
+    {
+        margin-bottom: 25px;
+        height: 50px;
+        padding-left: 10px;
+        width: 100%;
+        outline: none;
+        border: 1px solid @blue-basic;
+    }
+
+    input[type=submit]
+    {
+        width: 100%;
+        outline: none;
+        background-color: @blue-basic;
+        font-family: "Appetite"; 
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 12px;
+        border: none;
+        color:#fff;
+    }
+
+    textarea
+    {
+        margin-bottom: 45px;
+        height: 125px;
+        resize: none;
+        padding: 10px;
+        vertical-align: top;
+        width: 100%;
+        outline: none;
+        border: 1px solid @blue-basic;
+    }
+
+}

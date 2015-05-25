@@ -1,6 +1,24 @@
-$(function() {
-    ParallaxScroll.init();
+$(function() 
+{            
+    ParallaxScroll.init();   
 });
+
+/*
+function change_options_after_resize()
+{
+    if($('body').width()<640)
+    {
+        $('.programm').attr('data-parallax', "101");
+        $('.programm').attr('style', "101");
+        $('.timer').attr('data-test', "101");
+       // ParallaxScroll.init();   
+    }
+}
+
+    $(window).resize(change_options_after_resize);
+
+*/
+
 
 var ParallaxScroll = {
     /* PUBLIC VARIABLES */
@@ -38,6 +56,10 @@ var ParallaxScroll = {
         if (this.showLogs) console.log("Parallax Scroll / " + message);
     },
     _onScroll: function(noSmooth) {
+
+    if($('body').width()>640)
+    {
+
         var scroll = $(document).scrollTop();
         var windowHeight = $(window).height();
         this._log("onScroll " + scroll);
@@ -61,6 +83,7 @@ var ParallaxScroll = {
                 }
             }
             var datasLength = datas.length;
+
             for(iData = 0; iData < datasLength; iData ++) {
                 var data = datas[iData];
                 var scrollFrom = data["from-scroll"];
@@ -151,7 +174,10 @@ var ParallaxScroll = {
                     }
                 }, this));
             }
-            if (applyProperties) {
+
+
+            if (applyProperties) 
+            {
                 if (properties["z"] != undefined) {
                     var perspective = data["perspective"];
                     if (perspective == undefined) perspective = 800;
@@ -167,6 +193,7 @@ var ParallaxScroll = {
                     properties["scaleY"] *= properties["scale"];
                     properties["scaleZ"] *= properties["scale"];
                 }
+                
                 var translate3d = "translate3d(" + (properties["x"] ? properties["x"] : 0) + "px, " + (properties["y"] ? properties["y"] : 0) + "px, " + (properties["z"] ? properties["z"] : 0) + "px)";
                 var rotate3d = "rotateX(" + (properties["rotateX"] ? properties["rotateX"] : 0) + "deg) rotateY(" + (properties["rotateY"] ? properties["rotateY"] : 0) + "deg) rotateZ(" + (properties["rotateZ"] ? properties["rotateZ"] : 0) + "deg)";
                 var scale3d = "scaleX(" + properties["scaleX"] + ") scaleY(" + properties["scaleY"] + ") scaleZ(" + properties["scaleZ"] + ")";
@@ -174,12 +201,20 @@ var ParallaxScroll = {
                 this._log(cssTransform);
                 $el.attr("style", "transform:" + cssTransform + " -webkit-transform:" + cssTransform + " " + style);
             }
+
+
         }, this));
-        if(window.requestAnimationFrame) {
-            window.requestAnimationFrame($.proxy(this._onScroll, this, false));
+
+        if(window.requestAnimationFrame) 
+        {
+            window.requestAnimationFrame($.proxy(this._onScroll, this, false));         
         }
-        else {
+
+        else
+        {            
             this._requestAnimationFrame($.proxy(this._onScroll, this, false));
         }
+    }
+
     }
 }

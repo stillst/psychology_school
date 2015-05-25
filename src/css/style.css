@@ -120,7 +120,7 @@ p {
   color: #04a4e7;
   text-transform: uppercase;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   font-family: "Appetite";
 }
 .section-title--white {
@@ -223,7 +223,8 @@ This must be run when you have at least 2 sprites.
   font-family: "Appetite";
 }
 .btn-info:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  border: 4px solid #fff;
+  padding: 8px 28px;
 }
 .btn-more-info {
   cursor: pointer;
@@ -255,7 +256,7 @@ This must be run when you have at least 2 sprites.
   text-align: center;
 }
 .btn-respond:hover {
-  background-color: #fc5b5b;
+  background-color: #52cbf9;
 }
 .js-search-form {
   display: inline-block;
@@ -357,7 +358,7 @@ This must be run when you have at least 2 sprites.
   margin-right: 10px;
 }
 .header .contacts__link:hover {
-  background-color: #fc5b5b;
+  background-color: #52cbf9;
 }
 .header .contacts__link:before {
   margin-bottom: 10px;
@@ -421,6 +422,7 @@ This must be run when you have at least 2 sprites.
   background-image: url(../img/banner/background_banner.jpg);
   background-size: cover;
   min-height: 420px;
+  min-width: 960px;
   padding: 55px 0;
 }
 .banner__title {
@@ -462,6 +464,7 @@ This must be run when you have at least 2 sprites.
   text-align: center;
   padding: 40px 0 30px 0;
   min-height: 330px;
+  min-width: 960px;
   background-image: url(../img/programm/background_programm_.jpg);
   background-size: cover;
 }
@@ -675,6 +678,68 @@ This must be run when you have at least 2 sprites.
   display: inline-block;
   vertical-align: middle;
 }
+.popup {
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+}
+.popup__content {
+  margin: 370px auto 0px auto;
+  width: 430px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ebe7e7;
+}
+.popup__header {
+  margin-bottom: 20px;
+}
+.popup__header .popup__title {
+  float: left;
+  color: #04a4e7;
+  font-size: 24px;
+  font-family: "Appetite";
+  text-transform: uppercase;
+}
+.popup__header .popup__close {
+  float: right;
+  cursor: pointer;
+  background: url("../img/_for_sprite/close.png") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.popup input[type=text] {
+  margin-bottom: 25px;
+  height: 50px;
+  padding-left: 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #04a4e7;
+}
+.popup input[type=submit] {
+  width: 100%;
+  outline: none;
+  background-color: #04a4e7;
+  font-family: "Appetite";
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  color: #fff;
+}
+.popup textarea {
+  margin-bottom: 45px;
+  height: 125px;
+  resize: none;
+  padding: 10px;
+  vertical-align: top;
+  width: 100%;
+  outline: none;
+  border: 1px solid #04a4e7;
+}
 @media (max-width: 640px) and (min-width: 360px) {
   .wrapper {
     width: 580px;
@@ -721,6 +786,7 @@ This must be run when you have at least 2 sprites.
   .banner {
     background-position: 850px 0px;
     min-height: 300px;
+    min-width: 580px;
     text-align: center;
   }
   .banner__title {
@@ -776,6 +842,12 @@ This must be run when you have at least 2 sprites.
   .do .flip-container__front {
     left: 20%;
   }
+  .programm {
+    min-width: 580px;
+  }
+  .map {
+    min-width: 580px;
+  }
   .footer .copy {
     line-height: 45px;
     font-weight: bold;
@@ -829,9 +901,6 @@ This must be run when you have at least 2 sprites.
   }
 }
 @media (max-width: 360px) {
-  /* ////////////////////*/
-  /*     Layout-small    */
-  /* ////////////////////*/
   .wrapper {
     width: 310px;
   }
@@ -871,26 +940,20 @@ This must be run when you have at least 2 sprites.
   .col-xs-12 {
     width: 100%;
   }
-  /* ////////////////////*/
-  /*   Typography-small  */
-  /* ////////////////////*/
   .section-title {
     font-size: 20px;
   }
-  /* ////////////////////*/
-  /*   Programm-small    */
-  /* ////////////////////*/
+  .programm {
+    min-width: 310px;
+  }
   .programm .row [class^=col-] {
     padding: 0;
   }
   .programm__img {
     margin-top: 25px;
   }
-  /* ////////////////////*/
-  /*        Timer-small  */
-  /* ////////////////////*/
   .timer {
-    padding: 30px;
+    padding: 35px;
   }
   .timer__txt {
     font-size: 20px;
@@ -898,9 +961,6 @@ This must be run when you have at least 2 sprites.
   .timer .timer__block {
     margin-bottom: 10px;
   }
-  /* ////////////////////*/
-  /*       do-small      */
-  /* ////////////////////*/
   .do .speaker-col {
     width: 100%;
     padding: 0;
@@ -936,9 +996,6 @@ This must be run when you have at least 2 sprites.
   .do .flip-container__front {
     left: 20%;
   }
-  /* ////////////////////*/
-  /*    footer-small     */
-  /* ////////////////////*/
   .footer {
     text-align: center;
   }
@@ -953,9 +1010,6 @@ This must be run when you have at least 2 sprites.
     float: none;
     padding: 10px 0;
   }
-  /* ////////////////////*/
-  /*    header-small     */
-  /* ////////////////////*/
   .header .row [class^=col-] {
     padding: 0;
   }
@@ -993,11 +1047,12 @@ This must be run when you have at least 2 sprites.
   .header .logo__title {
     width: 65%;
   }
-  /* ////////////////////*/
-  /*    banner-small     */
-  /* ////////////////////*/
+  .map {
+    min-width: 310px;
+  }
   .banner {
     background-position: 850px 0px;
+    min-width: 310px;
   }
   .banner__title {
     font-size: 25px;
