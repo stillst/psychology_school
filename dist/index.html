@@ -27,12 +27,12 @@
 				</div>				
 				
 				<div class="col-8 col-tablet-12 col-xs-12 contacts">
-
 					<div class="js-search-form">
 						<form action="#">
 							<input class="js-search-form__input"  name="query"  type="text" value="">
 							<input class="js-search-form__submit" name="submit" type="submit" value="">			
-							<a class="js-search-form__toogle" href="#"></a>			
+							<a class="js-search-form__open" href="#"></a>			
+							<a class="js-search-form__close" href="#"></a>	
 						</form>						
 					</div>
 										
@@ -48,23 +48,27 @@
 
 			<nav class="header__nav">
 				<ul class="header__nav-list">
-					<li class="header__nav-item"><a href="#">о нас</a></li>
-					<li class="header__nav-item"><a href="#">преподаватели</a></li>
-					<li class="header__nav-item"><a href="#">материалы</a>
+					<li class="header__nav-item">
+						<a href="#">о нас</a>
 						<ul class="header__sub-menu">
-				            <li class="header__sub-menu-item"><a href="#">lorem</a></li>
-				            <li class="header__sub-menu-item"><a href="#">ipsum</a></li>
-				            <li class="header__sub-menu-item"><a href="#">Lorem ipsum dolor</a></li>
-				            <li class="header__sub-menu-item"><a href="#">Lorem ipsum dolor</a></li>
-				            <li class="header__sub-menu-item"><a href="#">Lorem ipsum dolor</a></li>
-				            <li class="header__sub-menu-item"><a href="#">Lorem ipsum dolor</a></li>
+				            <li class="header__sub-menu-item"><a href="#">о школе</a></li>
+				            <li class="header__sub-menu-item"><a href="#">организационный комитет</a></li>
 				        </ul>
+					</li>						
+					<li class="header__nav-item"><a href="#">преподаватели</a></li>
+					<li class="header__nav-item">
+						<a href="#">материалы</a>	
+						<ul class="header__sub-menu">
+							<li class="header__sub-menu-item"><a href="#">презентации</a></li>
+				            <li class="header__sub-menu-item"><a href="#">видео</a></li>
+				            <li class="header__sub-menu-item"><a href="#">газета</a></li>
+				        </ul>					
 					</li>
 					<li class="header__nav-item"><a href="#">галерея</a></li>
 					<li class="header__nav-item">
 						<a href="#">участникам</a>
 						<ul class="header__sub-menu">
-				            <li class="header__sub-menu-item"><a href="#">информация</a></li>
+				            <li class="header__sub-menu-item"><a href="#">документы</a></li>
 				            <li class="header__sub-menu-item"><a href="#">оставить заявку</a></li>
 				            <li class="header__sub-menu-item"><a href="#">вопросы и ответы</a></li>
 				        </ul>
@@ -78,7 +82,7 @@
 
 	<section class="banner">
 		<div class="wrapper">
-			<h1 class="banner__title">зимняя школа зажигает в 15-й раз!</h1>
+			<h1 class="banner__title">зимняя школа зажигает в <span>15</span>-й раз!</h1>
 			<div class="row">
 				<div class="col-6 col-xs-12 col-tablet-12">
 					<p class="banner__info">
@@ -93,7 +97,7 @@
 		</div>
 	</section>
 
-	<section class="">
+	<section class="timer-section">
 		<div class="wrapper">
 			<div class="timer">
 				<h1 class="section-title">
@@ -121,10 +125,10 @@
 		</div>		
 	</section>
 
-	<section class="programm" data-parallax='{"z" : 80, "from-scroll": 650, "distance": 10, "smoothness": 10 }'>
+	<section class="programm">
 		<div class="wrapper">
 			<h1 class="section-title section-title--white">
-				Что входит в программу?
+				Что будет на мероприятии
 			</h1>	
 			<div class="row programm__include">
 				<div class="col-4 col-xs-12" data-parallax='{"y" : -60, "from-scroll": 700, "distance": 60 }'>
@@ -135,7 +139,7 @@
 						по тематическим зонам
 					</div>
 				</div>
-				<div class="col-4 col-xs-12" data-parallax='{"y" : 30, "from-scroll": 700, "distance": 10 }'>
+				<div class="col-4 col-xs-12" data-parallax='{"z" : 60, "from-scroll": 700, "distance": 10 }'>
 					<img  class="programm__img" src="img/programm/question.png" alt="Вопрос"> 
 					<div class="programm__txt">
 						Возможность найти
@@ -173,7 +177,8 @@
               		<div class="flip-container__front">
                 		<img class="do__img" src="img/aplications/speaker.jpg" alt="Докладчик">
               		</div>              
-            	</div>					
+            	</div>	
+
 				<h2 class="do__title">Хочу стать докладчиком!</h2>
 				<p class="do__txt">Супер! Мы тоже этого хотим :-) В этом куча плюсов!</p>					
 				<ul class="do__bonuses">
@@ -221,6 +226,10 @@
 				</ul>
 				
 				<a href="#" class="recomendation">Рекомендации по проектам </a>	
+
+
+				<a href="#" class="btn-respond">подать заявку</a>
+		
 									
 			</div>
 
@@ -241,58 +250,53 @@
 				<h2 class="do__title">Хочу стать слушателем</h2>
 				<p class="do__txt">Почётный слушатель тоже высоко ценится!</p>
 				<ul class="do__bonuses">
-						<li class="row">
-							<div class="collist-marker do__bonus-horizon">
-								
-							</div>					
-							<div class="collist-txt">
-								Расширение кругозора
-							</div>	
-						</li>
-						<li class="row">
-							<div class="collist-marker do__bonus-workshop">
-								
-							</div>					
-							<div class="collist-txt">
-								Свободное посещение лекций и мастер-классов
-							</div>	
-						</li>
-						<li class="row">							
-							<div class="collist-marker do__bonus-certificate">
-								
-							</div>					
-							<div class="collist-txt">
-								Возможность посетить трёхдневный сквозной проект и получить диплом
-							</div>
-						</li>
-						<li class="row">
-							<div class="collist-marker do__bonus-winter">
-								
-							</div>					
-							<div class="collist-txt">
-								Финский залив
-							</div>
-						</li>
-						<li class="row">
+					<li class="row">
+						<div class="collist-marker do__bonus-horizon">
 							
-							<div class="collist-marker do__bonus-tradition">
-								
-							</div>					
-							<div class="collist-txt">
-								Традиции - глинтвейн, тепло компании
-							</div>
-						</li>												
-				</ul>			
-				</div>	
-				<div class="row">
-					<div class="speaker-col">
-						<a href="#" class="btn-respond">подать заявку</a>
-					</div>
-					<div class="student-col">
-						<a href="#" class="btn-respond">подать заявку</a>
-					</div>
-				</div>															
+						</div>					
+						<div class="collist-txt">
+							Расширение кругозора
+						</div>	
+					</li>
+					<li class="row">
+						<div class="collist-marker do__bonus-workshop">
+							
+						</div>					
+						<div class="collist-txt">
+							Свободное посещение лекций и мастер-классов
+						</div>	
+					</li>
+					<li class="row">							
+						<div class="collist-marker do__bonus-certificate">
+							
+						</div>					
+						<div class="collist-txt">
+							Возможность посетить трёхдневный сквозной проект и получить диплом
+						</div>
+					</li>
+					<li class="row">
+						<div class="collist-marker do__bonus-winter">
+							
+						</div>					
+						<div class="collist-txt">
+							Финский залив
+						</div>
+					</li>
+					<li class="row l-margin-bottom-75">
+						
+						<div class="collist-marker do__bonus-tradition">
+							
+						</div>					
+						<div class="collist-txt">
+							Традиции - глинтвейн, тепло компании
+						</div>
+					</li>												
+				</ul>	
 				
+				<a href="#" class="btn-respond">подать заявку</a>
+						
+				</div>	
+
 			</div>		
 		</div>			
 	</div>
@@ -336,9 +340,9 @@
 	    		<span class="popup__title">написать нам</span>
 	    		<div class="popup__close"></div>	    		
 	    	</div>		        	        
-	        <input type="text" placeholder="Имя">
-	        <input type="text" placeholder="Телефон">
-	        <textarea rows="10" placeholder="Вопрос"></textarea>
+	        <input type="text" placeholder="Имя" required="required">
+	        <input type="tel" placeholder="Телефон +7(921)212-85-06" required="required" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+	        <textarea rows="10" placeholder="Вопрос" required="required"></textarea>
 	        <input type="submit">
 	    </form>
 	</div>
