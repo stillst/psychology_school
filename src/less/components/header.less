@@ -73,16 +73,24 @@
 
 
 	&__nav
-    {      
-    	position: relative;
+    {          	
+    	display: table;
+    	width: @wrapper-width;
+
+    	&-list
+		{
+			display: table-row;
+		}
+
         &-item
         {               	
-            display: inline-block;     
-            vertical-align: middle;                                             
+            display: table-cell;
+            position: relative;
+            text-align: center;
+
             a
             {
-            	text-transform: uppercase;  
-				padding: 5px 31px; 	
+            	text-transform: uppercase;  					
 				font-size: 18px; 
 				font-weight: bold;
 				color: @blue-basic;
@@ -93,21 +101,29 @@
 				}			               
             }    
 
-            &:first-child a
+            &:first-child 
             {
-            	padding-left:0;
+            	text-align: left;
             }    
 
-            &:last-child a
+            &:last-child 
             {
-                padding-right:0;
-            }   		
+                text-align: right;
+                
+            }   
+
+            .header__sub-menu-item	a
+            {
+				padding: 5px 31px; 
+            }
         }        
     }
 
+	
     &__sub-menu
     {
     	display: none;
+    	z-index: 2;
 		position: absolute;			
 		padding: 15px 0;
 		top: 45px;

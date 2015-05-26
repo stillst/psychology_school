@@ -166,42 +166,35 @@
 		
 		
 		&__nav
-	    {      		    	
+	    {    
+	    	width: @wrapper-width-tablet; 		
+	    	&-list 
+	    	{
+				display: block;
+	    	}
 	        &-item
-	        {               	
-	               
-	            padding: 20px 30px;                                            	             
-	            &:first-child a
-	            {
-	            	padding:10px;
-	            }    
-
-	            &:last-child a
-	            {
-	            	padding:10px;
-	            }
-
-	            a
-	            {
-	            	padding:10px;
-	            }   		
+	        {               		              
+	            display: inline-block;
+				vertical-align: middle;
+	            text-align: center;				
+				width: 30%;
+				position: relative;
 	        }        
+
+	        &-item:first-child
+	        {               		              	            				
+	            text-align: center;								
+	        } 
+
+	        &-item:last-child
+	        {               		              	            				
+	            text-align: center;								
+	        }   
 	    }
 
 		&__sub-menu
 	    {	    	
-			padding: 15px 0;
-			top: auto;		
-			border: 2px solid #000;
- 			background: #fff;
-			&-item
-			{
-				a
-				{
-					display: inline-block;
-					font-size: 14px;
-				}			
-			}
+			top: 0px;
 	    }       
 
     	.logo

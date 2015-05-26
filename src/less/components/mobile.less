@@ -136,6 +136,14 @@
 			}
 		}
 	
+		.logo
+		{    		
+			&__title
+			{
+				width: 65%;
+			}        
+		}    
+
 		.js-search-form
 		{
 			display: block;
@@ -154,47 +162,32 @@
 		}
 		
 		&__nav
-	    {      		    	
+	    {      		   
+	    	width: @wrapper-width-mobile; 	
 	        &-item
 	        {               	
-	            display: block;                                              
-	             
-	            &:first-child a
-	            {
-	            	padding-left:10px;
-	            }    
-
-	            a
-	            {
-	            	padding-left:10px;
-	            }   		
+	            display:block;
+	            text-align: left;	            
+		        &:last-child
+		        {               		              	            				
+		            text-align: left;								
+		        }     	          		
 	        }        
 	    }
 
 		&__sub-menu
 	    {	    	
-			padding: 15px 0;
-			top: auto;
-			left: 15px;
-			border: 2px solid #000;
- 			background: #fff;
+	    	top:0;
+	    	left: 0;
+	    	border: 1px solid @blue-basic;			
 			&-item
 			{
 				a
 				{
-					display: inline-block;
-					font-size: 14px;
+					
 				}			
 			}
-	    }       
-
-    	.logo
-    	{    		
-    		&__title
-    		{
-    			width: 65%;
-    		}        
-    	}    
+	    }           	
 	}
 
 	.map

@@ -283,14 +283,6 @@ This must be run when you have at least 2 sprites.
   width: 40px;
   border-radius: 20px;
   background: url('../img/header/search_icon.png') no-repeat 50% 50%;
-  /*
-	  		&:before
-	  		{
-	  			.sprite(@search-icon);
-	  			position: relative;
-	  			top: 10px;
-			}
-		*/
 }
 .js-search-form__input {
   position: absolute;
@@ -382,15 +374,19 @@ This must be run when you have at least 2 sprites.
   vertical-align: middle;
 }
 .header__nav {
-  position: relative;
+  display: table;
+  width: 960px;
+}
+.header__nav-list {
+  display: table-row;
 }
 .header__nav-item {
-  display: inline-block;
-  vertical-align: middle;
+  display: table-cell;
+  position: relative;
+  text-align: center;
 }
 .header__nav-item a {
   text-transform: uppercase;
-  padding: 5px 31px;
   font-size: 18px;
   font-weight: bold;
   color: #04a4e7;
@@ -399,14 +395,18 @@ This must be run when you have at least 2 sprites.
 .header__nav-item a:hover {
   color: #fc5b5b;
 }
-.header__nav-item:first-child a {
-  padding-left: 0;
+.header__nav-item:first-child {
+  text-align: left;
 }
-.header__nav-item:last-child a {
-  padding-right: 0;
+.header__nav-item:last-child {
+  text-align: right;
+}
+.header__nav-item .header__sub-menu-item a {
+  padding: 5px 31px;
 }
 .header__sub-menu {
   display: none;
+  z-index: 2;
   position: absolute;
   padding: 15px 0;
   top: 45px;
@@ -425,6 +425,7 @@ This must be run when you have at least 2 sprites.
 }
 .banner__title {
   font-size: 40px;
+  font-weight: bold;
   margin-bottom: 35px;
   font-family: "Appetite";
   letter-spacing: 0.03em;
@@ -461,7 +462,7 @@ This must be run when you have at least 2 sprites.
 .programm {
   text-align: center;
   padding: 40px 0 30px 0;
-  min-height: 330px;
+  min-height: 510px;
   min-width: 960px;
   background-image: url(../img/programm/background_programm_.jpg);
   background-size: cover;
@@ -722,7 +723,8 @@ This must be run when you have at least 2 sprites.
   top: 30%;
   right: 0;
 }
-.popup input[type=text] {
+.popup input[type=text],
+.popup input[type=tel] {
   margin-bottom: 25px;
   height: 50px;
   padding-left: 10px;
@@ -881,27 +883,27 @@ This must be run when you have at least 2 sprites.
     float: left;
     margin: 0 0 10px 10px;
   }
+  .header__nav {
+    width: 580px;
+  }
+  .header__nav-list {
+    display: block;
+  }
   .header__nav-item {
-    padding: 20px 30px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 30%;
+    position: relative;
   }
-  .header__nav-item:first-child a {
-    padding: 10px;
+  .header__nav-item:first-child {
+    text-align: center;
   }
-  .header__nav-item:last-child a {
-    padding: 10px;
-  }
-  .header__nav-item a {
-    padding: 10px;
+  .header__nav-item:last-child {
+    text-align: center;
   }
   .header__sub-menu {
-    padding: 15px 0;
-    top: auto;
-    border: 2px solid #000;
-    background: #fff;
-  }
-  .header__sub-menu-item a {
-    display: inline-block;
-    font-size: 14px;
+    top: 0px;
   }
   .header .logo__title {
     vertical-align: top;
@@ -1024,6 +1026,9 @@ This must be run when you have at least 2 sprites.
   .header .row [class^=col-] {
     padding: 0;
   }
+  .header .logo__title {
+    width: 65%;
+  }
   .header .js-search-form {
     display: block;
     margin: 10px ;
@@ -1035,28 +1040,20 @@ This must be run when you have at least 2 sprites.
     float: left;
     margin: 0 0 10px 10px;
   }
+  .header__nav {
+    width: 310px;
+  }
   .header__nav-item {
     display: block;
+    text-align: left;
   }
-  .header__nav-item:first-child a {
-    padding-left: 10px;
-  }
-  .header__nav-item a {
-    padding-left: 10px;
+  .header__nav-item:last-child {
+    text-align: left;
   }
   .header__sub-menu {
-    padding: 15px 0;
-    top: auto;
-    left: 15px;
-    border: 2px solid #000;
-    background: #fff;
-  }
-  .header__sub-menu-item a {
-    display: inline-block;
-    font-size: 14px;
-  }
-  .header .logo__title {
-    width: 65%;
+    top: 0;
+    left: 0;
+    border: 1px solid #04a4e7;
   }
   .map {
     min-width: 310px;

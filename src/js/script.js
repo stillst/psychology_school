@@ -3,9 +3,10 @@ $(document).ready(function()
 	//sub-menu
 	$(function()
 	{
-	    $(document).on('mouseenter', '.header__nav-item a', function()
+	    $(document).on('mouseenter', '.header__nav-item > a', function()
 	    { 
-	    	$(this).next().slideToggle("slow");                                                                    
+	    	$('.header__sub-menu').hide("slow");  
+	    	$(this).next().slideToggle("slow");  	    	                                                                 
 	    });
 
 	    $(document).on('mouseleave', '.header__sub-menu', function()
@@ -67,4 +68,15 @@ $(document).ready(function()
 	    });	
 	});	
 
+/*
+	$(function(f){
+	
+	    var element = f('.js-programm__block');	
+	    f(window).scroll(function()
+	    {	
+	        element['fade'+ (f(this).scrollTop() > 800 ? 'In': 'Out')](500);          	
+	    });	
+	});
+
+*/
 }); 
