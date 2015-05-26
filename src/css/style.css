@@ -90,6 +90,9 @@
   display: table;
   clear: both;
 }
+.l-margin-bottom-75 {
+  margin-bottom: 75px;
+}
 @font-face {
   font-family: "Appetite";
   src: url("../fonts/appetite.otf");
@@ -122,6 +125,7 @@ p {
   font-size: 30px;
   margin-bottom: 34px;
   font-family: "Appetite";
+  font-weight: 100;
 }
 .section-title--white {
   color: #fff;
@@ -239,7 +243,7 @@ This must be run when you have at least 2 sprites.
   font-family: "Appetite";
 }
 .btn-more-info:hover {
-  color: #fc5b5b;
+  background-color: #b9e5f9;
 }
 .btn-respond {
   font-family: "Appetite";
@@ -271,36 +275,75 @@ This must be run when you have at least 2 sprites.
   height: 40px;
   overflow: hidden;
   border-radius: 50px;
-  background-color: #fc5b5b;
+  background-color: #fff;
+  border: 2px solid #fc5b5b;
 }
-.js-search-form__toogle {
+.js-search-form__open {
   display: inline-block;
+  z-index: 2;
   vertical-align: middle;
   position: absolute;
+  top: 0;
   right: 0;
   text-align: center;
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
   border-radius: 20px;
   background: url('../img/header/search_icon.png') no-repeat 50% 50%;
+  background-color: #fc5b5b;
+}
+.js-search-form__open:hover {
+  border: 2px solid #fff;
+}
+.js-search-form__close {
+  display: inline-block;
+  z-index: 1;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 20px;
+  background: url('../img/header/close.png') no-repeat 50% 50%;
+  background-color: #fc5b5b;
+}
+.js-search-form__close:hover {
+  border: 2px solid #fff;
 }
 .js-search-form__input {
   position: absolute;
-  color: #fff;
-  background-color: #fc5b5b;
-  height: 40px;
+  color: #fc5b5b;
+  background-color: #fff;
+  height: 36px;
   border: none;
   font-size: 20px;
   width: 350px;
-  right: 100px;
+  right: 80px;
   outline: none;
+  /*
+		position: absolute;
+	
+		  background-color: #fc5b5b;
+
+		  border: none;
+		  width: 350px;
+		  right: 80px;
+		  outline: none;
+		  border-radius: 5px;
+		  margin: 5px;
+		  padding: 5px 0;
+		  border: 2px solid green;
+		  background-color: #fff;
+
+		*/
 }
 .js-search-form__submit {
   position: absolute;
   right: 40px;
-  color: #fff;
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
   border: none;
   background-color: transparent;
   background: url(../img/header/search_icon.png) 0 50% no-repeat;
@@ -388,7 +431,7 @@ This must be run when you have at least 2 sprites.
 .header__nav-item a {
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 100;
   color: #04a4e7;
   font-family: "Appetite";
 }
@@ -424,12 +467,16 @@ This must be run when you have at least 2 sprites.
   padding: 55px 0;
 }
 .banner__title {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 100;
   margin-bottom: 35px;
   font-family: "Appetite";
   letter-spacing: 0.03em;
   color: #fff;
+  text-transform: uppercase;
+}
+.banner__title span {
+  font-size: 50px;
 }
 .banner__info {
   font-size: 16px;
@@ -444,12 +491,12 @@ This must be run when you have at least 2 sprites.
 }
 .timer {
   text-align: center;
-  padding: 60px 100px;
+  padding: 60px 160px;
   color: #fc5b5b;
 }
 .timer__tab {
   font-size: 60px;
-  padding: 25px 20px;
+  padding: 10px 20px;
   border: 4px solid #fc5b5b;
   margin-bottom: 10px;
   color: #fc5b5b;
@@ -515,6 +562,7 @@ This must be run when you have at least 2 sprites.
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  font-weight: 100;
 }
 .do__txt {
   font-size: 14px;
@@ -685,13 +733,19 @@ This must be run when you have at least 2 sprites.
   overflow: hidden;
   position: fixed;
   top: 0px;
+  z-index: 5;
 }
 .popup__content {
-  margin: 370px auto 0px auto;
   width: 430px;
   padding: 20px;
   background-color: #fff;
   border: 2px solid #ebe7e7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 .popup__header {
   margin-bottom: 20px;
@@ -806,6 +860,9 @@ This must be run when you have at least 2 sprites.
     font-size: 25px;
     padding: 0 20px;
   }
+  .banner__title span {
+    font-size: 35px;
+  }
   .banner__info {
     font-size: 15px;
   }
@@ -854,6 +911,9 @@ This must be run when you have at least 2 sprites.
   }
   .do .flip-container__front {
     left: 20%;
+  }
+  .do .l-margin-bottom-75 {
+    margin-bottom: 84px;
   }
   .programm {
     min-width: 580px;
@@ -1009,6 +1069,9 @@ This must be run when you have at least 2 sprites.
   .do .flip-container__front {
     left: 20%;
   }
+  .do .l-margin-bottom-75 {
+    margin-bottom: 0;
+  }
   .footer {
     text-align: center;
   }
@@ -1067,6 +1130,9 @@ This must be run when you have at least 2 sprites.
     text-align: center;
     padding: 0 20px;
   }
+  .banner__title span {
+    font-size: 35px;
+  }
   .banner__info {
     font-size: 15px;
   }
@@ -1077,5 +1143,8 @@ This must be run when you have at least 2 sprites.
   }
   .banner__dates {
     padding: 0 20px;
+  }
+  .popup__content {
+    width: 310px;
   }
 }

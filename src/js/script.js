@@ -23,40 +23,27 @@ $(document).ready(function()
 	//search
 	$(function()
 	{
-	    $(document).on('click', '.js-search-form__toogle', function()
+	    $(document).on('click', '.js-search-form__open', function()
 	    { 
-	    	var toggleWidth = 40;
+	    	var toggleWidth = "290px";
 	    	if ($(window).width() <= '360')
 	    	{
-	    		if ($(".js-search-form form").width() == 290)
-	    		{
-	    			toggleWidth = "40px"
-	    			$(".js-search-form__toogle").css('background-image', "url(../img/header/search_icon.png)");  
-	    		}
-
-	    		else
-	    		{
-					toggleWidth = "290px"
-					$(".js-search-form__toogle").css('background-image', "url(../img/header/close.png)");  
-	    		}
+	    		toggleWidth = "290px"
 	    	}
 	    	else
 	    	{
-	    		if ($(".js-search-form form").width() == 450)
-	    		{
-	    			toggleWidth = "40px"
-	    			$(".js-search-form__toogle").css('background-image', "url(../img/header/search_icon.png)");  
-	    		}
-	    		else
-	    		{
-					toggleWidth = "450px"
-					$(".js-search-form__toogle").css('background-image', "url(../img/header/close.png)");  
-	    		}
-	    		
-	    	}	    	
-        	$('.js-search-form form').animate({ width: toggleWidth }); 
-			
+				toggleWidth = "450px"
+	    	}
+	    	$('.js-search-form__open').css('z-index','0');
+	    	$('.js-search-form form').animate({ width: toggleWidth }); 	    		    	        			
 	    });	
+
+        $(document).on('click', '.js-search-form__close', function()
+        { 
+        	var toggleWidth = "40px";
+        	$('.js-search-form__open').css('z-index','2');
+        	$('.js-search-form form').animate({ width: toggleWidth }); 	    		    	        			
+        });	
 	});	
 
 	//popup

@@ -7,14 +7,21 @@
     overflow:hidden;
     position:fixed;
     top:0px;
+    z-index: 5;
 
     &__content
     {
-        margin:370px auto 0px auto;
         width:@wrapper-popup;
         padding:20px;
         background-color: #fff;      
-        border: 2px solid @grey-ligth;      
+        border: 2px solid @grey-ligth;   
+        position: absolute;
+        
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
     }
 
     &__header
