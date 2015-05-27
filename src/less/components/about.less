@@ -1,0 +1,38 @@
+.about
+{
+	&__teaser
+	{
+		p
+		{
+			font-size: 14px;			
+  			line-height: 20px;
+  			font-family: @open-sans;
+  			margin-bottom: 35px;
+		}
+
+		.about__caption
+		{
+			color:@blue-basic;
+		}
+	}
+
+	&__goals
+	{
+		list-style-type: none; 
+		counter-reset: item; 
+		margin-bottom: 35px;
+		&-goal
+		{
+			font-size: 14px;			
+			line-height: 24px;
+			font-family: @open-sans;
+			color: @grey-basic;
+
+			&:before
+			{
+			    content: counter(item) ') '; 
+			    counter-increment: item; 
+			}
+		}
+	}	
+}

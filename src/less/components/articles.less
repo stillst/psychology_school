@@ -1,0 +1,43 @@
+.articles
+{
+	font-size: 0;
+	li
+	{
+		width: 50%;
+	  	display: inline-block;
+		vertical-align: top;
+		margin-bottom: 70px;
+
+		article
+		{		
+			img
+			{
+				display: inline-block;
+				vertical-align: middle;				
+				padding-right: 10px;
+				height: 155px;
+				width: 155px;
+			}
+
+			.article
+			{
+				display: inline-block;
+				vertical-align: top;
+				font-size: 14px;
+				line-height: 24px;		
+				width: 65%;
+				font-family: @open-sans;
+			}		
+		}
+
+		&:nth-child(2n+1)
+		{
+			padding-right: 30px;
+		}
+
+		&:nth-child(2n)
+		{
+			padding-left: 30px;
+		}
+	}	
+}
