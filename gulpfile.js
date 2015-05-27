@@ -58,7 +58,7 @@ gulp.task('connect', function() {
 		root: 'src',
 		livereload: true
 	});
-	opn('http://localhost:8080/about-committe.html')
+	opn('http://localhost:8080')
 });
 
 // Запуск сервера

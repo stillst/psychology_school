@@ -156,26 +156,27 @@
 		}
 	
 		.js-search-form
-		{
-			display: block;
-			margin: 10px ;
-
+		{						
 			&__input
 			{	
 				width: 250px;
 			}
 		}
 
-		.contacts__link--msg
+		.contacts__link
 		{
 			float: left;
 			margin: 0 0 10px 10px;	
 		}
 		
-		
+		&__top
+		{
+			margin-bottom: 40px;
+		}
+
 		&__nav
 	    {    
-	    	width: @wrapper-width-tablet; 		
+	    	width: @wrapper-width-tablet; 
 	    	&-list 
 	    	{
 				display: block;
@@ -202,11 +203,18 @@
 
 		&__sub-menu
 	    {	    	
-			top: 0px;
+			top: 20px;
+			left: 0;
+			border: 1px solid @blue-basic;	
 	    }       
 
     	.logo
     	{    		
+    		
+    		&__img
+    		{
+    			margin-bottom: 10px;
+    		}
     		&__title
     		{
     			vertical-align: top;    			
