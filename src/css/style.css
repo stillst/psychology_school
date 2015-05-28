@@ -173,6 +173,19 @@ p {
   height: 510px;
   overflow: hidden;
 }
+.pagination {
+  text-align: center;
+}
+.pagination li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.pagination li a {
+  color: #04a4e7;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #b9e5f9;
+}
 .flip-container {
   transition: 0.5s;
   transform-style: preserve-3d;
@@ -614,6 +627,30 @@ This must be run when you have at least 2 sprites.
   font-size: 12px;
   color: #6b6b6b;
   margin-bottom: 30px;
+}
+.galery .album {
+  margin-bottom: 35px;
+}
+.galery .album__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.galery .album__img img {
+  width: 100%;
+}
+.galery .album__name {
+  display: block;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #04a4e7;
+  font-size: 18px;
+}
+.galery .album__tizer {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  color: #6b6b6b;
+  margin-bottom: 15px;
 }
 .lectors {
   text-align: center;

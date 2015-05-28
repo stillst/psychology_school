@@ -49,15 +49,24 @@ $(document).ready(function()
 	    });	
 	});	
 
-/*
-	$(function(f){
-	
-	    var element = f('.js-programm__block');	
-	    f(window).scroll(function()
-	    {	
-	        element['fade'+ (f(this).scrollTop() > 800 ? 'In': 'Out')](500);          	
-	    });	
-	});
-
-*/
+	//gallery
+	$(function() {
+	  $('.popup-gallery').magnificPopup({
+	    delegate: 'a',
+	    type: 'image',
+	    tLoading: 'Загрузка изображения #%curr%...',
+	    tClose: 'Закрыть (Esc)',
+	    gallery: {
+	      enabled: true,
+	      navigateByImgClick: true,
+	      preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+	      tPrev: 'Предыдущая', 
+	      tNext: 'Следующая', 
+	      tCounter: 'Фото %curr% из %total%'
+	    },
+	    image: {
+	      tError: '<a href="%url%">Картинка #%curr%</a> не может быть загружена.',	      
+	    }
+	  });
+	}); 
 }); 
