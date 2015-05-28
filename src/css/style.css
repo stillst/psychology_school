@@ -306,6 +306,27 @@ This must be run when you have at least 2 sprites.
 .btn-respond:hover {
   background-color: #52cbf9;
 }
+.btn-more {
+  font-family: "Appetite";
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 35px ;
+  background-color: #fff;
+  outline: none;
+  text-transform: uppercase;
+  color: #04a4e7;
+  font-size: 16px;
+  border: 2px solid #04a4e7;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+.btn-more:hover {
+  background-color: #52cbf9;
+}
 .js-search-form {
   display: inline-block;
   vertical-align: middle;
@@ -376,22 +397,6 @@ This must be run when you have at least 2 sprites.
   width: 350px;
   right: 80px;
   outline: none;
-  /*
-		position: absolute;
-	
-		  background-color: #fc5b5b;
-
-		  border: none;
-		  width: 350px;
-		  right: 80px;
-		  outline: none;
-		  border-radius: 5px;
-		  margin: 5px;
-		  padding: 5px 0;
-		  border: 2px solid green;
-		  background-color: #fff;
-
-		*/
 }
 .js-search-form__submit {
   position: absolute;
@@ -404,6 +409,47 @@ This must be run when you have at least 2 sprites.
   font-size: 23px;
   border-right: 2px solid #fff;
   outline: none;
+}
+.js-lector-form {
+  margin-bottom: 25px;
+}
+.js-lector-form__search {
+  float: left;
+  position: relative;
+  width: 380px;
+  height: 40px;
+  border: 1px solid #04a4e7;
+}
+.js-lector-form__search-input {
+  outline: none;
+  border: none;
+  width: 330px;
+  height: 38px;
+  position: absolute;
+  left: 8px;
+  top: 0;
+}
+.js-lector-form__search-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 38px;
+  width: 38px;
+  background: url('../img/header/search_icon.png') no-repeat 50% 50%;
+  background-color: #04a4e7;
+  outline: none;
+  border: none;
+}
+.js-lector-form__select {
+  float: right;
+  height: 40px;
+  width: 285px;
+  border: 1px solid #04a4e7;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background: url('../img/_for_sprite/select-arrow-down.jpg') no-repeat 100% 100%;
 }
 .header {
   padding: 20px 0;
@@ -568,6 +614,10 @@ This must be run when you have at least 2 sprites.
   font-size: 12px;
   color: #6b6b6b;
   margin-bottom: 30px;
+}
+.lectors {
+  text-align: center;
+  margin-bottom: 75px;
 }
 .articles {
   font-size: 0;
