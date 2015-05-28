@@ -491,10 +491,10 @@ This must be run when you have at least 2 sprites.
   font-weight: normal;
   width: 40%;
 }
-.header .contacts {
+.header .round-links {
   text-align: right;
 }
-.header .contacts__link {
+.header .round-links__link {
   background-color: #04a4e7;
   color: #6b6b6b;
   display: inline-block;
@@ -512,10 +512,10 @@ This must be run when you have at least 2 sprites.
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
 }
-.header .contacts__link:hover {
+.header .round-links__link:hover {
   background-color: #52cbf9;
 }
-.header .contacts__link:before {
+.header .round-links__link:before {
   margin-bottom: 10px;
   background-image: url(../img/sprite/sprite.png);
   background-position: -94px -74px;
@@ -525,10 +525,10 @@ This must be run when you have at least 2 sprites.
   display: inline-block;
   vertical-align: middle;
 }
-.header .contacts__link--msg {
+.header .round-links__link--msg {
   padding-top: 13px;
 }
-.header .contacts__link--msg:before {
+.header .round-links__link--msg:before {
   margin-bottom: 13px;
   background-image: url(../img/sprite/sprite.png);
   background-position: -123px -96px;
@@ -705,6 +705,23 @@ This must be run when you have at least 2 sprites.
 }
 .articles li:nth-child(2n) {
   padding-left: 30px;
+}
+.questions p,
+.questions ul {
+  margin-bottom: 25px;
+}
+.questions__question {
+  color: #04a4e7;
+  font-size: 24px;
+  border-bottom: 2px dotted #04a4e7;
+  display: inline-block;
+}
+.questions__answer {
+  color: #04a4e7;
+}
+.questions__clarification {
+  color: #6b6b6b;
+  font-size: 14px;
 }
 .infographics {
   padding: 0 200px;
@@ -1212,7 +1229,7 @@ This must be run when you have at least 2 sprites.
   .header .js-search-form__input {
     width: 250px;
   }
-  .header .contacts__link {
+  .header .round-links__link {
     float: left;
     margin: 0 0 10px 10px;
   }
@@ -1383,7 +1400,7 @@ This must be run when you have at least 2 sprites.
   .header .js-search-form__input {
     width: 250px;
   }
-  .header .contacts__link--msg {
+  .header .round-links__link--msg {
     float: left;
     margin: 0 0 10px 10px;
   }
