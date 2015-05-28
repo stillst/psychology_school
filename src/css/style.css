@@ -98,6 +98,9 @@
   font-family: "Appetite";
   src: url("../fonts/appetite.otf");
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -137,7 +140,6 @@ p {
 }
 .page-nav__link a {
   font-size: 24px;
-  font-family: 'Open Sans', sans-serif;
   color: #04a4e7;
 }
 .page-nav__link--active {
@@ -167,6 +169,7 @@ p {
 }
 .map {
   width: 100%;
+  min-width: 960px;
   height: 510px;
   overflow: hidden;
 }
@@ -417,7 +420,6 @@ This must be run when you have at least 2 sprites.
 }
 .header .logo__title {
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
   vertical-align: baseline;
   font-size: 14px;
   line-height: 24px;
@@ -429,7 +431,6 @@ This must be run when you have at least 2 sprites.
   text-align: right;
 }
 .header .contacts__link {
-  font-family: 'Open Sans', sans-serif;
   background-color: #04a4e7;
   color: #6b6b6b;
   display: inline-block;
@@ -528,7 +529,6 @@ This must be run when you have at least 2 sprites.
 .about__teaser p {
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Open Sans', sans-serif;
   margin-bottom: 35px;
 }
 .about__teaser .about__caption {
@@ -542,7 +542,6 @@ This must be run when you have at least 2 sprites.
 .about__goals-goal {
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
   color: #6b6b6b;
 }
 .about__goals-goal:before {
@@ -550,22 +549,22 @@ This must be run when you have at least 2 sprites.
   counter-increment: item;
 }
 .person__img {
-  width: 180px;
-  height: 180px;
+  width: 100%;
   margin-bottom: 34px;
+}
+.person__img img {
+  width: 100%;
 }
 .person__name {
   display: block;
   margin-bottom: 25px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
   color: #04a4e7;
   font-size: 18px;
 }
 .person__profession {
   display: block;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   color: #6b6b6b;
   margin-bottom: 30px;
@@ -579,20 +578,21 @@ This must be run when you have at least 2 sprites.
   vertical-align: top;
   margin-bottom: 70px;
 }
-.articles li article img {
+.articles li article .articles__img {
   display: inline-block;
   vertical-align: middle;
   padding-right: 10px;
-  height: 155px;
-  width: 155px;
+  width: 35%;
 }
-.articles li article .article {
+.articles li article .articles__img img {
+  width: 100%;
+}
+.articles li article p {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
   line-height: 24px;
   width: 65%;
-  font-family: 'Open Sans', sans-serif;
 }
 .articles li:nth-child(2n+1) {
   padding-right: 30px;
@@ -626,7 +626,7 @@ This must be run when you have at least 2 sprites.
   background-image: url(../img/banner/background_banner.jpg);
   background-size: cover;
   min-height: 420px;
-  min-width: 980px;
+  min-width: 960px;
   padding: 55px 0;
 }
 .banner__title {
@@ -645,7 +645,6 @@ This must be run when you have at least 2 sprites.
   font-size: 16px;
   margin-bottom: 30px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
 }
 .banner__dates {
   color: #04a4e7;
@@ -666,14 +665,13 @@ This must be run when you have at least 2 sprites.
   font-family: "Appetite";
 }
 .timer__txt {
-  font-family: 'Open Sans', sans-serif;
   color: #fc5b5b;
 }
 .programm {
   text-align: center;
   padding: 40px 0 30px 0;
   min-height: 510px;
-  min-width: 980px;
+  min-width: 960px;
   background-image: url(../img/programm/background_programm_.jpg);
   background-size: cover;
 }
@@ -683,7 +681,6 @@ This must be run when you have at least 2 sprites.
 .programm__txt {
   font-size: 16px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
   line-height: 24px;
 }
 .programm__img {
@@ -695,7 +692,6 @@ This must be run when you have at least 2 sprites.
   margin-top: 25px;
   font-size: 14px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
 }
 .do {
   padding: 60px 0;
@@ -735,7 +731,6 @@ This must be run when you have at least 2 sprites.
 .do__bonuses {
   margin: 20px 0 20px 0;
   color: #04a4e7;
-  font-family: 'Open Sans', sans-serif;
   min-height: 205px;
 }
 .do__bonus-diplom:before {
@@ -834,7 +829,6 @@ This must be run when you have at least 2 sprites.
 .footer .copy p {
   font-size: 14px;
   padding: 6px 0;
-  font-family: 'Open Sans', sans-serif;
 }
 .footer .social-icons {
   float: right;
@@ -1030,7 +1024,7 @@ This must be run when you have at least 2 sprites.
   .banner {
     background-position: 850px 0px;
     min-height: 300px;
-    min-width: 600px;
+    min-width: 620px;
     text-align: center;
   }
   .banner__title {
@@ -1093,10 +1087,10 @@ This must be run when you have at least 2 sprites.
     margin-bottom: 84px;
   }
   .programm {
-    min-width: 600px;
+    min-width: 620px;
   }
   .map {
-    min-width: 600px;
+    min-width: 620px;
   }
   .footer .copy {
     line-height: 45px;
@@ -1120,7 +1114,7 @@ This must be run when you have at least 2 sprites.
     margin-bottom: 40px;
   }
   .header__nav {
-    width: 600px;
+    width: 620px;
   }
   .header__nav-list {
     display: block;
@@ -1198,7 +1192,7 @@ This must be run when you have at least 2 sprites.
     font-size: 20px;
   }
   .programm {
-    min-width: 330px;
+    min-width: 350px;
   }
   .programm .row [class^=col-] {
     padding: 0;
@@ -1267,6 +1261,9 @@ This must be run when you have at least 2 sprites.
     float: none;
     padding: 10px 0;
   }
+  .header {
+    min-width: 350px;
+  }
   .header .row [class^=col-] {
     padding: 0;
   }
@@ -1285,7 +1282,7 @@ This must be run when you have at least 2 sprites.
     margin: 0 0 10px 10px;
   }
   .header__nav {
-    width: 330px;
+    width: 350px;
   }
   .header__nav-item {
     display: block;
@@ -1297,11 +1294,11 @@ This must be run when you have at least 2 sprites.
     border: 1px solid #04a4e7;
   }
   .map {
-    min-width: 330px;
+    min-width: 350px;
   }
   .banner {
     background-position: 850px 0px;
-    min-width: 330px;
+    min-width: 350px;
   }
   .banner__title {
     font-size: 25px;
@@ -1323,6 +1320,6 @@ This must be run when you have at least 2 sprites.
     padding: 0 20px;
   }
   .popup__content {
-    width: 330px;
+    width: 350px;
   }
 }

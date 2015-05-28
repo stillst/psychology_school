@@ -2,7 +2,7 @@
 { 
     .wrapper
     {  
-        width: @wrapper-width-mobile;
+        width: @wrapper-width-mobile-correct;
     }   
 
    .generate-columns(@n,@i:1) when (@i=<@n)
@@ -133,6 +133,7 @@
 
 	.header
 	{
+		min-width: @wrapper-width-mobile;
 		.row 
 		{
 			& [class^=col-]
