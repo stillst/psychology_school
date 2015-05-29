@@ -147,16 +147,13 @@ p {
   border-bottom: 2px solid #04a4e7;
 }
 .redlink {
-  margin-bottom: 0;
-}
-.redlink a {
   color: #fc5b5b;
   font-size: 14px;
   text-decoration: underline;
   display: inline-block;
   vertical-align: middle;
 }
-.redlink a:hover {
+.redlink:hover {
   text-decoration: none;
 }
 .mb-30 {
@@ -661,6 +658,54 @@ This must be run when you have at least 2 sprites.
   text-align: center;
   margin-bottom: 75px;
 }
+.information {
+  margin-bottom: 465px;
+}
+.document {
+  margin-bottom: 25px;
+}
+.document__img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.document__img img {
+  width: 100%;
+}
+.document__title {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.document__title--journal {
+  min-height: 95px;
+}
+.document__video {
+  width: 100%;
+}
+.document__video iframe {
+  width: 100%;
+}
+.document__link {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 35px;
+  margin-right: 40px;
+  background: url(../img/_for_sprite/document-pdf.png) no-repeat 0% 50%;
+}
+.document__link a {
+  padding-left: 40px;
+}
+.document__link--pdf {
+  background: url(../img/_for_sprite/document-pdf.png) no-repeat 0% 0%;
+}
+.document__link--doc {
+  background: url(../img/_for_sprite/document-doc.png) no-repeat 0% 0%;
+}
+.document__link--xlsx {
+  background: url(../img/_for_sprite/document-xlsx.png) no-repeat 0% 0%;
+}
+.document__link--pptx {
+  background: url(../img/_for_sprite/document-pptx.png) no-repeat 0% 0%;
+}
 .contacts {
   margin-bottom: 300px;
 }
@@ -674,6 +719,39 @@ This must be run when you have at least 2 sprites.
   width: 100%;
   height: 300px;
   overflow: hidden;
+}
+.contacts-book {
+  margin-bottom: 580px;
+}
+.contacts-book__tizer {
+  font-size: 24px;
+  color: #04a4e7;
+  margin-bottom: 35px;
+}
+.contacts-book__form {
+  margin-bottom: 35px;
+}
+.contacts-book__form-input {
+  height: 40px;
+  width: 380px;
+  border: 1px solid #04a4e7;
+  padding-left: 10px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+.contacts-book__form-submit {
+  background-color: #04a4e7;
+  font-family: "Appetite";
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding: 8px 35px;
+  height: 40px;
+  border: 1px solid #04a4e7;
+  display: inline-block;
+  vertical-align: top;
 }
 .articles {
   font-size: 0;
@@ -945,6 +1023,12 @@ This must be run when you have at least 2 sprites.
   content: "";
   display: inline-block;
   vertical-align: middle;
+}
+.materials-journal {
+  margin-bottom: 220px;
+}
+.materials-presentation {
+  margin-bottom: 50px;
 }
 .footer .copy {
   padding: 30px 0;
