@@ -1024,6 +1024,58 @@ This must be run when you have at least 2 sprites.
   display: inline-block;
   vertical-align: middle;
 }
+.aplication__class {
+  text-align: center;
+  font-family: "Appetite";
+  font-size: 36px;
+  color: #04a4e7;
+  margin-bottom: 30px;
+}
+.aplication__option {
+  color: #04a4e7;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  min-height: 65px;
+}
+.aplication__uni {
+  color: #04a4e7;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.aplication__steps {
+  margin-bottom: 60px;
+  min-height: 250px;
+}
+.aplication__steps-step {
+  padding-left: 50px;
+  margin-bottom: 15px;
+  min-height: 50px;
+}
+.aplication__steps-step--selection {
+  background: url('../img/_for_sprite/aplication/selection.png') no-repeat 0% 50%;
+}
+.aplication__steps-step--letter {
+  background: url('../img/_for_sprite/aplication/letter.png') no-repeat 0% 50%;
+}
+.aplication__steps-step--participant {
+  background: url('../img/_for_sprite/aplication/participant.png') no-repeat 0% 50%;
+}
+.aplication__steps-step--meeting {
+  background: url('../img/_for_sprite/aplication/meeting.png') no-repeat 0% 50%;
+}
+.aplication__steps-step--letter-download {
+  background: url('../img/_for_sprite/aplication/letter-download.png') no-repeat 0% 50%;
+}
+.aplication__steps-step--project {
+  background: url('../img/_for_sprite/aplication/project.png') no-repeat 0% 50%;
+}
+.aplication__steps-step--mail {
+  background: url('../img/_for_sprite/aplication/mail.png') no-repeat 0% 50%;
+}
+.aplication__steps-step--request {
+  background: url('../img/_for_sprite/aplication/request.png') no-repeat 0% 50%;
+}
 .materials-journal {
   margin-bottom: 220px;
 }
