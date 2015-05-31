@@ -24,7 +24,7 @@
     {
     	background-position: 850px 0px;      	
     	min-height: 300px;
-    	min-width: @wrapper-width-tablet;
+    	min-width: @wrapper-width-tablet-correct;
     	text-align: center;  
 		&__title
 		{
@@ -176,18 +176,16 @@
 
 		&__nav
 	    {    
-	    	width: @wrapper-width-tablet; 
+	    	width: @wrapper-width-tablet-correct; 
 	    	&-list 
 	    	{
 				display: block;
 	    	}
 	        &-item
 	        {               		              
-	            display: inline-block;
-				vertical-align: middle;
-	            text-align: center;				
-				width: 30%;
-				position: relative;
+	            display: block;	            
+	            text-align: center;	
+	            border: 1px solid @blue-basic;												
 	        }        
 
 	        &-item:first-child
@@ -202,10 +200,13 @@
 	    }
 
 		&__sub-menu
-	    {	    	
-			top: 20px;
-			left: 0;
-			border: 1px solid @blue-basic;	
+	    {	    				
+	    	position: static;
+	    	padding-top: 0;				
+			&-item
+	        {               		              	            				
+	            border: 5px solid @blue-basic;							
+	        }   
 	    }       
 
     	.logo

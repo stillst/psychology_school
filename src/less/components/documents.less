@@ -35,6 +35,7 @@
 		iframe
 		{
 			width: 100%;
+			border: 0px;
 		}
 	}
 
@@ -43,31 +44,42 @@
 		display: inline-block;
 		vertical-align: middle;
 		min-height: 35px;
-		margin-right: 40px;
-		background: url(../img/_for_sprite/document-pdf.png) no-repeat 0% 50%;
+		margin-right: 40px;		
 		a
 		{
-			padding-left:40px;
+			padding-left:20px;
 		}
 
 		&--pdf		
-		{
-			background: url(../img/_for_sprite/document-pdf.png) no-repeat 0% 0%;
+		{			
+			&:before
+			{				
+			   .sprite(@document-pdf);
+			}							
 		}
 
 		&--doc		
-		{
-			background: url(../img/_for_sprite/document-doc.png) no-repeat 0% 0%;
+		{			
+			&:before
+			{				
+			   .sprite(@document-doc);
+			}	
 		}
 
 		&--xlsx		
 		{
-			background: url(../img/_for_sprite/document-xlsx.png) no-repeat 0% 0%;
+			&:before
+			{				
+			   .sprite(@document-xlsx);
+			}
 		}
 
 		&--pptx		
 		{
-			background: url(../img/_for_sprite/document-pptx.png) no-repeat 0% 0%;
+			&:before
+			{				
+			   .sprite(@document-pptx);
+			}
 		}
 	}
 }

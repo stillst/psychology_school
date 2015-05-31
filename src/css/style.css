@@ -92,7 +92,7 @@
   clear: both;
 }
 .l-margin-bottom-75 {
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 }
 @font-face {
   font-family: "Appetite";
@@ -467,7 +467,7 @@ This must be run when you have at least 2 sprites.
   background: url('../img/_for_sprite/select-arrow-down.jpg') no-repeat 100% 100%;
 }
 .header {
-  padding: 20px 0;
+  padding: 20px 0 5px 0;
 }
 .header__top {
   margin-bottom: 20px;
@@ -515,7 +515,7 @@ This must be run when you have at least 2 sprites.
 .header .round-links__link:before {
   margin-bottom: 10px;
   background-image: url(../img/sprite/sprite.png);
-  background-position: -94px -74px;
+  background-position: -235px -29px;
   width: 14px;
   height: 20px;
   content: "";
@@ -528,7 +528,7 @@ This must be run when you have at least 2 sprites.
 .header .round-links__link--msg:before {
   margin-bottom: 13px;
   background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -96px;
+  background-position: -164px -150px;
   width: 20px;
   height: 14px;
   content: "";
@@ -575,6 +575,7 @@ This must be run when you have at least 2 sprites.
 }
 .header__sub-menu {
   z-index: 2;
+  padding-top: 20px;
   position: absolute;
   overflow: hidden;
   display: none;
@@ -683,28 +684,52 @@ This must be run when you have at least 2 sprites.
 }
 .document__video iframe {
   width: 100%;
+  border: 0px;
 }
 .document__link {
   display: inline-block;
   vertical-align: middle;
   min-height: 35px;
   margin-right: 40px;
-  background: url(../img/_for_sprite/document-pdf.png) no-repeat 0% 50%;
 }
 .document__link a {
-  padding-left: 40px;
+  padding-left: 20px;
 }
-.document__link--pdf {
-  background: url(../img/_for_sprite/document-pdf.png) no-repeat 0% 0%;
+.document__link--pdf:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -40px -193px;
+  width: 30px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.document__link--doc {
-  background: url(../img/_for_sprite/document-doc.png) no-repeat 0% 0%;
+.document__link--doc:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -145px -43px;
+  width: 33px;
+  height: 34px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.document__link--xlsx {
-  background: url(../img/_for_sprite/document-xlsx.png) no-repeat 0% 0%;
+.document__link--xlsx:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -86px -106px;
+  width: 33px;
+  height: 34px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.document__link--pptx {
-  background: url(../img/_for_sprite/document-pptx.png) no-repeat 0% 0%;
+.document__link--pptx:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: 0px -106px;
+  width: 33px;
+  height: 34px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
 .contacts {
   margin-bottom: 300px;
@@ -762,16 +787,16 @@ This must be run when you have at least 2 sprites.
   vertical-align: top;
   margin-bottom: 70px;
 }
-.articles li article .articles__img {
+.articles li .articles__img {
   display: inline-block;
   vertical-align: middle;
   padding-right: 10px;
   width: 35%;
 }
-.articles li article .articles__img img {
+.articles li .articles__img img {
   width: 100%;
 }
-.articles li article p {
+.articles li p {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
@@ -936,7 +961,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-diplom:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -40px -38px;
+  background-position: 0px -193px;
   width: 30px;
   height: 30px;
   content: "";
@@ -945,7 +970,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-feedback:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -86px -37px;
+  background-position: -80px -193px;
   width: 30px;
   height: 30px;
   content: "";
@@ -954,7 +979,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-speach:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: 0px -38px;
+  background-position: -190px 0px;
   width: 35px;
   height: 31px;
   content: "";
@@ -963,7 +988,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-discount:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: 0px 0px;
+  background-position: -50px -45px;
   width: 41px;
   height: 33px;
   content: "";
@@ -972,7 +997,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-glory:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -46px 0px;
+  background-position: -145px 0px;
   width: 35px;
   height: 33px;
   content: "";
@@ -981,7 +1006,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-horizon:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -123px 0px;
+  background-position: -124px -150px;
   width: 30px;
   height: 18px;
   content: "";
@@ -990,7 +1015,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-workshop:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -86px 0px;
+  background-position: -190px -41px;
   width: 32px;
   height: 32px;
   content: "";
@@ -999,7 +1024,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-tradition:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -63px -74px;
+  background-position: -120px -193px;
   width: 26px;
   height: 30px;
   content: "";
@@ -1008,7 +1033,7 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-winter:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -29px -74px;
+  background-position: 0px -150px;
   width: 29px;
   height: 33px;
   content: "";
@@ -1017,12 +1042,15 @@ This must be run when you have at least 2 sprites.
 }
 .do__bonus-certificate:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: 0px -74px;
+  background-position: -190px -83px;
   width: 24px;
   height: 40px;
   content: "";
   display: inline-block;
   vertical-align: middle;
+}
+.aplication {
+  margin-bottom: 125px;
 }
 .aplication__class {
   text-align: center;
@@ -1045,36 +1073,93 @@ This must be run when you have at least 2 sprites.
 }
 .aplication__steps {
   margin-bottom: 60px;
-  min-height: 250px;
+  min-height: 205px;
+}
+.aplication__steps-txt {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  font-size: 14px;
+}
+.aplication__steps li {
+  margin-bottom: 15px;
 }
 .aplication__steps-step {
-  padding-left: 50px;
-  margin-bottom: 15px;
-  min-height: 50px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 30%;
 }
-.aplication__steps-step--selection {
-  background: url('../img/_for_sprite/aplication/selection.png') no-repeat 0% 50%;
+.aplication__steps-step--selection:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -50px 0px;
+  width: 41px;
+  height: 35px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.aplication__steps-step--letter {
-  background: url('../img/_for_sprite/aplication/letter.png') no-repeat 0% 50%;
+.aplication__steps-step--letter:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 40px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.aplication__steps-step--participant {
-  background: url('../img/_for_sprite/aplication/participant.png') no-repeat 0% 50%;
+.aplication__steps-step--participant:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -101px -46px;
+  width: 34px;
+  height: 36px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.aplication__steps-step--meeting {
-  background: url('../img/_for_sprite/aplication/meeting.png') no-repeat 0% 50%;
+.aplication__steps-step--meeting:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -39px -150px;
+  width: 32px;
+  height: 29px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.aplication__steps-step--letter-download {
-  background: url('../img/_for_sprite/aplication/letter-download.png') no-repeat 0% 50%;
+.aplication__steps-step--letter-download:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -43px -106px;
+  width: 33px;
+  height: 34px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.aplication__steps-step--project {
-  background: url('../img/_for_sprite/aplication/project.png') no-repeat 0% 50%;
+.aplication__steps-step--project:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: 0px -50px;
+  width: 34px;
+  height: 46px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.aplication__steps-step--mail {
-  background: url('../img/_for_sprite/aplication/mail.png') no-repeat 0% 50%;
+.aplication__steps-step--mail:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -81px -150px;
+  width: 33px;
+  height: 23px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
-.aplication__steps-step--request {
-  background: url('../img/_for_sprite/aplication/request.png') no-repeat 0% 50%;
+.aplication__steps-step--request:before {
+  background-image: url(../img/sprite/sprite.png);
+  background-position: -101px 0px;
+  width: 34px;
+  height: 36px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
 .materials-journal {
   margin-bottom: 220px;
@@ -1113,7 +1198,7 @@ This must be run when you have at least 2 sprites.
 }
 .footer .social-icon--vk:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: 0px -119px;
+  background-position: -194px -150px;
   width: 21px;
   height: 12px;
   content: "";
@@ -1122,7 +1207,7 @@ This must be run when you have at least 2 sprites.
 }
 .footer .social-icon--facebook:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -158px 0px;
+  background-position: -235px -82px;
   width: 10px;
   height: 19px;
   content: "";
@@ -1131,7 +1216,7 @@ This must be run when you have at least 2 sprites.
 }
 .footer .social-icon--twitter:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: 0px -136px;
+  background-position: -235px -59px;
   width: 17px;
   height: 13px;
   content: "";
@@ -1140,7 +1225,7 @@ This must be run when you have at least 2 sprites.
 }
 .footer .social-icon--instagram:after {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -72px;
+  background-position: -186px -193px;
   width: 19px;
   height: 19px;
   content: "";
@@ -1189,7 +1274,7 @@ This must be run when you have at least 2 sprites.
 }
 .popup__header .popup__close:before {
   background-image: url(../img/sprite/sprite.png);
-  background-position: -123px -48px;
+  background-position: -235px 0px;
   width: 19px;
   height: 19px;
   content: "";
@@ -1237,7 +1322,7 @@ This must be run when you have at least 2 sprites.
   outline: none;
   border: 1px solid #04a4e7;
 }
-@media (max-width: 640px) and (min-width: 360px) {
+@media (max-width: 940px) and (min-width: 640px) {
   .wrapper {
     width: 600px;
   }
@@ -1283,7 +1368,7 @@ This must be run when you have at least 2 sprites.
   .banner {
     background-position: 850px 0px;
     min-height: 300px;
-    min-width: 620px;
+    min-width: 600px;
     text-align: center;
   }
   .banner__title {
@@ -1373,17 +1458,15 @@ This must be run when you have at least 2 sprites.
     margin-bottom: 40px;
   }
   .header__nav {
-    width: 620px;
+    width: 600px;
   }
   .header__nav-list {
     display: block;
   }
   .header__nav-item {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     text-align: center;
-    width: 30%;
-    position: relative;
+    border: 1px solid #04a4e7;
   }
   .header__nav-item:first-child {
     text-align: center;
@@ -1392,9 +1475,11 @@ This must be run when you have at least 2 sprites.
     text-align: center;
   }
   .header__sub-menu {
-    top: 20px;
-    left: 0;
-    border: 1px solid #04a4e7;
+    position: static;
+    padding-top: 0;
+  }
+  .header__sub-menu-item {
+    border: 5px solid #04a4e7;
   }
   .header .logo__img {
     margin-bottom: 10px;
@@ -1407,7 +1492,7 @@ This must be run when you have at least 2 sprites.
     font-family: "Appetite";
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 640px) {
   .wrapper {
     width: 330px;
   }
@@ -1546,11 +1631,13 @@ This must be run when you have at least 2 sprites.
   .header__nav-item {
     display: block;
     text-align: center;
+    border: 1px solid #04a4e7;
   }
   .header__sub-menu {
-    top: 0;
-    left: 0;
-    border: 1px solid #04a4e7;
+    position: static;
+  }
+  .header__sub-menu-item {
+    border: 5px solid #04a4e7;
   }
   .map {
     min-width: 350px;

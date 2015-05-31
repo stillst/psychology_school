@@ -21,6 +21,7 @@ gulp.task('clean', function () {
 // Копирование статики
 gulp.task('copy_img', function () {
     return gulp.src('src/img/**/*')
+
      .pipe(gulp.dest('dist/img/'));   
 });
 
@@ -105,12 +106,12 @@ gulp.task('watch', function () {
 // Спрайты
 gulp.task('sprite', function() {
     var spriteData = 
-        gulp.src('./src/img/_for_sprite/*.*') // путь, откуда берем картинки для спрайта
+        gulp.src('./src/img/_for_sprite/**/*.png') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 imgName: 'sprite.png',
                 cssName: 'sprite.less',
                 cssFormat :'less',
-                padding: 5,
+                padding: 10,
             }));
     //../img/sprite/sprite.png
     spriteData.img.pipe(gulp.dest('./src/img/sprite/')); // путь, куда сохраняем картинку

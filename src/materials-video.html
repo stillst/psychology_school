@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>	
+	<title>Материалы: видео | Сайт ЗПШ СПБГУ</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!-- build:css css/vendor.css -->
 	<!-- bower:css -->		     
 	<link href="bower/normalize.css/normalize.css" rel="stylesheet" />   
@@ -20,8 +20,70 @@
 <body>	
 
 	<header class="header">
+		<div class="wrapper">
+			<div class="row header__top">
+				<div class="col-4 col-tablet-12 col-xs-12">
+					<a href="index.html">
+						<img class="logo__img" src="img/header/logo.png" alt="Логитип школы">
+						<p class="logo__title">
+							Зимняя Психологическая Школа молодых ученых СПбГУ
+						</p>
+					</a>								
+				</div>				
+				
+				<div class="col-8 col-tablet-12 col-xs-12 round-links">
+					<div class="js-search-form">
+						<form action="#">
+							<input class="js-search-form__input"  name="query"  type="text" value="">
+							<input class="js-search-form__submit" name="submit" type="submit" value="">			
+							<a class="js-search-form__open" href="#"></a>			
+							<a class="js-search-form__close" href="#"></a>	
+						</form>						
+					</div>
 
+					<a class="round-links__link round-links__link--msg" href="#">
+						Написать нам
+					</a>				
+
+					<a class="round-links__link" href="contacts-book.html">
+						Книга контактов
+					</a>
+				</div>
+			</div>		
+
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a href="#">о нас</a>
+						<ul class="header__sub-menu">
+							<li class="header__sub-menu-item"><a href="about.html">о школе</a></li>
+							<li class="header__sub-menu-item"><a href="about-committe.html">организационный комитет</a></li>
+						</ul>
+					</li>						
+					<li class="header__nav-item"><a href="lectors.html">преподаватели</a></li>
+					<li class="header__nav-item">
+						<a href="#">материалы</a>	
+						<ul class="header__sub-menu">
+							<li class="header__sub-menu-item"><a href="materials-prezentation.html">презентации</a></li>
+							<li class="header__sub-menu-item"><a href="materials-video.html">видео</a></li>
+							<li class="header__sub-menu-item"><a href="materials-journal.html">газета</a></li>
+						</ul>					
+					</li>
+					<li class="header__nav-item"><a href="gallery-albums.html">галерея</a></li>
+					<li class="header__nav-item">
+						<a href="#">участникам</a>
+						<ul class="header__sub-menu">
+							<li class="header__sub-menu-item"><a href="documents.html">документы</a></li>
+							<li class="header__sub-menu-item"><a href="application.html">оставить заявку</a></li>
+							<li class="header__sub-menu-item"><a href="question.html">вопросы и ответы</a></li>
+						</ul>
+					</li>					
+					<li class="header__nav-item"><a href="contacts.html">контакты</a></li>
+				</ul>
+			</nav>		
+		</div>
 	</header>
+
 	<main class="materials-video">
 		<div class="wrapper">
 			<h1 class="page-title">материалы</h1>
@@ -35,7 +97,7 @@
 				<div class="col-3">
 					<div class="document">						
 						<div class="document__video">
-							<iframe src="https://www.youtube.com/embed/W1wpSa8LhJ4" frameborder="0" allowfullscreen></iframe>
+							<iframe src="https://www.youtube.com/embed/W1wpSa8LhJ4" allowfullscreen></iframe>
 						</div>
 						<p class="document__title">					
 							Нейрофизиология:Различия друг-партнёр
@@ -45,7 +107,8 @@
 				<div class="col-3">
 					<div class="document">						
 						<div class="document__video">
-							<iframe src="https://www.youtube.com/embed/t6R0doa6N9M" frameborder="0" allowfullscreen></iframe>		
+							<iframe src="https://www.youtube.com/embed/t6R0doa6N9M" allowfullscreen></iframe>
+						</div>		
 						<p class="document__title">					
 							А.Четвериков "Эпичные провалы предсказаний у вас в голове, или Почему не стоит играть на бирже"
 						</p>													
@@ -56,19 +119,53 @@
 	</main>
 	
 	<footer class="footer">
-		
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-6 col-tablet-7 col-xs-12 copy">
+					<p>
+						Зимняя Психологическая Школа молодых ученых СПбГУ 2015 &amp;copy	
+					</p>	
+				</div>
+				<div class="col-6 col-tablet-5 col-xs-12">
+					<div class="social-icons">
+						<a href="#" class="social-icon social-icon--vk">
+
+						</a>
+						<a href="#" class="social-icon social-icon--facebook">
+
+						</a>
+						<a href="#" class="social-icon social-icon--twitter">
+
+						</a>
+						<a href="#" class="social-icon social-icon--instagram">
+
+						</a>
+					</div>	
+				</div>
+			</div>							
+		</div>		
 	</footer>	
+
+	<div class="popup">
+		<form class="popup__content" action="#">
+			<div class="popup__header clearfix">
+				<span class="popup__title">написать нам</span>
+				<div class="popup__close"></div>	    		
+			</div>		        	        
+			<input type="text" placeholder="Имя" required="required">
+			<input type="tel" placeholder="Телефон +7(921)212-85-06" required="required" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+			<textarea rows="10" placeholder="Вопрос" required="required"></textarea>
+			<input type="submit" value="Отправить">
+		</form>
+	</div>
 
 <!-- build:js js/vendor.js -->
 <!-- bower:js -->
 <script src="bower/jquery/dist/jquery.min.js"></script>  
-<script src="bower/magnific-popup/dist/jquery.magnific-popup.min.js"></script>  
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js js/script.js -->
-<script src="js/countdown.js"></script>
-<script src="js/jquery.parallax-scroll.js"></script>
 <script src="js/script.js"></script>
 <!-- endbuild -->
 </body>
