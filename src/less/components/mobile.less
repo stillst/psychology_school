@@ -2,7 +2,7 @@
 { 
     .wrapper
     {  
-        width: @wrapper-width-mobile-correct;
+        width: @wrapper-width-mobile;
     }   
 
    .generate-columns(@n,@i:1) when (@i=<@n)
@@ -111,6 +111,7 @@
 	.footer
 	{
 		text-align: center;
+		font-weight: bold;
 		.row 
 		{
 			& [class^=col-]
@@ -133,7 +134,7 @@
 
 	.header
 	{
-		min-width: @wrapper-width-mobile;
+		min-width: @wrapper-width-mobile-correct;
 		.row 
 		{
 			& [class^=col-]
@@ -169,7 +170,7 @@
 		
 		&__nav
 	    {      		   
-	    	width: @wrapper-width-mobile; 	
+	    	width: @wrapper-width-mobile-correct; 	
 	        &-item
 	        {               	
 	            display:block;
@@ -235,4 +236,96 @@
     {
 		width: @wrapper-width-mobile;
     }
+	
+
+	.page
+	{
+
+		&-nav
+		{
+			
+			&__link
+			{
+				display: inline-block;
+				vertical-align: top;
+				font-size: 0;
+				width: 30%;
+				margin-right: 10px;
+				a
+				{
+					font-size: 20px;
+				}																
+			}
+		}
+	}
+
+    .infographics
+	{
+		padding: 0 0;
+		text-align: center;
+		margin-bottom: 25px;
+
+		&__img
+		{
+			margin-bottom: 25px;
+			max-height: 115px;
+			max-width: 140px;
+		}
+
+		&__txt
+		{
+			margin-bottom: 20px;
+
+		}
+
+		&.row [class^=col-]
+		{			 
+			padding: 0;			    			
+		}
+	}
+
+	.articles
+	{
+		font-size: 0;
+		li
+		{
+		  	display: block;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			width: 80%;
+			
+			.articles__img
+			{
+				display: block;							
+				padding-right: 0;
+				margin-bottom: 10px;
+				width: 100%;
+
+				img
+				{				
+					width: 100%
+				}
+			}
+					
+			p
+			{
+				display: inline-block;
+				vertical-align: top;
+				font-size: 14px;
+				line-height: 24px;		
+				width: 100%;				
+			}				
+
+			&:nth-child(2n+1)
+			{
+				padding-right: 0;
+			}
+
+			&:nth-child(2n)
+			{
+				padding-left: 0;
+			}
+		}	
+	}
+
 }
