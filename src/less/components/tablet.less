@@ -2,7 +2,7 @@
 {
 	.wrapper
     {  
-        width:  @wrapper-width-tablet-correct;
+        width:  @wrapper-width-tablet;
     }   
 
    .generate-columns(@n,@i:1) when (@i=<@n)
@@ -112,9 +112,9 @@
 		  	}
 		}		
 
-		.l-margin-bottom-75 
+		.l-margin-extra 
 		{
-			margin-bottom: 84px;
+			margin-bottom: 89px;
 		}
 	}
 
@@ -226,5 +226,215 @@
 
     		}        
     	}    
+	}
+
+    .infographics
+	{
+		padding: 0 0;
+		text-align: center;
+		margin-bottom: 25px;
+
+		&__txt
+		{
+			margin-bottom: 20px;
+		}
+
+		&.row [class^=col-]
+		{			 
+			padding: 0;			    			
+		}
+	}
+
+	.articles
+	{
+		font-size: 0;
+		li
+		{
+		  	display: block;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			width: @wrapper-width-tablet-correct;
+			
+			.articles__img
+			{					
+				width: 40%;
+				margin-bottom: 10px;				
+				padding-right: 5%;	
+
+				img
+				{				
+					width: 100%
+				}
+			}
+					
+			p
+			{
+				width: 60%;						
+			}				
+
+			&:nth-child(2n+1)
+			{
+				padding-right: 0;
+			}
+
+			&:nth-child(2n)
+			{
+				padding-left: 0;
+			}
+		}	
+	}
+
+	.person
+	{
+		text-align: center;
+		&__img			
+		{				
+			margin-bottom: 15px;			
+		}
+
+		&__profession
+		{
+			font-size: 20px;
+		}
+
+		&__name
+		{
+			font-size: 20px;
+			margin-bottom: 5px;
+		}		
+	}
+
+	.aplication
+	{
+		margin-bottom: 0;
+		&__steps
+		{
+			margin-bottom: 10px;
+			min-height: 180px;
+		}
+	}
+
+	.contacts-book
+	{
+		margin-bottom: 60px;	
+		text-align: center;		
+	}
+
+	.contacts
+	{
+		margin-bottom: 20px;
+		&__paragraph
+		{
+			margin-bottom: 15px;			
+		}	
+
+		&__map
+		{
+			width: @wrapper-width-tablet-correct;				
+		}
+
+		.line
+		{
+			margin: 0;	
+			& [class^=col-]
+			{			 
+				padding: 0;			    			
+			}		
+		}	
+
+		.redlink
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+	.information
+	{
+		margin-bottom: 25px;
+	}
+
+	.lectors
+	{
+		.line
+		{
+			margin: 0;			
+		}	
+		margin-bottom: 15px;
+
+		.js-lector-form
+		{	
+			&__search
+			{
+				width: @wrapper-width-tablet-correct /2 - 30px;
+				margin-bottom: 10px;
+
+				&-input
+				{				
+					font-size: 15px;
+					width: 230px;		
+				}
+			}
+
+			&__select
+			{
+				width: @wrapper-width-tablet-correct /2 - 30px;
+				border: 1px solid @blue-basic;
+			}
+		}
+	}
+
+	.document
+	{
+		margin-bottom: 25px;
+
+		&__img
+		{			
+			margin-bottom: 20px;			
+		}
+
+		&__title
+		{
+			font-size: 14px;
+			margin-bottom: 25px;
+			
+			&--journal
+			{
+				min-height: 0;
+			}
+		}
+
+		&__video
+		{
+			width: 100%;
+			iframe
+			{
+				width: 100%;
+				min-height: 200px;
+				border: 0px;
+			}
+		}		
+	}
+
+	.galery
+	{		
+		text-align: center;
+
+		.album
+		{
+			margin-bottom: 15px;
+
+			&__name
+			{
+				text-align:center;
+				font-size: 20px;
+				margin-bottom: 10px;									
+			}
+
+			&__tizer
+			{
+				text-align:center;		
+				font-size: 20px;				
+			}
+		}
 	}
 }

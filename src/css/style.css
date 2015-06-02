@@ -91,7 +91,7 @@
   display: table;
   clear: both;
 }
-.l-margin-bottom-75 {
+.l-margin-extra {
   margin-bottom: 80px;
 }
 @font-face {
@@ -809,6 +809,9 @@ This must be run when you have at least 2 sprites.
   display: inline-block;
   vertical-align: top;
 }
+.contacts-book__form-submit:hover {
+  background-color: #52cbf9;
+}
 .articles {
   font-size: 0;
 }
@@ -1333,7 +1336,7 @@ This must be run when you have at least 2 sprites.
 }
 @media (max-width: 940px) and (min-width: 640px) {
   .wrapper {
-    width: 600px;
+    width: 620px;
   }
   .col-tablet-1 {
     width: 8.33333333%;
@@ -1436,8 +1439,8 @@ This must be run when you have at least 2 sprites.
   .do .flip-container__front {
     left: 20%;
   }
-  .do .l-margin-bottom-75 {
-    margin-bottom: 84px;
+  .do .l-margin-extra {
+    margin-bottom: 89px;
   }
   .programm {
     min-width: 620px;
@@ -1499,6 +1502,142 @@ This must be run when you have at least 2 sprites.
     width: 75%;
     font-size: 20px;
     font-family: "Appetite";
+  }
+  .infographics {
+    padding: 0 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .infographics__txt {
+    margin-bottom: 20px;
+  }
+  .infographics.row [class^=col-] {
+    padding: 0;
+  }
+  .articles {
+    font-size: 0;
+  }
+  .articles li {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 600px;
+  }
+  .articles li .articles__img {
+    width: 40%;
+    margin-bottom: 10px;
+    padding-right: 5%;
+  }
+  .articles li .articles__img img {
+    width: 100%;
+  }
+  .articles li p {
+    width: 60%;
+  }
+  .articles li:nth-child(2n+1) {
+    padding-right: 0;
+  }
+  .articles li:nth-child(2n) {
+    padding-left: 0;
+  }
+  .person {
+    text-align: center;
+  }
+  .person__img {
+    margin-bottom: 15px;
+  }
+  .person__profession {
+    font-size: 20px;
+  }
+  .person__name {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .aplication {
+    margin-bottom: 0;
+  }
+  .aplication__steps {
+    margin-bottom: 10px;
+    min-height: 180px;
+  }
+  .contacts-book {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .contacts {
+    margin-bottom: 20px;
+  }
+  .contacts__paragraph {
+    margin-bottom: 15px;
+  }
+  .contacts__map {
+    width: 600px;
+  }
+  .contacts .line {
+    margin: 0;
+  }
+  .contacts .line [class^=col-] {
+    padding: 0;
+  }
+  .contacts .redlink {
+    margin-bottom: 10px;
+  }
+  .information {
+    margin-bottom: 25px;
+  }
+  .lectors {
+    margin-bottom: 15px;
+  }
+  .lectors .line {
+    margin: 0;
+  }
+  .lectors .js-lector-form__search {
+    width: 270px;
+    margin-bottom: 10px;
+  }
+  .lectors .js-lector-form__search-input {
+    font-size: 15px;
+    width: 230px;
+  }
+  .lectors .js-lector-form__select {
+    width: 270px;
+    border: 1px solid #04a4e7;
+  }
+  .document {
+    margin-bottom: 25px;
+  }
+  .document__img {
+    margin-bottom: 20px;
+  }
+  .document__title {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .document__title--journal {
+    min-height: 0;
+  }
+  .document__video {
+    width: 100%;
+  }
+  .document__video iframe {
+    width: 100%;
+    min-height: 200px;
+    border: 0px;
+  }
+  .galery {
+    text-align: center;
+  }
+  .galery .album {
+    margin-bottom: 15px;
+  }
+  .galery .album__name {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .galery .album__tizer {
+    text-align: center;
+    font-size: 20px;
   }
 }
 @media (max-width: 640px) {
@@ -1597,7 +1736,7 @@ This must be run when you have at least 2 sprites.
   .do .flip-container__front {
     left: 20%;
   }
-  .do .l-margin-bottom-75 {
+  .do .l-margin-extra {
     margin-bottom: 0;
   }
   .footer {
@@ -1704,7 +1843,7 @@ This must be run when you have at least 2 sprites.
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 80%;
+    width: 330px;
   }
   .articles li .articles__img {
     display: block;
@@ -1849,9 +1988,7 @@ This must be run when you have at least 2 sprites.
     width: 100%;
   }
   .document__video iframe {
-    width: 100%;
     min-height: 200px;
-    border: 0px;
   }
   .materials-presentation {
     margin-bottom: 0;
