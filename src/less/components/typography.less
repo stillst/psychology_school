@@ -57,11 +57,14 @@ p
 		{
 			display: inline-block;
 			vertical-align: middle;
-
 			a
 			{
 				font-size: 24px;				
 				color: @blue-basic;
+				&:hover
+				{
+					color: @red-basic;
+				}
 			}
 												
 			margin-right: 50px;
@@ -69,6 +72,14 @@ p
 			{
 				font-weight: bold;
 				border-bottom: 2px solid @blue-basic;
+				&:hover
+				{
+					a
+					{
+						color: @red-basic;
+					}
+					border-bottom: 2px solid @red-basic;
+				}
 			}
 		}
 	}
