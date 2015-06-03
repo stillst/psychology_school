@@ -48,5 +48,20 @@ $(document).ready(function()
 	    	$(".popup").slideToggle("fast");                                                                    
 	    });	
 	});	
-	
+
+	//questions carusel
+	$(function()
+	{
+	    $(document).on('click', '.questions__question', function()
+	    { 	    	
+	    	if($(this).hasClass("questions__question--active"))
+	    	{
+	    		$(this).removeClass("questions__question--active");
+	    	}
+	    	else
+	    	{
+	    		$(this).addClass("questions__question--active");
+	    	}
+	    });	
+	});		
 }); 

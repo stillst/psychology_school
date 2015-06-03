@@ -378,8 +378,8 @@ This must be run when you have at least 2 sprites.
   z-index: 2;
   vertical-align: middle;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 1px;
   text-align: center;
   height: 36px;
   width: 36px;
@@ -858,18 +858,28 @@ This must be run when you have at least 2 sprites.
 .questions ul {
   margin-bottom: 25px;
 }
-.questions__question {
+.questions__question p {
   color: #04a4e7;
-  font-size: 24px;
+  font-size: 20px;
   border-bottom: 2px dotted #04a4e7;
   display: inline-block;
+  cursor: pointer;
 }
-.questions__answer {
+.questions__question--active p {
+  border-bottom: none;
+}
+.questions__question--active + .questions__answer {
+  display: block;
+}
+.questions__qualification {
   color: #04a4e7;
 }
 .questions__clarification {
   color: #6b6b6b;
   font-size: 14px;
+}
+.questions__answer {
+  display: none;
 }
 .banner {
   background-image: url(../img/banner/background_banner.jpg);
