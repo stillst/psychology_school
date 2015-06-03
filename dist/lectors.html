@@ -87,11 +87,14 @@
 					<input class="js-lector-form__search-input" placeholder="Поиск по преподавателям" name="lector-query"  type="text" >
 					<input class="js-lector-form__search-submit" name="lector-submit" type="submit" value="">	
 				</div>
-				<select class="js-lector-form__select">
-                    <option selected value="all">Все направления</option>                                        
-                    <option value="">Теология</option>
-                    <option value="">Православие</option>                    
-                </select>
+				<div class="js-lector-form__select">
+					<select id="js-lector-form__select">
+	                    <option selected value="all">Все направления</option>                      
+	                    <option value="">Теология</option>
+	                    <option value="">Православие</option>                    
+	                </select>	
+				</div>
+				
 			</form>		
 	
 			<div class="line">
@@ -227,9 +230,17 @@
 			<input type="submit" value="Отправить">
 		</form>
 	</div>	
-
+	
 <script src="js/vendor.js"></script>
 
-<script src="js/script.js"></script>
+<script src="js/script-lectors.js"></script>
+<script>
+	
+$(function(){
+  $('#js-lector-form__select').selectric();
+});
+
+</script>
+
 </body>
 </html>
