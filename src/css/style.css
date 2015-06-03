@@ -139,7 +139,7 @@ p {
   margin-right: 50px;
 }
 .page-nav__link a {
-  font-size: 24px;
+  font-size: 18px;
   color: #04a4e7;
 }
 .page-nav__link a:hover {
@@ -223,7 +223,13 @@ p {
   background-color: #fff;
   transform: rotateY(180deg);
   border: 5px solid #04a4e7;
-  min-height: 400px;
+  height: 380px;
+  width: 380px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   border-radius: 50%;
 }
 .flip-container__back p {
@@ -380,14 +386,14 @@ This must be run when you have at least 2 sprites.
   border-radius: 20px;
   background: url('../img/header/search_icon.png') no-repeat 50% 50%;
   background-color: #fc5b5b;
-  -webkit-transition: border 300ms linear;
-  -moz-transition: border 300ms linear;
-  -o-transition: border 300ms linear;
-  -ms-transition: border 300ms linear;
-  transition: border 300ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 .js-search-form__open:hover {
-  border: 2px solid #fff;
+  background-color: #ed0404;
 }
 .js-search-form__close {
   display: inline-block;
@@ -400,16 +406,16 @@ This must be run when you have at least 2 sprites.
   height: 36px;
   width: 36px;
   border-radius: 20px;
-  background: url('../img/header/close.png') no-repeat 50% 50%;
+  background: url('../img/header/close_white.png') no-repeat 50% 50%;
   background-color: #fc5b5b;
-  -webkit-transition: border 300ms linear;
-  -moz-transition: border 300ms linear;
-  -o-transition: border 300ms linear;
-  -ms-transition: border 300ms linear;
-  transition: border 300ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 .js-search-form__close:hover {
-  border: 2px solid #fff;
+  background-color: #ed0404;
 }
 .js-search-form__input {
   position: absolute;
@@ -429,7 +435,7 @@ This must be run when you have at least 2 sprites.
   width: 36px;
   border: none;
   background-color: transparent;
-  background: url('../img/header/search_icon.png') 0 50% no-repeat;
+  background: url('../img/header/search_grey.png') 0 50% no-repeat;
   font-size: 23px;
   border-right: 2px solid #fff;
   outline: none;
@@ -604,6 +610,7 @@ This must be run when you have at least 2 sprites.
 }
 .about__teaser .about__caption {
   color: #04a4e7;
+  font-size: 20px;
 }
 .about__goals {
   list-style-type: none;
@@ -685,6 +692,10 @@ This must be run when you have at least 2 sprites.
   font-size: 12px;
   color: #6b6b6b;
   margin-bottom: 15px;
+}
+.mfp-figure .mfp-close {
+  font-size: 90px;
+  top: 45px;
 }
 .lectors {
   text-align: center;
@@ -1177,6 +1188,9 @@ This must be run when you have at least 2 sprites.
   margin-bottom: 220px;
 }
 .materials-presentation {
+  margin-bottom: 50px;
+}
+.documents {
   margin-bottom: 50px;
 }
 .footer .copy {
@@ -1727,17 +1741,19 @@ This must be run when you have at least 2 sprites.
     min-height: 200px;
     max-height: 200px;
     max-width: 200px;
-    left: 20%;
   }
   .do .flip-container__back p {
     padding: 40px 0;
-    font-size: 20px;
+    font-size: 18px;
   }
   .do .flip-container__front {
     left: 20%;
   }
   .do .l-margin-extra {
     margin-bottom: 0;
+  }
+  .do .speaker-col {
+    margin-bottom: 30px;
   }
   .footer {
     text-align: center;
@@ -1762,17 +1778,19 @@ This must be run when you have at least 2 sprites.
   }
   .header .logo__title {
     width: 65%;
+    margin-bottom: 10px;
   }
   .header .js-search-form {
-    display: block;
-    margin: 10px ;
+    display: inline-block;
+    vertical-align: top;
   }
   .header .js-search-form__input {
-    width: 200px;
+    width: 100px;
   }
-  .header .round-links__link--msg {
-    float: left;
-    margin: 0 0 10px 10px;
+  .header .round-links__link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
   }
   .header__nav {
     width: 330px;

@@ -88,12 +88,11 @@
 		  	{
 			    min-height: 200px;
 			    max-height: 200px;
-			    max-width: 200px;
-			    left: 20%;
+			    max-width: 200px;			    
 			    & p
     			{  
     				padding: 40px 0;
-    				font-size: 20px;
+    				font-size: 18px;
     			}
 			}
 			&__front
@@ -105,6 +104,11 @@
 		.l-margin-extra	
 		{
 			margin-bottom: 0;
+		}
+
+		.speaker-col
+		{
+			margin-bottom: 30px;
 		}
 	}
 
@@ -148,24 +152,27 @@
 			&__title
 			{
 				width: 65%;
+				margin-bottom: 10px;
 			}        
+
 		}    
 
 		.js-search-form
 		{
-			display: block;
-			margin: 10px ;
+			display: inline-block;
+			vertical-align: top;
 
 			&__input
 			{	
-				width: 200px;
+				width: 100px;
 			}
 		}
 
-		.round-links__link--msg
+		.round-links__link
 		{
-			float: left;
-			margin: 0 0 10px 10px;	
+			display: inline-block;
+			vertical-align: middle;	
+			margin-bottom: 10px;		
 		}
 		
 		&__nav

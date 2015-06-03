@@ -22,7 +22,7 @@ $(document).ready(function()
 	    	var toggleWidth = "290px";
 	    	if ($(window).width() <= '640')
 	    	{
-	    		toggleWidth = "290px"
+	    		toggleWidth = "210px"
 	    	}
 	    	else
 	    	{
