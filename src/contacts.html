@@ -22,7 +22,7 @@
 <body>	
 
 	<header class="header">
-		<div class="wrapper">
+		<div class="header__top-wrapper">
 			<div class="row header__top">
 				<div class="col-4 col-tablet-12 col-xs-12">
 					<a href="index.html">
@@ -50,9 +50,15 @@
 					<a class="round-links__link" href="contacts-book.html">
 						Книга контактов
 					</a>
+					<button type="button" class="header__nav-toggle">			                    
+		                <span class="header__nav-toggle-bar"></span>
+		                <span class="header__nav-toggle-bar"></span>
+		                <span class="header__nav-toggle-bar"></span>		               
+		           	</button>
 				</div>
-			</div>		
-
+			</div>
+		</div>
+		<div class="header__nav-wrapper">					
 			<nav class="header__nav">
 				<ul class="header__nav-list">
 					<li class="header__nav-item">
@@ -80,7 +86,7 @@
 							<li class="header__sub-menu-item"><a href="question.html">вопросы и ответы</a></li>
 						</ul>
 					</li>					
-					<li class="header__nav-item"><a href="contacts.html">контакты</a></li>
+					<li class="header__nav-item item-active"><a href="contacts.html">контакты</a></li>
 				</ul>
 			</nav>		
 		</div>

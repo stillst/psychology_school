@@ -21,7 +21,7 @@
 <body>	
 
 	<header class="header">
-		<div class="wrapper">
+		<div class="header__top-wrapper">
 			<div class="row header__top">
 				<div class="col-4 col-tablet-12 col-xs-12">
 					<a href="index.html">
@@ -49,9 +49,15 @@
 					<a class="round-links__link" href="contacts-book.html">
 						Книга контактов
 					</a>
+					<button type="button" class="header__nav-toggle">			                    
+		                <span class="header__nav-toggle-bar"></span>
+		                <span class="header__nav-toggle-bar"></span>
+		                <span class="header__nav-toggle-bar"></span>		               
+		           	</button>
 				</div>
-			</div>		
-
+			</div>
+		</div>
+		<div class="header__nav-wrapper">					
 			<nav class="header__nav">
 				<ul class="header__nav-list">
 					<li class="header__nav-item">
@@ -62,12 +68,12 @@
 						</ul>
 					</li>						
 					<li class="header__nav-item"><a href="lectors.html">преподаватели</a></li>
-					<li class="header__nav-item">
+					<li class="header__nav-item item-active">
 						<a href="#">материалы</a>	
 						<ul class="header__sub-menu">
 							<li class="header__sub-menu-item"><a href="materials-prezentation.html">презентации</a></li>
 							<li class="header__sub-menu-item"><a href="materials-video.html">видео</a></li>
-							<li class="header__sub-menu-item"><a href="materials-journal.html">газета</a></li>
+							<li class="header__sub-menu-item item-active"><a href="materials-journal.html">газета</a></li>
 						</ul>					
 					</li>
 					<li class="header__nav-item"><a href="gallery-albums.html">галерея</a></li>
