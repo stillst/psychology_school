@@ -140,6 +140,33 @@
 
 .aplication
 {
+	&__line
+	{
+		margin:0 -80px;
+		font-size: 0;  
+		& [class^=col-]
+		{
+		   display: inline-block;
+		   vertical-align: top;  
+		   padding: 0 80px;
+		   font-size: @font-size-base;
+		}
+	}
+
+	&__sub-line
+	{
+		margin:0 -18px;
+		font-size: 0;  
+		min-height: 390px;
+		& [class^=col-]
+		{
+		   display: inline-block;
+		   vertical-align: middle;
+		   padding: 0 18px;
+		   font-size: @font-size-base;
+		}
+	}
+
 	margin-bottom: 125px;
 	&__class
 	{
@@ -153,10 +180,10 @@
 	&__option
 	{		
 		color: @blue-basic;
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: bold;
-		margin-bottom: 30px;
-		min-height: 65px;
+		margin-bottom: 20px;
+		min-height: 53px;
 	}
 
 	&__uni
@@ -164,6 +191,11 @@
 		color: @blue-basic;
 		margin-bottom: 30px;
 		font-weight: bold;
+	}
+
+	&__item
+	{
+		padding: 7px 0;
 	}
 
 	&__steps
@@ -187,7 +219,7 @@
 		&-step
 		{			
 			display: inline-block;
-			vertical-align: baseline;			
+			vertical-align: middle;			
 			
 			width: 30%;		
 			&--selection

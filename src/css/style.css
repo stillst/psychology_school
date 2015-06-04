@@ -1338,6 +1338,27 @@ This must be run when you have at least 2 sprites.
 .aplication {
   margin-bottom: 125px;
 }
+.aplication__line {
+  margin: 0 -80px;
+  font-size: 0;
+}
+.aplication__line [class^=col-] {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 80px;
+  font-size: 14px;
+}
+.aplication__sub-line {
+  margin: 0 -18px;
+  font-size: 0;
+  min-height: 390px;
+}
+.aplication__sub-line [class^=col-] {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 18px;
+  font-size: 14px;
+}
 .aplication__class {
   text-align: center;
   font-family: "Appetite";
@@ -1347,15 +1368,18 @@ This must be run when you have at least 2 sprites.
 }
 .aplication__option {
   color: #04a4e7;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 30px;
-  min-height: 65px;
+  margin-bottom: 20px;
+  min-height: 53px;
 }
 .aplication__uni {
   color: #04a4e7;
   margin-bottom: 30px;
   font-weight: bold;
+}
+.aplication__item {
+  padding: 7px 0;
 }
 .aplication__steps {
   margin-bottom: 60px;
@@ -1372,7 +1396,7 @@ This must be run when you have at least 2 sprites.
 }
 .aplication__steps-step {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 30%;
 }
 .aplication__steps-step--selection:before {
@@ -1846,9 +1870,14 @@ This must be run when you have at least 2 sprites.
   .aplication {
     margin-bottom: 0;
   }
-  .aplication__steps {
-    margin-bottom: 10px;
-    min-height: 180px;
+  .aplication__steps-txt {
+    width: 80%;
+  }
+  .aplication__steps-step {
+    width: 20%;
+  }
+  .aplication__sub-line {
+    min-height: 300px;
   }
   .contacts-book {
     margin-bottom: 60px;
