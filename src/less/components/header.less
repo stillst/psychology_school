@@ -116,6 +116,7 @@
             {
             	text-transform: uppercase;  					
 				font-size: 18px; 
+				padding: 10px 20px;
 				font-weight: 100;
 				color: @blue-basic;
 				font-family: "Appetite"; 	
@@ -131,6 +132,23 @@
 					color: @red-basic;					
 				}			               
             }    
+
+            &:first-child
+            {
+            	>a
+            	{
+            		padding-left: 0;	
+            	}
+            	
+            }
+
+            &:last-child
+            {
+            	>a
+            	{
+					padding-right: 0;
+            	}				
+            }
         }        
     }
 

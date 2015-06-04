@@ -798,6 +798,7 @@ This must be run when you have at least 2 sprites.
 .header__nav-item a {
   text-transform: uppercase;
   font-size: 18px;
+  padding: 10px 20px;
   font-weight: 100;
   color: #04a4e7;
   font-family: "Appetite";
@@ -809,6 +810,12 @@ This must be run when you have at least 2 sprites.
 }
 .header__nav-item a:hover {
   color: #fc5b5b;
+}
+.header__nav-item:first-child > a {
+  padding-left: 0;
+}
+.header__nav-item:last-child > a {
+  padding-right: 0;
 }
 .header__sub-menu {
   z-index: 2;
