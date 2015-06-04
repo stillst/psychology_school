@@ -304,9 +304,7 @@
 	</div>			
 	
 
-	<div class="map">
-		<script type="text/javascript" charset="utf-8" 
-		src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=2mjRup7qPEtZmd01l9_qlas9apYcpVOh"></script>
+	<div id="map" class="map">		
 	</div>
 
 	<footer class="footer">
@@ -337,6 +335,9 @@
 		</div>		
 	</footer>	
 
+	
+
+
 	<div class="popup">
 		<form class="popup__content" action="#">
 			<div class="popup__header clearfix">
@@ -349,10 +350,40 @@
 			<input type="submit" value="Отправить">
 		</form>
 	</div>
-
+	
 <script src="js/vendor.js"></script>
 
 <script src="js/script-index.js"></script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+
+<script type="text/javascript">
+        
+        ymaps.ready(init);
+        function init () 
+        {            
+		     var myMap = new ymaps.Map('map', 
+		     {
+                center: [60.17379876, 29.45355750],
+                zoom: 15
+		     });
+		    					    
+			myMap.controls.add(
+   				new ymaps.control.ZoomControl()
+			);			    				
+			myMap.balloon.open(				
+				[60.17379876, 29.45355750],
+				{
+        			contentHeader: "<span class='balloon__title'>База отдыха восток</span>",
+        			contentBody: "<span>Санкт-Петербург, Ленинградская область, пос. Смолячково, Приморское Шоссе д 704.</span>",
+        			contentFooter: "<a class='redlink' href='materials-prezentation.html'>Узнать как проехать</a>" 
+    			},
+    			{
+    				maxWidth:400
+    			}
+    		);						
+		}	      
+</script>
+
 </body>
 </html>
 

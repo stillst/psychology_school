@@ -240,6 +240,12 @@ p {
   text-transform: uppercase;
   padding: 100px 60px;
 }
+.balloon__title {
+  font-family: "Appetite";
+  color: #04a4e7;
+  font-size: 20px;
+  text-transform: uppercase;
+}
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
 
