@@ -701,6 +701,11 @@ This must be run when you have at least 2 sprites.
 .header {
   padding: 20px 0 5px 0;
 }
+.header__top-wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 980px;
+}
 .header__top {
   margin-bottom: 20px;
 }
@@ -819,6 +824,28 @@ This must be run when you have at least 2 sprites.
   vertical-align: middle;
   font-size: 14px;
   padding: 5px 31px;
+}
+.header__nav-toggle {
+  display: none;
+  margin-right: 15px;
+  padding: 10px 10px 7px 10px;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #fc5b5b;
+  outline: none;
+}
+.header__nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin-bottom: 3px;
+  border-radius: 1px;
+  background-color: #fc5b5b;
+}
+.header__nav-wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 980px;
 }
 .about__teaser p {
   font-size: 14px;
@@ -1711,7 +1738,8 @@ This must be run when you have at least 2 sprites.
     margin-bottom: 40px;
   }
   .header__nav {
-    width: 600px;
+    display: none;
+    width: 100%;
   }
   .header__nav-list {
     display: block;
@@ -1743,6 +1771,18 @@ This must be run when you have at least 2 sprites.
     width: 75%;
     font-size: 20px;
     font-family: "Appetite";
+  }
+  .header__top-wrapper {
+    width: 620px;
+  }
+  .header__nav-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .header__nav-toggle {
+    display: inline-block;
+    vertical-align: middle;
   }
   .infographics {
     padding: 0 0;
@@ -2016,11 +2056,12 @@ This must be run when you have at least 2 sprites.
   }
   .header .round-links__link {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+    float: left;
     margin-bottom: 10px;
   }
   .header__nav {
-    width: 330px;
+    width: 100%;
   }
   .header__nav-item {
     display: block;
@@ -2032,6 +2073,20 @@ This must be run when you have at least 2 sprites.
   }
   .header__sub-menu-item {
     border: 5px solid #04a4e7;
+  }
+  .header__top-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .header__nav-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .header__nav-toggle {
+    display: inline-block;
+    vertical-align: top;
   }
   .map {
     min-width: 350px;

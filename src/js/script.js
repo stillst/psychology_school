@@ -14,6 +14,16 @@ $(document).ready(function()
 	    });
 	});
 
+
+	//nav-toogle
+	$(function()
+	{
+	    $(document).on('click', '.header__nav-toggle', function()
+	    { 	    	
+	    	$('.header__nav').toggle(); 	    	                                                                 
+	    });
+	});
+
 	//search
 	$(function()
 	{
@@ -26,7 +36,7 @@ $(document).ready(function()
 	    	}
 	    	else
 	    	{
-				toggleWidth = "450px"
+				toggleWidth = "420px"
 	    	}
 	    	$('.js-search-form__open').css('z-index','0');
 	    	$('.js-search-form form').animate({ width: toggleWidth }); 	    		    	        			

@@ -161,7 +161,7 @@
 		{
 			display: inline-block;
 			vertical-align: top;
-
+			
 			&__input
 			{	
 				width: 100px;
@@ -171,13 +171,14 @@
 		.round-links__link
 		{
 			display: inline-block;
-			vertical-align: middle;	
+			vertical-align: top;	
+			float: left;
 			margin-bottom: 10px;		
 		}
 		
 		&__nav
 	    {      		   
-	    	width: @wrapper-width-mobile-correct; 	
+	    	width: 100%; 	
 	        &-item
 	        {               	
 	            display:block;
@@ -198,7 +199,27 @@
 					
 				}			
 			}
-	    }           	
+	    }    
+		
+		&__top-wrapper
+		{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+	    &__nav-wrapper
+	    {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+	    }
+
+        &__nav-toggle 	
+        {
+    		display: inline-block;	
+    		vertical-align: top;	    		
+		}       	
 	}
 
 	.map

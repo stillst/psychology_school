@@ -15,8 +15,8 @@
     }
 
     .generate-columns(12);
+	    
 
-	
 	/* ////////////////////*/
     /*    banner-small     */
     /* ////////////////////*/
@@ -53,6 +53,8 @@
 		}
 
     }
+	
+   
 
     .timer
     {
@@ -176,7 +178,8 @@
 
 		&__nav
 	    {    
-	    	width: @wrapper-width-tablet-correct; 
+	    	display: none;
+	    	width:  100%;
 	    	&-list 
 	    	{
 				display: block;
@@ -226,6 +229,24 @@
 
     		}        
     	}    
+
+		&__top-wrapper
+		{
+			width:  @wrapper-width-tablet;
+		}
+
+	    &__nav-wrapper
+	    {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+	    }
+
+        &__nav-toggle 	
+        {
+    		display: inline-block;	
+    		vertical-align: middle;	    		
+		}
 	}
 
     .infographics
