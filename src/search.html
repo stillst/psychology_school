@@ -90,18 +90,22 @@
 		</div>
 	</header>
 
-	<main class="not-found">
-		<div class="wrapper">
+	<main class="search">
+		<div class="wrapper">			
 			<h1 class="page-title">Результаты поиска</h1>
-			<div class="row">
-				<div class="col-6 col-xs-12  l-vim">					
-					<img src="img/404/404.png" alt="Ничего не найдено">
-				</div>
-				<div class="col-6 col-xs-12 l-vim">
-					<p>По вашему запросу ничего не найдено</p>
-					<a class="redlink" href="index.html">Перейти на главную страницу</a>
-				</div>
-			</div>
+			<form class="search__form clearfix" action="#">				
+				<input class="search__form-input" value="Ценные знания" name="search-query" type="text">
+				<input class="search__form-submit" name="search-submit" type="submit" value="Искать на сайте">											
+			</form>
+			<p class="search__total">Найдено <span class="search__total-number">3</span> результата</p>			
+			<dl class="search__result">
+			  	<dt>Из лекции федоровского о пользе знаний</dt>
+			    	<dd>...и вправду это особенно впечатляющие, я бы даже сказал <span class="search__phrase">ценные знания</span>, и все же, позвольте заметить, совершенно не 	стоящие моего внимания...</dd>
+			  	<dt>Из лекции федоровского о пользе знаний</dt>
+			    	<dd>...и вправду это особенно впечатляющие, я бы даже сказал <span class="search__phrase">ценные знания</span>, и все же, позвольте заметить, совершенно не 	стоящие моего внимания...</dd>
+			    <dt>Из лекции федоровского о пользе знаний</dt>
+			    	<dd>...и вправду это особенно впечатляющие, я бы даже сказал <span class="search__phrase">ценные знания</span>, и все же, позвольте заметить, совершенно не 	стоящие моего внимания...</dd>
+			</dl>					
 		</div>		
 	</main>
 	

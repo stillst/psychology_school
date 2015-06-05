@@ -85,6 +85,9 @@
 .row [class^=collist-]:last-child {
   padding-right: 0;
 }
+.container {
+  min-height: 840px;
+}
 .clearfix:after,
 .clearfix:before {
   content: "";
@@ -180,6 +183,63 @@ p {
 }
 .not-found .l-vim {
   vertical-align: middle;
+}
+.search {
+  min-height: 840px;
+}
+.search__form {
+  margin-bottom: 30px;
+}
+.search__form-input {
+  height: 40px;
+  border: 1px solid #04a4e7;
+  background: url("../img/search/search_blue.png") no-repeat 2% 50%;
+  padding-left: 40px;
+  color: #6b6b6b;
+  width: 700px;
+  float: left;
+  outline: none;
+}
+.search__form-submit {
+  font-family: "Appetite";
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  padding: 10px 50px;
+  background-color: #04a4e7;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  float: right;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+.search__form-submit:hover {
+  background-color: #52cbf9;
+}
+.search__total {
+  margin-bottom: 30px;
+}
+.search__result dt {
+  font-family: "Appetite";
+  color: #04a4e7;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.search__result dd {
+  color: #6b6b6b;
+  margin-bottom: 55px;
+}
+.search__phrase {
+  font-weight: bold;
 }
 /***************************
 ********Scafolding**********
@@ -391,14 +451,22 @@ This must be run when you have at least 2 sprites.
   border-radius: 50px;
   background-color: #fff;
   border: 2px solid #fc5b5b;
+  -webkit-transition: border 300ms linear;
+  -moz-transition: border 300ms linear;
+  -o-transition: border 300ms linear;
+  -ms-transition: border 300ms linear;
+  transition: border 300ms linear;
+}
+.js-search-form form:hover {
+  border: 2px solid #ed0404;
 }
 .js-search-form__open {
   display: inline-block;
   z-index: 2;
   vertical-align: middle;
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 0;
+  right: 0;
   text-align: center;
   height: 36px;
   width: 36px;
@@ -456,7 +524,7 @@ This must be run when you have at least 2 sprites.
   background-color: transparent;
   background: url('../img/header/search_grey.png') 0 50% no-repeat;
   font-size: 23px;
-  border-right: 2px solid #fff;
+  border-right: 2px solid #fc5b5b;
   outline: none;
 }
 .js-lector-form {
@@ -499,7 +567,7 @@ This must be run when you have at least 2 sprites.
 }
 /*======================================
   Selectric
-======================================*/
+  ======================================*/
 .selectric-wrapper {
   position: relative;
   cursor: pointer;
@@ -875,6 +943,9 @@ This must be run when you have at least 2 sprites.
 .header .item-active > a {
   color: #fc5b5b;
 }
+.about-committe {
+  min-height: 840px;
+}
 .about__teaser p {
   font-size: 14px;
   line-height: 20px;
@@ -974,7 +1045,7 @@ This must be run when you have at least 2 sprites.
   margin-bottom: 75px;
 }
 .information {
-  margin-bottom: 465px;
+  min-height: 840px;
 }
 .document {
   margin-bottom: 25px;
@@ -1046,7 +1117,7 @@ This must be run when you have at least 2 sprites.
   vertical-align: middle;
 }
 .contacts {
-  margin-bottom: 300px;
+  min-height: 840px;
 }
 .contacts__paragraph {
   margin-bottom: 35px;
@@ -1060,7 +1131,7 @@ This must be run when you have at least 2 sprites.
   overflow: hidden;
 }
 .contacts-book {
-  margin-bottom: 580px;
+  min-height: 840px;
 }
 .contacts-book__tizer {
   font-size: 18px;
@@ -1980,6 +2051,19 @@ This must be run when you have at least 2 sprites.
   .not-found .l-vim {
     vertical-align: top;
   }
+  .search {
+    text-align: center;
+  }
+  .search__form-input {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .search__form-submit {
+    display: inline-block;
+    float: none;
+  }
 }
 @media (max-width: 640px) {
   .wrapper {
@@ -2381,5 +2465,16 @@ This must be run when you have at least 2 sprites.
   .not-found img {
     max-width: 200px;
     max-height: 280px;
+  }
+  .search__form-input {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .search__form-submit {
+    display: block;
+    float: none;
+    width: 100%;
   }
 }
