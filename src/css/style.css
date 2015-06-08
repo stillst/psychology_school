@@ -318,11 +318,25 @@ p {
   text-transform: uppercase;
   padding: 100px 60px;
 }
-.balloon__title {
+.balloon__header {
   font-family: "Appetite";
   color: #04a4e7;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-bottom: 10px;
+}
+.balloon__body {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+}
+.balloon__footer {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
@@ -595,6 +609,8 @@ This must be run when you have at least 2 sprites.
   color: #444;
   min-height: 18px;
   color: #6b6b6b;
+  text-align: left;
+  padding-left: 8px;
 }
 .selectric .button {
   display: block;
@@ -687,6 +703,7 @@ This must be run when you have at least 2 sprites.
 .selectric-items .selectric-scroll {
   height: 100%;
   overflow: auto;
+  text-align: left;
 }
 .selectric-items:before,
 .selectric-items:after {
@@ -916,6 +933,7 @@ This must be run when you have at least 2 sprites.
   overflow: hidden;
   display: none;
   background: #fff;
+  text-align: left;
 }
 .header__sub-menu-item a {
   display: inline-block;
@@ -1122,7 +1140,7 @@ This must be run when you have at least 2 sprites.
   vertical-align: middle;
 }
 .contacts {
-  min-height: 840px;
+  min-height: 500px;
 }
 .contacts__paragraph {
   margin-bottom: 35px;
@@ -1230,7 +1248,7 @@ This must be run when you have at least 2 sprites.
   display: none;
 }
 .banner {
-  background-image: url(../img/banner/background_banner.jpg);
+  background-image: url(../img/banner/background.jpg);
   background-size: cover;
   min-height: 420px;
   min-width: 960px;
@@ -1891,6 +1909,7 @@ This must be run when you have at least 2 sprites.
   }
   .header__sub-menu {
     position: static;
+    text-align: center;
     padding-top: 0;
   }
   .header__sub-menu-item {
@@ -2224,6 +2243,7 @@ This must be run when you have at least 2 sprites.
   }
   .header__sub-menu {
     position: static;
+    text-align: center;
   }
   .header__sub-menu-item {
     border: 5px solid #04a4e7;
