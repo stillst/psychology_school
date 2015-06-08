@@ -1289,6 +1289,7 @@ This must be run when you have at least 2 sprites.
   font-size: 16px;
   color: #fff;
   line-height: 24px;
+  text-shadow: 1px 1px 2px black, 0 0 1em #b9e5f9;
 }
 .programm__img {
   max-width: 120px;
@@ -1859,11 +1860,16 @@ This must be run when you have at least 2 sprites.
     width: 250px;
   }
   .header .round-links__link {
+    float: right;
+    margin: 0 10px 10px 0;
+  }
+  .header__nav-toggle {
+    display: inline-block;
+    vertical-align: middle;
     float: left;
-    margin: 0 0 10px 10px;
   }
   .header__top {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .header__nav {
     display: none;
@@ -1895,10 +1901,7 @@ This must be run when you have at least 2 sprites.
   }
   .header .logo__title {
     vertical-align: top;
-    font-weight: bold;
-    width: 75%;
-    font-size: 20px;
-    font-family: "Appetite";
+    width: 120px;
   }
   .header__top-wrapper {
     width: 620px;
@@ -1907,10 +1910,6 @@ This must be run when you have at least 2 sprites.
     margin: 0;
     padding: 0;
     width: 100%;
-  }
-  .header__nav-toggle {
-    display: inline-block;
-    vertical-align: middle;
   }
   .infographics {
     padding: 0 0;
@@ -2193,7 +2192,7 @@ This must be run when you have at least 2 sprites.
     padding: 0;
   }
   .header .logo__title {
-    width: 65%;
+    width: 120px;
     margin-bottom: 10px;
   }
   .header .js-search-form {
@@ -2201,13 +2200,18 @@ This must be run when you have at least 2 sprites.
     vertical-align: top;
   }
   .header .js-search-form__input {
-    width: 100px;
+    width: 60px;
   }
   .header .round-links__link {
     display: inline-block;
     vertical-align: top;
-    float: left;
+    float: right;
     margin-bottom: 10px;
+  }
+  .header__nav-toggle {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
   }
   .header__nav {
     width: 100%;
@@ -2233,10 +2237,6 @@ This must be run when you have at least 2 sprites.
     margin: 0;
     padding: 0;
     width: 100%;
-  }
-  .header__nav-toggle {
-    display: inline-block;
-    vertical-align: top;
   }
   .map {
     min-width: 350px;

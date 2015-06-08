@@ -29,10 +29,10 @@ $(document).ready(function()
 	{
 	    $(document).on('click', '.js-search-form__open', function()
 	    { 
-	    	var toggleWidth = "290px";
+	    	var toggleWidth = "155px";
 	    	if ($(window).width() <= '640')
 	    	{
-	    		toggleWidth = "210px"
+	    		toggleWidth = "155px"
 	    	}
 	    	else
 	    	{
