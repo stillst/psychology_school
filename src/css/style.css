@@ -144,6 +144,7 @@ p {
 .page-nav__link {
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
   margin-right: 50px;
 }
 .page-nav__link a {
@@ -162,6 +163,12 @@ p {
 }
 .page-nav__link--active:hover a {
   color: #fc5b5b;
+}
+.page-content__item {
+  display: none;
+}
+.page-content__item--active {
+  display: block;
 }
 .redlink {
   color: #fc5b5b;
@@ -1585,14 +1592,8 @@ This must be run when you have at least 2 sprites.
   display: inline-block;
   vertical-align: middle;
 }
-.materials-journal {
-  margin-bottom: 220px;
-}
-.materials-presentation {
-  margin-bottom: 50px;
-}
-.documents {
-  margin-bottom: 50px;
+.materials {
+  min-height: 580px;
 }
 .footer .copy {
   padding: 30px 0;

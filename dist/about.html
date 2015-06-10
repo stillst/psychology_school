@@ -54,20 +54,20 @@
 		<div class="header__nav-wrapper">					
 			<nav class="header__nav">
 				<ul class="header__nav-list">
-					<li class="header__nav-item item-active">
+					<li class="header__nav-item">
 						<a href="#">о нас</a>
 						<ul class="header__sub-menu">
-							<li class="header__sub-menu-item item-active"><a href="about.html">о школе</a></li>
-							<li class="header__sub-menu-item"><a href="about-committe.html">организационный комитет</a></li>
+							<li class="header__sub-menu-item"><a id="link_about-school" href="about.html#school">о школе</a></li>
+							<li class="header__sub-menu-item"><a id="link_about-us" href="about.html#us">организационный комитет</a></li>
 						</ul>
 					</li>						
 					<li class="header__nav-item"><a href="lectors.html">преподаватели</a></li>
 					<li class="header__nav-item">
 						<a href="#">материалы</a>	
 						<ul class="header__sub-menu">
-							<li class="header__sub-menu-item"><a href="materials-prezentation.html">презентации</a></li>
-							<li class="header__sub-menu-item"><a href="materials-video.html">видео</a></li>
-							<li class="header__sub-menu-item"><a href="materials-journal.html">газета</a></li>
+							<li class="header__sub-menu-item"><a id="link_materials-presentation" href="materials.html#presentation">презентации</a></li>
+							<li class="header__sub-menu-item"><a id="link_materials-video" href="materials.html#video">видео</a></li>
+							<li class="header__sub-menu-item"><a id="link_materials-journal" href="materials.html#journal">газета</a></li>
 						</ul>					
 					</li>
 					<li class="header__nav-item"><a href="gallery-albums.html">галерея</a></li>
@@ -88,86 +88,180 @@
 		<div class="wrapper">
 			<h1 class="page-title">о нас</h1>
 			<ul class="page-nav">
-				<li class="page-nav__link page-nav__link--active"><a href="about.html">О школе</a></li>
-				<li class="page-nav__link"><a href="about-committe.html">Организационный комитет</a></li>
+				<li class="page-nav__link page-nav__link--active"><a href="about.html#school">О школе</a></li>
+				<li class="page-nav__link"><a href="about.html#us">Организационный комитет</a></li>
 			</ul>
-			<div class="about__teaser">
-				<p>
-					Зимняя Психологическая Школа СПбГУ собирает каждый год более 250 человек, среди них студенты, аспиранты, молодые ученые, практикующие специалисты, преподаватели и ведущие ученые из различных городов России, стран СНГ и дальнего зарубежья.
-				</p>
-				<p>
-					<span class="about__caption">Цель Школы: </span>Создание профессионального сообщества молодых специалистов-психологов для научного и практического сотрудничества.
-				</p>
-				
-				<span class="about__caption">Задачи Школы:</span>
-				<ol class="about__goals">
-					<li class="about__goals-goal">обсуждение актуальных проблем психологической теории и практики;</li>
-					<li class="about__goals-goal">знакомство с новыми разработками различных психологических школ;</li>
-					<li class="about__goals-goal">обсуждение перспектив психологического образования;</li>
-					<li class="about__goals-goal">приобретение нового профессионального опыта.</li>
-				</ol>
-													
-			</div>
-
-			<div class="row infographics">
-				<div class="col-4 col-xs-12">
-					<img  class="infographics__img" src="img/about/project.png" alt="Проекты">		
-					<span class="infographics__num">
-						70+ 
-					</span>
-					<span class="infographics__txt">
-						проектов 
-					</span>					
-				</div>
-				<div class="col-4 col-xs-12">
-					<img  class="infographics__img" src="img/about/academic.png" alt="Образовательные программы"> 
-					<span class="infographics__num">
-						6+ 
-					</span>
-					<span class="infographics__txt">
-						краткосрочных образовательных программ
-					</span>
-				</div>
-				<div class="col-4 col-xs-12">
-					<img  class="infographics__img" src="img/about/book.png" alt="Лекции"> 
-					<span class="infographics__num">
-						350+ 
-					</span>
-					<span class="infographics__txt">
-						часов лекций
-					</span>
-				</div>
-			</div>
-			
-			<ul class="articles">
-				<li>				
-					<div class="articles__img">
-						<img src="img/articles/1.jpg" alt="ЗОЛОТАЯ ПСИХЕЯ 2002">
-					</div>						
-					<p>
-						В 2002 году в номинации «Лучший проект в области интеграции психологов в единое профессиональное сообщество» проект ЗПШ СПбГУ-2002 получил звание лауреата национального психологического конкурса «ЗОЛОТАЯ ПСИХЕЯ».
-					</p>
-				</li>
-
-				<li>					
-					<div class="articles__img">
-						<img src="img/articles/2.jpg" alt="ЗОЛОТАЯ ПСИХЕЯ 2007">
+			<ul class="page-content">
+				<li class="page-content__item page-content__item--active">
+					<div class="about__teaser">
+						<p>
+							Зимняя Психологическая Школа СПбГУ собирает каждый год более 250 человек, среди них студенты, аспиранты, молодые ученые, практикующие специалисты, преподаватели и ведущие ученые из различных городов России, стран СНГ и дальнего зарубежья.
+						</p>
+						<p>
+							<span class="about__caption">Цель Школы: </span>Создание профессионального сообщества молодых специалистов-психологов для научного и практического сотрудничества.
+						</p>
+						
+						<span class="about__caption">Задачи Школы:</span>
+						<ol class="about__goals">
+							<li class="about__goals-goal">обсуждение актуальных проблем психологической теории и практики;</li>
+							<li class="about__goals-goal">знакомство с новыми разработками различных психологических школ;</li>
+							<li class="about__goals-goal">обсуждение перспектив психологического образования;</li>
+							<li class="about__goals-goal">приобретение нового профессионального опыта.</li>
+						</ol>
+															
 					</div>
-					<p>
-						В 2007 в номинации «Коллективный вклад в становление единого профессионального психологического сообщества» проект ЗПШ СПбГУ-2006 получил звание победителя национального профессионального психологического конкурса «ЗОЛОТАЯ ПСИХЕЯ».
-					</p>					
-				</li>
-							
-				<li>					
-					<div class="articles__img">
-						<img src="img/articles/1.jpg" alt="ЗОЛОТАЯ ПСИХЕЯ 2002">
-					</div>
-					<p>
-						В 2002 году в номинации «Лучший проект в области интеграции психологов в единое профессиональное сообщество» проект ЗПШ СПбГУ-2002 получил звание лауреата национального психологического конкурса «ЗОЛОТАЯ ПСИХЕЯ».
-					</p>					
-				</li>
-			</ul>
 
+					<div class="row infographics">
+						<div class="col-4 col-xs-12">
+							<img  class="infographics__img" src="img/about/project.png" alt="Проекты">		
+							<span class="infographics__num">
+								70+ 
+							</span>
+							<span class="infographics__txt">
+								проектов 
+							</span>					
+						</div>
+						<div class="col-4 col-xs-12">
+							<img  class="infographics__img" src="img/about/academic.png" alt="Образовательные программы"> 
+							<span class="infographics__num">
+								6+ 
+							</span>
+							<span class="infographics__txt">
+								краткосрочных образовательных программ
+							</span>
+						</div>
+						<div class="col-4 col-xs-12">
+							<img  class="infographics__img" src="img/about/book.png" alt="Лекции"> 
+							<span class="infographics__num">
+								350+ 
+							</span>
+							<span class="infographics__txt">
+								часов лекций
+							</span>
+						</div>
+					</div>
+					
+					<ul class="articles">
+						<li>				
+							<div class="articles__img">
+								<img src="img/articles/1.jpg" alt="ЗОЛОТАЯ ПСИХЕЯ 2002">
+							</div>						
+							<p>
+								В 2002 году в номинации «Лучший проект в области интеграции психологов в единое профессиональное сообщество» проект ЗПШ СПбГУ-2002 получил звание лауреата национального психологического конкурса «ЗОЛОТАЯ ПСИХЕЯ».
+							</p>
+						</li>
+
+						<li>					
+							<div class="articles__img">
+								<img src="img/articles/2.jpg" alt="ЗОЛОТАЯ ПСИХЕЯ 2007">
+							</div>
+							<p>
+								В 2007 в номинации «Коллективный вклад в становление единого профессионального психологического сообщества» проект ЗПШ СПбГУ-2006 получил звание победителя национального профессионального психологического конкурса «ЗОЛОТАЯ ПСИХЕЯ».
+							</p>					
+						</li>
+									
+						<li>					
+							<div class="articles__img">
+								<img src="img/articles/1.jpg" alt="ЗОЛОТАЯ ПСИХЕЯ 2002">
+							</div>
+							<p>
+								В 2002 году в номинации «Лучший проект в области интеграции психологов в единое профессиональное сообщество» проект ЗПШ СПбГУ-2002 получил звание лауреата национального психологического конкурса «ЗОЛОТАЯ ПСИХЕЯ».
+							</p>					
+						</li>
+					</ul>
+				</li>
+				<li class="page-content__item">
+					<div class="line">
+
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/1.jpg" alt="Айдар Хисамов">
+							</div>					
+							<span class="person__name">Айдар Хисамов</span>
+							<span class="person__profession">Обеспечение</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/2.jpg" alt="Александр Одайник">
+							</div>
+							<span class="person__name">Александр Одайник</span>
+							<span class="person__profession">IT-отдел</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/3.jpg" alt="Александр Смирнов">
+							</div>
+							<span class="person__name">Александр Смирнов</span>
+							<span class="person__profession">Руководитель IT-отдела</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/4.jpg" alt="Алина Силина">
+							</div>
+							<span class="person__name">Алина Силина</span>
+							<span class="person__profession">Руководитель отдела PR, ответственная за обратную связь</span>
+						</div>
+
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/1.jpg" alt="Айдар Хисамов">
+							</div>
+							<span class="person__name">Айдар Хисамов</span>
+							<span class="person__profession">Обеспечение</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/2.jpg" alt="Александр Одайник">
+							</div>
+							<span class="person__name">Александр Одайник</span>
+							<span class="person__profession">IT-отдел</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/3.jpg" alt="Александр Смирнов">
+							</div>
+							<span class="person__name">Александр Смирнов</span>
+							<span class="person__profession">Руководитель IT-отдела</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/4.jpg" alt="Алина Силина" >
+							</div>
+							<span class="person__name">Алина Силина</span>
+							<span class="person__profession">Руководитель отдела PR, ответственная за обратную связь</span>
+						</div>
+
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/1.jpg" alt="Айдар Хисамов" >
+							</div>
+							<span class="person__name">Айдар Хисамов</span>
+							<span class="person__profession">Обеспечение</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/2.jpg" alt="Александр Одайник" >
+							</div>
+							<span class="person__name">Александр Одайник</span>
+							<span class="person__profession">IT-отдел</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/3.jpg" alt="Александр Смирнов" >
+							</div>
+							<span class="person__name">Александр Смирнов</span>
+							<span class="person__profession">Руководитель IT-отдела</span>
+						</div>
+						<div class="col-3 col-tablet-6 col-xs-12 person">
+							<div class="person__img">
+								<img src="img/persons/4.jpg" alt="Алина Силина" >
+							</div>
+							<span class="person__name">Алина Силина</span>
+							<span class="person__profession">Руководитель отдела PR, ответственная за обратную связь</span>
+						</div>
+					</div>	
+				</li>
+			</ul>					
 		</div>		
 	</main>
 	

@@ -57,6 +57,7 @@ p
 		{
 			display: inline-block;
 			vertical-align: middle;
+			cursor: pointer;
 			a
 			{
 				font-size: 18px;				
@@ -82,6 +83,15 @@ p
 				}
 			}
 		}
+	}
+
+	&-content__item
+	{
+		display: none;
+		&--active
+		{
+			display: block;
+		}	
 	}
 }
 

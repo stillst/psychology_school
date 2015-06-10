@@ -1,5 +1,6 @@
 $(document).ready(function()
 {
+
 	//sub-menu
 	$(function()
 	{
@@ -73,5 +74,78 @@ $(document).ready(function()
 	    		$(this).addClass("questions__question--active");
 	    	}
 	    });	
+	});	
+
+	//tabs
+	$(function()
+	{
+	    $(document).on('click', '.page-nav__link', function()
+	    { 	    	
+	    	var index = $(this).index();            
+	        $(".page-nav__link--active").removeClass("page-nav__link--active");   
+	        $(".page-content__item--active").removeClass("page-content__item--active");       
+	        $(this).addClass("page-nav__link--active");                       	              
+	        $(".page-content__item").eq(index).addClass("page-content__item--active");
+	    });	
+	});	
+
+	//link to correct tab from nav
+	$(function()		
+	{	
+		url = window.location.href;
+		var hash_tag_index = url.indexOf('#');
+		if(hash_tag_index > 0)
+		{
+			var active_tab = url.substring(hash_tag_index);	
+			switch (active_tab) 
+			{				
+				case "#presentation":			
+				case "#school":								
+			   		break;
+
+		   		case "#video":	
+		   		case "#us":		
+		   			$(".page-nav__link--active").removeClass("page-nav__link--active");   
+	        		$(".page-content__item--active").removeClass("page-content__item--active"); 
+	        		$(".page-content__item").eq(1).addClass("page-content__item--active");
+	        		$(".page-nav__link").eq(1).addClass("page-nav__link--active");
+		   	   		break;
+			   	
+			    case "#journal":				   		
+			   		$(".page-nav__link--active").removeClass("page-nav__link--active");   
+	        		$(".page-content__item--active").removeClass("page-content__item--active"); 
+	        		$(".page-content__item").eq(2).addClass("page-content__item--active");
+	        		$(".page-nav__link").eq(2).addClass("page-nav__link--active");
+			   		break;
+			}		
+		}
+
+
+		$(function()
+		{
+		    $(document).on('click', '#link_about-school, #link_materials-presentation', function()
+		    { 	    	
+		    	$(".page-nav__link--active").removeClass("page-nav__link--active");   
+        		$(".page-content__item--active").removeClass("page-content__item--active"); 
+        		$(".page-content__item").eq(0).addClass("page-content__item--active");
+        		$(".page-nav__link").eq(0).addClass("page-nav__link--active");
+		    });	
+
+		    $(document).on('click', '#link_about-us, #link_materials-video', function()
+		    { 	    	
+		    	$(".page-nav__link--active").removeClass("page-nav__link--active");   
+        		$(".page-content__item--active").removeClass("page-content__item--active"); 
+        		$(".page-content__item").eq(1).addClass("page-content__item--active");
+        		$(".page-nav__link").eq(1).addClass("page-nav__link--active");
+		    });	
+
+		    $(document).on('click', '#link_materials-journal', function()
+		    { 	    	
+		    	$(".page-nav__link--active").removeClass("page-nav__link--active");   
+        		$(".page-content__item--active").removeClass("page-content__item--active"); 
+        		$(".page-content__item").eq(2).addClass("page-content__item--active");
+        		$(".page-nav__link").eq(2).addClass("page-nav__link--active");
+		    });	
+		});	   
 	});		
 }); 
