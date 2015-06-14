@@ -1,18 +1,16 @@
-$(document).ready(function()
-{
+$(document).ready(function() {
 
 	//sub-menu
-	$(function()
-	{
-	    $(document).on('mouseenter', '.header__nav-item', function()
-	    { 	    	
-	    	$(this).children('.header__sub-menu').slideDown(); 	    	                                                                 
-	    });
-
-	    $(document).on('mouseleave', '.header__nav-item', function()
-	    { 
-	    	$(this).children('.header__sub-menu').slideUp(); 	                                                                  
-	    });
+	$(".header__nav-item").mouseenter(function(){
+	    clearTimeout($(this).data('timeoutId'));
+	    $(this).find(".header__sub-menu").slideDown();
+	}).mouseleave(function(){
+	    var navItem = $(this),
+	        timeoutId = setTimeout(function(){
+	            navItem.find(".header__sub-menu").slideUp();
+	        }, 350);    
+	        //console.log(timeoutId);
+	    navItem.data('timeoutId', timeoutId); 
 	});
 
 
@@ -54,10 +52,19 @@ $(document).ready(function()
 	//popup
 	$(function()
 	{
-	    $(document).on('click', '.round-links__link--msg, .popup__close', function()
+	    $(document).on('click', '.round-links__link--msg, .popup form > div > div', function()
 	    { 	    	
 	    	$(".popup").slideToggle("fast");                                                                    
 	    });	
+
+	    $(document).on('click', '.popup', function()
+	    { 	    	
+	    	if (!$('.popup form').is(':hover')){
+	    		$(".popup").slideToggle("fast");                                                                    	
+	    	}
+	    	
+	    });	
+
 	});	
 
 	//questions carusel

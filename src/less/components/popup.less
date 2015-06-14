@@ -9,7 +9,7 @@
     top:0px;
     z-index: 5;
 
-    &__content
+    form
     {
         width:@wrapper-popup;
         padding:20px;
@@ -22,40 +22,52 @@
         -webkit-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-    }
 
-    &__header
-    {
-        margin-bottom: 20px;
-        .popup__title
+
+        & > div
         {
-            float: left;
-            color: @blue-basic;
-            font-size: 24px;
-            font-family: "Appetite"; 
-            text-transform: uppercase;
-        }
-
-        .popup__close
-        {
-
-            float: right;
-            height: 20px;
-            width: 20px;
-            text-align: right;
-            position: relative;
-            cursor: pointer;
-            &:before
+            margin-bottom: 20px;
+            & > span
             {
-                .sprite(@close);     
-                position: absolute;
-                top:30%;
-                right: 0;
+                float: left;
+                color: @blue-basic;
+                font-size: 24px;
+                font-family: "Appetite"; 
+                text-transform: uppercase;
             }
+
+            & > div
+            {
+
+                float: right;
+                height: 20px;
+                width: 20px;
+                text-align: right;
+                position: relative;
+                cursor: pointer;
+                &:before
+                {
+                    .sprite(@close);     
+                    position: absolute;
+                    top:30%;
+                    right: 0;
+                }
+            }
+
+            &:after, &:before 
+            {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
         }
+
     }
+
     
-    input[type=text], input[type=tel]
+    
+    input[type=text], input[type=email]
     {
         margin-bottom: 25px;
         height: 50px;

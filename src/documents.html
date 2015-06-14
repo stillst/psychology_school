@@ -98,37 +98,38 @@
 				<p class="document__title">					
 					Здесь название документа, в котором содержится важная информация, необходимая всем участникам
 				</p>
-				<div class="document__links">
-					<div class="document__link document__link--pdf">
-						<a class="redlink" href="#">
+				<a class="document__links" href="#">				
+					<div class="document__link">
+						<img src="../img/documents/document-pdf.png" alt="">
+						<span class="redlink" href="#">
 							Скачать
-						</a>						
-					</div>					
-				</div>
+						</span>	
+					</div>						
+				</a>									
 			</div>
 			<div class="document">
 				<p class="document__title">					
 					Здесь название документа, в котором содержится важная информация, необходимая всем участникам
 				</p>
-				<ul class="document__links">
-					<li class="document__link document__link--doc">
-						<a class="redlink" href="#">
+				<a class="document__link" href="#">
+					<div class="document__link">
+						<img src="../img/documents/document-doc.png" alt="">
+						<span class="redlink" href="#">
 							Скачать
-						</a>	
-					</li>
-				</ul>
+						</span>	
+					</div>	
+				</a>
 			</div>
 			<div class="document">
 				<p class="document__title">					
 					Здесь название документа, в котором содержится важная информация, необходимая всем участникам
 				</p>
-				<ul class="document__links">
-					<li class="document__link document__link--xlsx">
-						<a class="redlink" href="#">
-							Скачать
-						</a>	
-					</li>
-				</ul>
+				<a class="document__link" href="#">
+					<img src="../img/documents/document-xlsx.png" alt="">
+					<span class="redlink" href="#">
+						Скачать
+					</span>	
+				</a>
 			</div>
 		</div>		
 	</main>
@@ -162,13 +163,13 @@
 	</footer>	
 
 	<div class="popup">
-		<form class="popup__content" action="#">
-			<div class="popup__header clearfix">
-				<span class="popup__title">написать нам</span>
-				<div class="popup__close"></div>	    		
+		<form action="#">
+			<div>
+				<span>написать нам</span>
+				<div></div>	    		
 			</div>		        	        
 			<input type="text" placeholder="Имя" required="required">
-			<input type="tel" placeholder="Телефон +7(921)212-85-06" required="required" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+			<input type="email" placeholder="Адрес электронной почты" required="required">
 			<textarea rows="10" placeholder="Вопрос" required="required"></textarea>
 			<input type="submit" value="Отправить">
 		</form>
