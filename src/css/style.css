@@ -981,21 +981,21 @@ This must be run when you have at least 2 sprites.
   line-height: 20px;
   margin-bottom: 35px;
 }
-.about__teaser .about__caption {
+.about__teaser span {
   color: #04a4e7;
   font-size: 20px;
 }
-.about__goals {
+.about ol {
   list-style-type: none;
   counter-reset: item;
   margin-bottom: 35px;
 }
-.about__goals-goal {
+.about ol li {
   font-size: 14px;
   line-height: 24px;
   color: #6b6b6b;
 }
-.about__goals-goal:before {
+.about ol li:before {
   content: counter(item) ') ';
   counter-increment: item;
 }
@@ -1021,7 +1021,8 @@ This must be run when you have at least 2 sprites.
   margin-bottom: 30px;
 }
 .infographics {
-  padding: 0 200px;
+  width: 620px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 45px;
 }
@@ -1041,6 +1042,9 @@ This must be run when you have at least 2 sprites.
   font-family: "Appetite";
   font-size: 18px;
   color: #04a4e7;
+}
+.infographics [class^=col-] {
+  padding: 0 5px;
 }
 .galery .album {
   margin-bottom: 35px;
@@ -1210,14 +1214,11 @@ This must be run when you have at least 2 sprites.
   vertical-align: top;
   margin-bottom: 70px;
 }
-.articles li .articles__img {
+.articles li img {
+  width: 35%;
   display: inline-block;
   vertical-align: middle;
   padding-right: 10px;
-  width: 35%;
-}
-.articles li .articles__img img {
-  width: 100%;
 }
 .articles li p {
   display: inline-block;
@@ -1903,7 +1904,8 @@ This must be run when you have at least 2 sprites.
   }
   .header__nav {
     display: none;
-    width: 100%;
+    width: 620px;
+    margin: 0 auto;
   }
   .header__nav-list {
     display: block;
@@ -1913,20 +1915,18 @@ This must be run when you have at least 2 sprites.
     text-align: center;
     border: 1px solid #04a4e7;
   }
-  .header__nav-item:first-child {
-    text-align: center;
-  }
-  .header__nav-item:last-child {
-    text-align: center;
-  }
   .header__sub-menu {
     position: static;
     padding: 0;
     text-align: center;
     padding-top: 0;
+    background-color: #e0e0e0;
   }
   .header__sub-menu-item {
     border: 1px solid #04a4e7;
+  }
+  .header__sub-menu-item a {
+    font-size: 10px;
   }
   .header .logo__img {
     margin-bottom: 10px;
@@ -2246,7 +2246,8 @@ This must be run when you have at least 2 sprites.
     float: left;
   }
   .header__nav {
-    width: 100%;
+    width: 350px;
+    margin: 0 auto;
     display: none;
   }
   .header__nav-item {
@@ -2258,9 +2259,13 @@ This must be run when you have at least 2 sprites.
     position: static;
     padding: 0;
     text-align: center;
+    background-color: #e0e0e0;
   }
   .header__sub-menu-item {
     border: 1px solid #04a4e7;
+  }
+  .header__sub-menu-item a {
+    font-size: 10px;
   }
   .header__top-wrapper {
     margin: 0;
@@ -2308,11 +2313,7 @@ This must be run when you have at least 2 sprites.
     padding: 0 0;
     text-align: center;
     margin-bottom: 25px;
-  }
-  .infographics__img {
-    margin-bottom: 25px;
-    max-height: 115px;
-    max-width: 140px;
+    width: 330px;
   }
   .infographics__txt {
     margin-bottom: 20px;

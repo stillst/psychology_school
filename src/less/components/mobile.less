@@ -185,7 +185,8 @@
 		
 		&__nav
 	    {      		   
-	    	width: 100%; 	
+	    	width: @wrapper-width-mobile; 	
+	    	margin: 0 auto;
 	    	display: none;
 	        &-item
 	        {               	
@@ -200,9 +201,14 @@
 	    	position: static;
 	    	padding: 0;
 	    	text-align: center;
+	    	background-color: @grey-special;	
 			&-item
 			{
 				border: 1px solid @blue-basic;							
+	            a
+	            {
+					font-size: 10px;											
+	            }		
 			}
 	    }    
 		
@@ -282,18 +288,10 @@
 		padding: 0 0;
 		text-align: center;
 		margin-bottom: 25px;
-
-		&__img
-		{
-			margin-bottom: 25px;
-			max-height: 115px;
-			max-width: 140px;
-		}
-
+		width: @wrapper-width-mobile-correct;
 		&__txt
 		{
 			margin-bottom: 20px;
-
 		}
 
 		&.row [class^=col-]

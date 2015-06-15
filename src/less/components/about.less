@@ -14,19 +14,19 @@
   			margin-bottom: 35px;
 		}
 
-		.about__caption
+		span
 		{
 			color:@blue-basic;
 			font-size: 20px;
 		}
 	}
 
-	&__goals
+	ol
 	{
 		list-style-type: none; 
 		counter-reset: item; 
 		margin-bottom: 35px;
-		&-goal
+		li
 		{
 			font-size: 14px;			
 			line-height: 24px;			
@@ -74,17 +74,18 @@
 
 .infographics
 {
-	padding: 0 200px;
+	width: 620px;
+	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 45px;
-
+	
 	&__img
 	{
 		margin-bottom: 25px;
 		max-height: 115px;
 		max-width: 140px;
 	}
-
+		
 	&__num
 	{
 		display: block;
@@ -100,4 +101,10 @@
 		font-size: 18px;
 		color: @blue-basic;
 	}
+
+	& [class^=col-]
+	{
+	  padding: 0 5px;
+	}
+
 }

@@ -186,7 +186,8 @@
 		&__nav
 	    {    
 	    	display: none;
-	    	width:  100%;
+	    	width:  @wrapper-width-tablet;
+			margin: 0 auto;
 	    	&-list 
 	    	{
 				display: block;
@@ -195,18 +196,9 @@
 	        {               		              
 	            display: block;	            
 	            text-align: center;	
-	            border: 1px solid @blue-basic;												
+	            border: 1px solid @blue-basic;		            	            
 	        }        
 
-	        &-item:first-child
-	        {               		              	            				
-	            text-align: center;								
-	        } 
-
-	        &-item:last-child
-	        {               		              	            				
-	            text-align: center;								
-	        }   
 	    }
 
 		&__sub-menu
@@ -214,10 +206,15 @@
 	    	position: static;
 	    	padding: 0;
 	    	text-align: center;
-	    	padding-top: 0;				
+	    	padding-top: 0;	
+	    	background-color: @grey-special;			
 			&-item
 	        {               		              	            				
-	            border: 1px solid @blue-basic;							
+	            border: 1px solid @blue-basic;					
+	            a
+	            {
+					font-size: 10px;											
+	            }		
 	        }   
 	    }       
 
