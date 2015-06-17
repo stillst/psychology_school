@@ -1805,27 +1805,27 @@ This must be run when you have at least 2 sprites.
   /* ////////////////////*/
   /*    banner-small     */
   /* ////////////////////*/
-  .banner {
+  .wall {
     background-position: 850px 0px;
     min-height: 300px;
     min-width: 600px;
     text-align: center;
   }
-  .banner__title {
+  .wall__title {
     font-size: 25px;
     padding: 0 20px;
   }
-  .banner__title span {
+  .wall__title span {
     font-size: 35px;
   }
-  .banner__info {
+  .wall__info {
     font-size: 15px;
   }
-  .banner .btn-info {
+  .wall .btn-info {
     text-align: center;
     margin-bottom: 40px;
   }
-  .banner__dates {
+  .wall__dates {
     padding: 0 20px;
   }
   .timer {
@@ -2280,27 +2280,27 @@ This must be run when you have at least 2 sprites.
   .map {
     min-width: 350px;
   }
-  .banner {
+  .wall {
     background-position: 850px 0px;
     min-width: 350px;
   }
-  .banner__title {
+  .wall__title {
     font-size: 25px;
     text-align: center;
     padding: 0 20px;
   }
-  .banner__title span {
+  .wall__title span {
     font-size: 35px;
   }
-  .banner__info {
+  .wall__info {
     font-size: 15px;
   }
-  .banner .btn-info {
+  .wall .btn-info {
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
   }
-  .banner__dates {
+  .wall__dates {
     padding: 0 20px;
   }
   .popup__content {
