@@ -1260,14 +1260,14 @@ This must be run when you have at least 2 sprites.
 .questions__answer {
   display: none;
 }
-.banner {
+.wall {
   background-image: url(../img/banner/background.jpg);
   background-size: cover;
   min-height: 420px;
   min-width: 960px;
   padding: 55px 0;
 }
-.banner__title {
+.wall__title {
   font-size: 36px;
   font-weight: 100;
   margin-bottom: 35px;
@@ -1276,15 +1276,15 @@ This must be run when you have at least 2 sprites.
   color: #fff;
   text-transform: uppercase;
 }
-.banner__title span {
+.wall__title span {
   font-size: 50px;
 }
-.banner__info {
+.wall__info {
   font-size: 16px;
   margin-bottom: 30px;
   color: #fff;
 }
-.banner__dates {
+.wall__dates {
   color: #04a4e7;
   font-size: 30px;
   font-family: "Appetite";
