@@ -1261,7 +1261,7 @@ This must be run when you have at least 2 sprites.
   display: none;
 }
 .wall {
-  background-image: url(../img/banner/background.jpg);
+  background-image: url(../img/wall/background.jpg);
   background-size: cover;
   min-height: 420px;
   min-width: 960px;
