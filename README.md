@@ -12,3 +12,6 @@
 
 ####If you want to clean directory for production version you need to do:
 1. gulp clean
+
+####If you want to see how site looks like you could go to the 
+http://stillst.github.io/psychology_school/dist/index.html
